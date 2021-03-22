@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Urban Drive</title>
+    <meta name="theme-color" content="#343a40">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl-theme-default.css">
+    <link rel="stylesheet" href="css/main-stylesheet.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navigation-cls-sty navbar-expand-md navbar-light bg-light fixed-top navbar-fixed-top full-screen-menu">
+            <a class="navbar-brand" href="index.html"><img src="images/logo_1.png"></a>
+            <button class="navbar-toggler" type="button" id="btn-mob-menu">
+                <span class="navbar-toggler-icon"></span>
+                <span id="show-cancel"><img src="images/cancel-menu.svg" style="width: 20px;"></span>
+            </button>
+            <div class="cart-small-show">
+                <ul class="navbar-nav full-screen-menu">
+                    <li class="nav-item btn-log-cls signup-btn cart-icon-right">
+                        <a class="nav-link" data-toggle="modal" data-target="#myModal" href="login.html" style="background: #fa4a0c00;"><i class="fa fa-shopping-cart"></i>&nbsp; Cart</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse small-navbar-collapse">
+            <ul class="navbar-nav full-screen-menu">
+                <li class="nav-item" style="z-index: 99999999999;">
+                    
+                    <a class="nav-link" href="javascript:void(0);" onclick="homeLogoClick()">Home</a>
+
+                </li>
+                
+                
+
+                <li class="nav-item btn-log-cls signup-btn">
+                    <a class="nav-link" data-toggle="modal" data-target="#myModal" href="javascript:void(0)" data-backdrop="static" data-keyboard="false">Login/signup</a>
+                </li>
+
+            </ul>
+        </div>
+           <!--  <div class="collapse navbar-collapse small-navbar-collapse">
+                <ul class="navbar-nav full-screen-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="our-partners.html">Our Partners </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="offers.html">Our Offers </a>
+                    </li>
+                    <li class="nav-item btn-log-cls signup-btn cart-icon-right">
+                        <a class="nav-link" data-toggle="modal" data-target="#myModal" href="login.html" style="background: #fa4a0c00;"><i class="fa fa-shopping-cart"></i>&nbsp; Cart</a>
+                    </li>
+                    <li class="nav-item btn-log-cls signup-btn">
+                        <a class="nav-link" data-toggle="modal" data-target="#myModal" href="login.html">Login/signup</a>
+                    </li>
+                </ul>
+            </div> -->
+        </nav>
+        <nav class="navbar navigation-cls-sty  small-screen-menu">
+            <div id="mob-navigation">
+                <ul class="navbar-nav small-screen-menu">
+                    <li class="nav-item btn-log-cls signup-btn">
+                        <a class="nav-link" data-toggle="modal" data-target="#myModal" href="login.html">Login/signup</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About us <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Policy.html">Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bottom-small" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bottom-small" href="#">Monthly booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bottom-small" href="#">Ladakh</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bottom-small" href="#">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bottom-small" href="#">Terms & Conditions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bottom-small" href="#">Contact us</a>
+                    </li>
+                    <br>
+                    <ul class="inline-icon">
+                        <li class="nav-item">
+                            <a class="nav-link bottom-small" href="#"><img src="images/facebook.svg"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link bottom-small" href="#"><img src="images/twitter.svg"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link bottom-small" href="#"><img src="images/instagram.png" style="width: 32px; height: 31px;"></a>
+                        </li>
+                    </ul>
+                    <br>
+                    <br>
+                    <br>
+                    <!-- <li class="nav-item">
+                            <a class="nav-link bottom-small" href="index.html"><img src="images/logo.png"></a>
+                        </li> -->
+                    <!-- <li class="nav-item">
+                            <a class="nav-link bottom-small small-screen-a" href="#">India's largest bike rental </a>
+                        </li> -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="mn-section-bd">
+        <div class="container-fluid">
+            <!-- Trigger the modal with a button -->
+            <!--  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Large Modal</button> -->
+            <!-- Modal -->
+            <div class="modal fade login-pop-cls" id="myModal" role="dialog" style="padding-right: 0px;">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content modal-contentss">
+                        <div class="modal-header modal-headerss">
+                            <button type="button" class="close close-btn" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- <button type="button" class="close close-btn" data-dismiss="modal">&times;</button> -->
+                            <div class="row rowss">
+                                <div class="col-sm-12 pull-right">
+                                    <ul class="nav nav-pills nav-pills-modal">
+                                        <li class="active"><a data-toggle="pill" href="#home" class="active">Sign In </a></li>
+                                        <li class=""><a data-toggle="pill" href="#menu1">Sign Up </a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div id="home" class="tab-pane fade in active">
+                                            <form class="form-horizontal" action="/action_page.php">
+                                                <div class="form-group form-group-modal" style="margin-top: 50px !important;">
+                                                    <label class="control-label col-sm-2" for="envelope"><img src="images/login-email.svg" alt="img-log"></label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" class="form-control" id="pwd" placeholder="Email Or Mobile No.">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group form-group-modal">
+                                                    <label class="control-label col-sm-2" for="lock"><img src="images/login-locked.svg" alt="img-log"> 
+                                                    </label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" class="form-control" id="text" placeholder="Password">
+                                                    </div>
+                                                </div>
+                                                <div class="checkbox form-group-modal" style="margin-top: 13px !important;">
+                                                    <label class="left">
+                                                        <input type="checkbox"> Remember Me</label>
+                                                </div>
+                                                <div class="form-group form-group-modal">
+                                                    <div class="col-sm-10">
+                                                        <button type="submit" class="btn btn-default">Login &nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="userauthTabs__orDivider"> <span class="ng-binding">or</span> 
+                                                </div>
+                                                <div class="btn-social-log">
+                                                    <a href="javascript:void(0)" class="btn_login-cls goo-plus-cls" onclick="LoginWithGooglePlus()"><i class="fa fa-linkedin-square" aria-hidden="true"></i> Login with LinkedIn</a>
+                                                    <a href="javascript:void(0)" class="btn_login-cls facebook-cls" onclick="LoginWithFacebook()"><i class="fa fa-facebook-square" aria-hidden="true"></i> Login with Facebook</a>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div id="menu1" class="tab-pane fade">
+                                            <form class="form-horizontal" action="/action_page.php">
+                                                <div class="form-group form-group-modal" style="margin-top: 50px !important;">
+                                                    <label class="control-label col-sm-2" for="user"><img src="images/login-user.svg" alt="img-log"></label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" class="form-control" id="text" placeholder="Name">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group form-group-modal">
+                                                    <label class="control-label col-sm-2" for="envelope"><img src="images/login-email.svg" alt="img-log"></label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" class="form-control" id="pwd" placeholder="Email">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group form-group-modal">
+                                                    <label class="control-label col-sm-2" for="phone"><img src="images/login-phone.svg" alt="img-log"></label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" class="form-control" id="text" placeholder="Mobile No.">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group form-group-modal">
+                                                    <label class="control-label col-sm-2" for="lock"><img src="images/login-locked.svg" alt="img-log"></label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" class="form-control" id="text" placeholder="Password">
+                                                    </div>
+                                                </div>
+                                                <div class="checkbox form-group-modal" style="margin-top: 13px !important;">
+                                                    <label class="left">
+                                                        <input type="checkbox" checked> I agree to the <a href="disclaimer-privacy-ploicy.html" style="text-decoration:underline">Terms & Conditions</a></label>
+                                                </div>
+                                                <div class="form-group form-group-modal">
+                                                    <div class="col-sm-10">
+                                                        <button type="submit" class="btn btn-default">Register &nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="userauthTabs__orDivider"> <span class="ng-binding">or</span> </div>
+                                                <div class="btn-social-log">
+                                                    <a href="javascript:void(0)" class="btn_login-cls goo-plus-cls" onclick="LoginWithGooglePlus()"><i class="fa fa-linkedin-square" aria-hidden="true"></i> Sign up with LinkedIn</a>
+                                                    <a href="javascript:void(0)" class="btn_login-cls facebook-cls" onclick="LoginWithFacebook()"><i class="fa fa-facebook-square" aria-hidden="true"></i> Sign up with Facebook</a>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div> -->
+                    </div>
+                </div>
+            </div>
+       
+        <div class="banner-cls-sty1 row banner-cls-sty-home">
+            <div class="container-fluid">
+                 
+                <div class="row justify-content-center align-items-center frm-banner-cls">
+                    <div class="col-sm-12 col-md-6 col-lg-5 ml-auto ">
+                        <!-- Nav tabs -->
+                        <div class="card banner-tab-cls p-0 shadow-lg mr-lg-5">
+                            <div class="nav nav-tabs chauffeur-tabs nav-fill" id="pills-tab" role="tablist">
+                                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Local</a>
+                                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Intercity</a>
+                                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Airport Transfer</a>
+                                        </div>
+                          
+                                   
+                                     
+                                        <div class="tab-content" id="pills-tabContent">
+                                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                      <div class="row">
+                                                    <div class="col-sm-6 form-group">
+                                                        <label for="city" class="small mb-0">Start City:</label>
+                                                        <div class="input-cls-new">
+                                                            <input type="text" class="form-control" placeholder="Pickup City">
+                                                            <img src="images/target-icon.png" class="icon-frm-cls">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 form-group">
+                                                        <label for="start date and time" class="small mb-0">Start Date and Time:</label>
+                                                        <div class="input-cls-new">
+                                                            <input type="text" class="form-control form_datetime" placeholder="Start Date and Time">
+                                                            <img src="images/calender-icon.png" class="icon-frm-cls">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <a href="car-listing.html" class="btn btn-banner">Search</a>
+                                                        <!-- <button class="btn btn-banner">Search</button> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                                <div class="row mb-2">
+                                                     <div class="col-auto">
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="customRadioInline1"  class="custom-control-input" name="cars" checked="checked" value="1" >
+                                                            <label class="custom-control-label" for="customRadioInline1">Round Trip</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="customRadioInline2" name="cars" value="2"  class="custom-control-input">
+                                                            <label class="custom-control-label" for="customRadioInline2">One Way</label>
+                                                        </div>
+                                                    </div>
+                                                        <!--   <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadioInline3">Local</label>
+                                                </div>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline4" name="customRadioInline1" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadioInline4">Airport Transfer</label>
+                                                </div> -->
+                                                    </div>
+                                                
+                                                <div id="Cars1" class="desc">
+                                                <div class="row">
+                                                    <div class="col-sm-6 form-group">
+                                                        <label for="city" class="small mb-0">Start City:</label>
+                                                        <div class="input-cls-new">
+                                                            <input type="text" class="form-control" placeholder="Pickup City">
+                                                            <img src="images/target-icon.png" class="icon-frm-cls">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 form-group">
+                                                        <label for="city" class="small mb-0">Start Address:</label>
+                                                        <div class="input-cls-new">
+                                                            <input type="text" class="form-control" placeholder="Start Address">
+                                                            <img src="images/target-icon.png" class="icon-frm-cls">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-6 form-group">
+                                                        <label for="city" class="small mb-0">End City:</label>
+                                                        <div class="input-cls-new">
+                                                            <input type="text" class="form-control" placeholder="End City">
+                                                            <img src="images/target-icon.png" class="icon-frm-cls">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 form-group">
+                                                        <label for="city" class="small mb-0">End Address:</label>
+                                                        <div class="input-cls-new">
+                                                            <input type="text" class="form-control" placeholder="End Address">
+                                                            <img src="images/target-icon.png" class="icon-frm-cls">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-6 form-group">
+                                                        <label for="start date and time" class="small mb-0">Start Date and Time:</label>
+                                                        <div class="input-cls-new">
+                                                            <input type="text" class="form-control form_datetime" placeholder="Start Date and Time">
+                                                            <img src="images/calender-icon.png" class="icon-frm-cls">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 form-group">
+                                                        <label for="end Date and Time" class="small mb-0">End Date and Time:</label>
+                                                        <div class="input-cls-new">
+                                                            <input type="text" class="form-control form_datetime" placeholder="End Date and Time">
+                                                            <img src="images/calender-icon.png" class="icon-frm-cls">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <a href="car-listing.html" class="btn btn-banner">Search</a>
+                                                        <!-- <button class="btn btn-banner">Search</button> -->
+                                                        <span class="small font-italic float-end">*Round Trip</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="Cars2" class="desc" style="display: none;">
+                                               
+                                                <div class="row">
+                                                    <div class="col-sm-6 form-group">
+                                                        <label for="city" class="small mb-0">Start City:</label>
+                                                        <div class="input-cls-new">
+                                                            <input type="text" class="form-control" placeholder="Pickup City">
+                                                            <img src="images/target-icon.png" class="icon-frm-cls">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 form-group">
+                                                        <label for="city" class="small mb-0">Start Address:</label>
+                                                        <div class="input-cls-new">
+                                                            <input type="text" class="form-control" placeholder="Start Address">
+                                                            <img src="images/target-icon.png" class="icon-frm-cls">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-6 form-group">
+                                                        <label for="city" class="small mb-0">End City:</label>
+                                                        <div class="input-cls-new">
+                                                            <input type="text" class="form-control" placeholder="End City">
+                                                            <img src="images/target-icon.png" class="icon-frm-cls">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 form-group">
+                                                        <label for="city" class="small mb-0">End Address:</label>
+                                                        <div class="input-cls-new">
+                                                            <input type="text" class="form-control" placeholder="End Address">
+                                                            <img src="images/target-icon.png" class="icon-frm-cls">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-6 form-group">
+                                                        <label for="start date and time" class="small mb-0">Start Date and Time:</label>
+                                                        <div class="input-cls-new">
+                                                            <input type="text" class="form-control form_datetime" placeholder="Start Date and Time">
+                                                            <img src="images/calender-icon.png" class="icon-frm-cls">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 form-group">
+                                                        <label for="end Date and Time" class="small mb-0">End Date and Time:</label>
+                                                        <div class="input-cls-new">
+                                                            <input type="text" class="form-control form_datetime" placeholder="End Date and Time">
+                                                            <img src="images/calender-icon.png" class="icon-frm-cls">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <a href="car-listing.html" class="btn btn-banner">Search</a>
+                                                        <!-- <button class="btn btn-banner">Search</button> -->
+                                                        <span class="small font-italic float-end">*One Way</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                                <div class="row">
+                                                    <div class="col-sm-6 form-group">
+                                                        <label for="city" class="small mb-0">Start City:</label>
+                                                        <div class="input-cls-new">
+                                                            <input type="text" class="form-control" placeholder="Pickup City">
+                                                            <img src="images/target-icon.png" class="icon-frm-cls">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 form-group">
+                                                        <label for="city" class="small mb-0">Trip Type:</label>
+                                                        <div class="input-cls-new">
+                                                            <select class="form-control">
+                                                                <option>Pickup from Airport</option>
+                                                                <option>Drop to Airport</option>
+                                                            </select>
+                                                            <img src="images/down-arrow.png" class="icon-frm-cls bg-white p-2 mr-0">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-6 form-group">
+                                                        <label for="start date and time" class="small mb-0">Start Date and Time:</label>
+                                                        <div class="input-cls-new">
+                                                            <input type="text" class="form-control form_datetime" placeholder="Start Date and Time">
+                                                            <img src="images/calender-icon.png" class="icon-frm-cls">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 form-group">
+                                                        <button class="btn btn-banner mt-4 btn-block">Search</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                  
+                                </div>
+                            
+                      
+                    
+                </div>
+                <div class="col-sm-12 col-md-6  col-lg-6 h-100">
+
+                    <div class="owl-carousel row" id="banner">
+                        <div>
+                            <img src="images/02.png" class="d-block w-100">
+                    <div class="banner-content">
+                        
+                        <h3>Banner title Goes Here</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                      
+                    </div>
+                </div>
+                <div>
+                            <img src="images/02.png" class="d-block w-100">
+                   
+                </div>
+            </div>
+                </div>
+            </div>
+             
+        </div>
+        </div>
+        <!-- mentor start here -->
+       <section class="our-mentor pdtb-50">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                
+                
+                     <div class="col-sm-auto col-6">
+                            <img src="https://www.myurbandrive.com/indigo/Content/images/cs_4.png" alt="mentor">
+                            <label>Driver with Masks</label>
+                       </div>
+                        <div class="col-sm-auto col-6">
+                            <img src="https://www.myurbandrive.com/indigo/Content/images/cs_2.png" alt="mentor">
+                            <label>Sanitized Cabs</label>
+                        </div>
+                        <div class="col-sm-auto col-6">
+                            <img src="https://www.myurbandrive.com/indigo/Content/images/cs_3.png" alt="mentor">
+                            <label>Hand Sanitizers</label>
+                        </div>
+                        <div class="col-sm-auto col-6">
+                            <img src="https://www.myurbandrive.com/indigo/Content/images/cs_1.png" alt="mentor">
+                            <label>Drivers with Aarogya Setu app</label>
+                       </div>
+               
+            </div>
+        </div>
+    </section>
+        <!-- Step start here -->
+        <section class="simple-step pdtb-50">
+            <div class="container">
+                <div class="heading-cls-sty text-center">
+                    <h2>3 Simple Steps</h2>
+                    <div class="line-heading-cls"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 form-group">
+                        <div class="simple-step-cls point-1">
+                            <div class="content-simple">
+                                <div class="point-cls-sty">01</div>
+                                <figure> <img src="images/car-icon.png" /> </figure>
+                                <h3>BOOK</h3>
+                                <p>Pick your favourite car,
+                                    <br /> time and place</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 form-group">
+                        <div class="simple-step-cls point-2">
+                            <div class="content-simple">
+                                <div class="point-cls-sty">02</div>
+                                <figure> <img src="images/home-icon.png" /> </figure>
+                                <h3>AT YOUR DOORSTEP</h3>
+                                <p>Upload your driver's license, pay the small security deposit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 form-group">
+                        <div class="simple-step-cls point-3">
+                            <div class="content-simple">
+                                <div class="point-cls-sty">03</div>
+                                <figure> <img src="images/cab-icon.png" /> </figure>
+                                <h3>ENJOY DRIVE</h3>
+                                <p>Fill the checklist on the our app or by calling us. Enjoy your self drive</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Attribuate start here -->
+        <section class="six-att-cls pdtb-50">
+            <div class="container">
+                <div class="heading-cls-sty text-center">
+                    <h2> Six Attributes of URBAN Drive</h2>
+                    <div class="line-heading-cls"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="att--pt-cls">
+                            <figure><img src="images/icon1.png"></figure>
+                            <h2>Keep Going<br /> Unlimited Kilometers</h2>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="att--pt-cls">
+                            <figure><img src="images/icon2.png"></figure>
+                            <h2>Easy Deposit <br /> Instant Refund </h2>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="att--pt-cls">
+                            <figure><img src="images/icon3.png"></figure>
+                            <h2>Always with you <br /> 24/7 Support</h2>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="att--pt-cls">
+                            <figure><img src="images/icon4.png"></figure>
+                            <h2>Keep Going<br /> Unlimited Kilometers</h2>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="att--pt-cls">
+                            <figure><img src="images/icon5.png"></figure>
+                            <h2>Got you Insured <br /> Insurance included</h2>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="att--pt-cls">
+                            <figure><img src="images/icon6.png"></figure>
+                            <h2>Explore All India <br />All India Permit </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonial start here -->
+        <section class="client-test pdtb-50">
+            <div class="container">
+                <div class="heading-cls-sty text-center">
+                    <h2> Tourist Reviews</h2>
+                    <div class="line-heading-cls"></div>
+                    <p class="mt-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="test-panel-cls">
+                    <!-- Updated By Subodh -->
+                    <div id="reviews" class="owl-carousel">
+                        <!-- Indicators -->
+                        <div class="col-md-12">
+                            <figure class="figure-width"><img src="images/karan.jpg"></figure>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            <div class="nme-client">
+                                <h2>Karan Varma</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <figure class="figure-width"><img src="images/karan.jpg"></figure>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            <div class="nme-client">
+                                <h2>Karan Varma</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <figure class="figure-width"><img src="images/karan.jpg"></figure>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            <div class="nme-client">
+                                <h2>Karan Varma</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Updated by Subodh -->
+                </div>
+            </div>
+            </div>
+            <div class="bg-test-cls bg-test-cls-top"></div>
+        </section>
+        <section class="popular-tour pdtb-50">
+            <div class="container">
+                <div class="heading-cls-sty text-center">
+                    <h2> Places to Visit </h2>
+                    <div class="line-heading-cls"></div>
+                </div>
+                <div id="tour">
+                    <div class="customNavigation"> <a class="btn prev"><i class="fa fa-angle-left"></i></a> <a class="btn next"><i class="fa fa-angle-right"></i></a> </div>
+                    <div id="owl-demo" class="owl-carousel">
+                        <div class="item">
+                            <div class="tour-pt-cls">
+                                <figure><img src="https://www.urbandrive.co.in//images/visit-place1.jpg"></figure>
+                                <div class="content-tour">
+                                    <h2>Rishikesh</h2>
+                                    <ul class="list-inline">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="tour-pt-cls">
+                                <figure><img src="https://www.urbandrive.co.in//images/visit-place1.jpg"></figure>
+                                <div class="content-tour">
+                                    <h2>Rishikesh</h2>
+                                    <ul class="list-inline">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="tour-pt-cls">
+                                <figure><img src="https://www.urbandrive.co.in//images/visit-place1.jpg"></figure>
+                                <div class="content-tour">
+                                    <h2>Rishikesh</h2>
+                                    <ul class="list-inline">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="tour-pt-cls">
+                                <figure><img src="https://www.urbandrive.co.in//images/visit-place1.jpg"></figure>
+                                <div class="content-tour">
+                                    <h2>Rishikesh</h2>
+                                    <ul class="list-inline">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="tour-pt-cls">
+                                <figure><img src="https://www.urbandrive.co.in//images/visit-place1.jpg"></figure>
+                                <div class="content-tour">
+                                    <h2>Rishikesh</h2>
+                                    <ul class="list-inline">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="tour-pt-cls">
+                                <figure><img src="https://www.urbandrive.co.in//images/visit-place1.jpg"></figure>
+                                <div class="content-tour">
+                                    <h2>Rishikesh</h2>
+                                    <ul class="list-inline">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="foot-mob-sec tb-space">
+                <div class="container">
+                    <div class="row">
+                        <!-- FAMILY IMAGE(YOU CAN USE ANY PNG IMAGE) -->
+                        <div class="col-md-6 col-sm-12 col-xs-12 family"> <img src="images/mobile.png" alt=""> </div>
+                        <!-- REQUEST A QUOTE -->
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <!-- THANK YOU MESSAGE -->
+                            <div class="foot-mob-app">
+                                <h2>Have you tried our mobile app?</h2>
+                                <p>World's leading tour and travels Booking website,Over 30,000 packages worldwide. Book travel packages and enjoy your holidays with distinctive experience</p>
+                                <ul>
+                                    <li><i>1</i> Select Vehicle</li>
+                                    <li><i>2</i> Navigate to Drive</li>
+                                    <li><i>3</i> Make Payment</li>
+                                    <li><i>4</i> Enjoy Drive</li>
+                                    <li><i>4</i> Enjoy Drive</li>
+                                </ul>
+                                <p class="get-sms"><b>Get SMS with link to download Our App</b></p>
+                                <!-- Updated by Subodh -->
+                                <div class="input-group subscriber col-sm-10 p-md-0">
+                                    <input type="text" class="form-control " id="mobilecarid" placeholder="Enter your 10 digit mobile number" style="height: 46px;">
+                                    <div class="input-group-addon submitBtn">
+                                        <input type="submit" class="sendbtn" value="Send">
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="text-md-left text-center pl-md-2">
+                                    <div class="app-store">
+                                        <a href="#"><img src="images/android.png" alt="" class="img-fluid"> </a>
+                                        <a href="#"><img src="images/apple.png" class="img-fluid" alt=""> </a>
+                                    </div>
+                                </div>
+                                <!-- End Updated by Subodh -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Left and right controls
+<a class="carousel-control-prev" href="#news-part" data-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</a>
+<a class="carousel-control-next" href="#news-part" data-slide="next">
+<span class="carousel-control-next-icon carousel-control-next-two"></span>
+</a> -->
+        </div>
+        <section class="news-part news-part-footer-comp">
+            <div class="container">
+                <div id="clients" class="owl-carousel">
+                    <div class="col-md-12">
+                        <img src="images/client-logo1.png" class="img-fluid" />
+                    </div>
+                    <div class="col-md-12">
+                        <img src="images/client-logo3.png" class="img-fluid" />
+                    </div>
+                    <div class="col-md-12">
+                        <img src="images/client-logo4.png" class="img-fluid" />
+                    </div>
+                    <div class="col-md-12">
+                        <img src="images/client-logo5.png" class="img-fluid" />
+                    </div>
+                    <div class="col-md-12">
+                        <img src="images/client-logo3.png" class="img-fluid" />
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </section>
+        <!-- Footer start here -->
+        <section class="footer-cls-sty pdtb-50 bottom-fotter1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                        <figure> <img src="images/logo.png"> </figure>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        <div class="social-foot-cls">
+                            <ul class="list-inline flex-cls">
+                                <li>
+                                    <h6>Follow us </h6>
+                                </li>
+                                <li><a href="https://www.facebook.com/Urban-Drive-1117900178315777/"><i class="fa fa-facebook"></a></i>
+                                </li>
+                                <li><a href="https://twitter.com/urbanselfdrive"><i class="fa fa-twitter"></a></i>
+                                </li>
+                                <li><a href="https://plus.google.com/u/0/103734751805183845735"><i class="fa fa-google-plus"></a></i>
+                                </li>
+                                <li><a href="https://www.linkedin.com/company/13329566/"><i class="fa  fa-linkedin"></a></i>
+                                </li>
+                                <li><a href="https://www.instagram.com/urbandrive.co.in/"><i class="fa fa-instagram"></a></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <h2> Company</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="testimonials.html">Testimonials</a></li>
+                            <li><a href="disclaimer-privacy-ploicy.html">Disclaimer & Privacy Policy</a></li>
+                            <li><a href="Policy.html">Booking Policy</a></li>
+                            <li><a href="faq.html">Frequently Asked Question</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <h2>Contact With us</h2>
+                        <ul class="list-unstyled contact-foot-sty">
+                            <li>
+                                <a href="#"> <i class="fa  fa-envelope"></i> +91-9773-881-881</a>
+                            </li>
+                            <li>
+                                <a href="#"> <i class="fa fa-phone"></i> care@urbandrive.co.in</a>
+                            </li>
+                        </ul>
+                        <div class="news-cls-foot">
+                            <h3>Newsletter</h3>
+                            <input type="text" class="form-control" placeholder="Your Email">
+                            <button class="btn btn-news-cls">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <div class="container-fluid"> -->
+      <!--   <section class="footer-cls-sty pdtb-50 bottom-fotter2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 ">
+                        <nav>
+                            <div class="nav nav-tabs nav-fill nav-tabsss" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-links nav-fill-nav-item active" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Read More</a>
+                                <a class="nav-item nav-links show nav-fill-nav-item" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Car</a>
+                                <a class="nav-item nav-links nav-fill-nav-item" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Bike</a>
+                                <a class="nav-item nav-links nav-fill-nav-item" id="nav-contact-tab" data-toggle="tab" href="#chauffeur-drive" role="tab" aria-controls="nav-contact" aria-selected="false"> Chauffeur Drive</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                            <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-3">
+                                        <ul class="bottom-fotter2-ul">
+                                            <li><a href="#">Bike Rentals in Delhi</a></li>
+                                            <li><a href="#">Bike On Rent in Delhi - Ladakh</a></li>
+                                            <li><a href="#">Hire Bike in Bangalore</a></li>
+                                            <li><a href="#">Motorcycle On Rent in Pune</a></li>
+                                            <li><a href="#">Two Wheeler On Rent in Mumbai</a></li>
+                                            <li><a href="#">Bike Rentals in Chandigarh</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <ul class="bottom-fotter2-ul">
+                                            <li><a href="#">Bike On Rent in Hyderabad</a></li>
+                                            <li><a href="#">Hire Bike in Kolkata</a></li>
+                                            <li><a href="#">Motorcycle On Rent in Jaipur</a></li>
+                                            <li><a href="#">Two Wheeler On Rent in Chennai</a></li>
+                                            <li><a href="#">Bike Rentals in Rishikesh</a></li>
+                                            <li><a href="#">Bike On Rent in Manali</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <ul class="bottom-fotter2-ul">
+                                            <li><a href="#">Hire Bike in Ahmedabad</a></li>
+                                            <li><a href="#">Motorcycle On Rent in Goa</a></li>
+                                            <li><a href="#">Two Wheeler On Rent in Pondicherry</a></li>
+                                            <li><a href="#">Bike Rentals in Guwahati</a></li>
+                                            <li><a href="#">Bike On Rent in Ooty</a></li>
+                                            <li><a href="#">Hire Bike in Mysore</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <ul class="bottom-fotter2-ul">
+                                            <li><a href="#">Motorcycle On Rent in Nainital</a></li>
+                                            <li><a href="#">Two Wheeler On Rent in Raipur</a></li>
+                                            <li><a href="#">Bike Rentals in Udaipur</a></li>
+                                            <li><a href="#">Bike On Rent in Gurgaon</a></li>
+                                            <li><a href="#">Hire Bike in Siliguri</a></li>
+                                            <li><a href="#">Motorcycle On Rent in Mount</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade bottom-fotter2-ul active show" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                Urban Drive – bike rentals started its operations from Delhi in 2014. It started working with bike renting vendors in Karol bagh for a start. These are the vendors who are giving bike on rent to Indian and foreign customers to go to Ladakh. They are giving bikes on rent since last 30-40 years and have grown since then.
+                                <br>
+                                <br> Urban Drive started working with them and started giving business to these vendors through out the year even it it is not a Ladakh season. The vendors started to earn 4-5 Lakhs a month and the market of bike hire grew tremendously. Then Urban Drive started its bike rentals business in Bangalore and Banaglore is a even huge market then Delhi. People here are taking bike on rent for daily commute. They go to office, Mall, Cinema or pub’s , they take a bike on rent and enjoy the beautiful weather of Urban Drive.
+                                <br>
+                                <br> Now in 2017 Urban Drive has its operations in almost 15 cities giving bikes on rent. Urban Drive works on a market place model and works with many vendors giving business to each one. Now you can get a bike on rent in Mumbai, bike on rent in Pune, bike on rent in Chandigarh, bike on rent in Kolkata, bike on rent in Jaipur, bike on rent in Bagdogra, bike on rent in Jaisalmer, bike on rent in Darjeeling, bike on rent in delhi, bike on rent in Bangalore, bike on rent in Manali, bike on rent in Rishikesh and bike on rent in Hyderabad.
+                                <br>
+                                <br> If you are in any of these cities you can book a bike on rent and experience the hasslefree bike renting.
+                                <br>
+                                <br> You can take bikes for rent in Bangalore or any of the operational city of Urban Drive to explore city. Also, if you face problems in daily commute you can rent a bike for daily travel. Hire bike for tours as the world is beautiful and unexplored. Rental bike for office travel. Bikes on rent for just some hours to ride to a exotic dinner with your girl friend or wife is the best thing to do. Rent Royal Enfield's Bullet, Ducati, Harley Davidson, Classic 350, Thunderbird 350, Standard 500. You can rent Rent KTM Duke 200, 390, RC 200, RC 390, Thunderbird 500, Desert Storm, Himalayan, Continental GT. Renting KTM Duke 200, 390, RC 200, RC 390, Avenger, Benelli, Ninja, Kawasaki, Triumph and many more is now your cup of tea. Avenger for rent in Bangalore. Motorcycle rentals for long weekends and extended long weekends. Rent a motorcycle for special days and occasions. Motorcycle rental for anniversary and birthday celebrations. Hire a motorcycle for promotion. For amazing entrance of groom rental bikes is an amazing option. Weekend leisure bike rentals. Bike rentals for road trips. The rental motorcycles come with 999 deposit and cheapest rent across city and easy booking and pickup. Bike rentals in Bangalore from Urban Drive is most preferred and highly rated by users. We conduct expeditions to Spiti Valley, Ladakh, Leh, Goa and many exotic destinations across India.
+                                <br>
+                                <br> You can now have bike rentals experience across 15 cities of India. Bike rentals in Delhi was always an option. Motorcycle hire in Bangalore, rent a bike in Pune, two wheeler rentals in manali, bike on rent in Kolkata, bike on rent in Mumbai, motorcycle rentals in Jaipur, bike on rent in Jaisalmer, bike on rent in Hyderabad, bike on rent in ladakh etc.
+                            </div>
+                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-3">
+                                        <ul class="bottom-fotter2-ul">
+                                            <li><a href="#">Bike Rentals in Phuket</a></li>
+                                            <li><a href="#">Bike On Rent in Pattaya</a></li>
+                                            <li><a href="#">Hire Bike in Bali</a></li>
+                                            <li><a href="#">Motorcycle On Rent in Kathmandu</a></li>
+                                            <li><a href="#">Two Wheeler On Rent in Coron</a></li>
+                                            <li><a href="#">Bike Rentals in Negombo</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <ul class="bottom-fotter2-ul">
+                                            <li><a href="#">Bike On Rent in Rome</a></li>
+                                            <li><a href="#">Hire Bike in Paris</a></li>
+                                            <li><a href="#">Motorcycle On Rent in Munich</a></li>
+                                            <li><a href="#">Two Wheeler On Rent in Frankfurt</a></li>
+                                            <li><a href="#">Bike Rentals in Hamburg</a></li>
+                                            <li><a href="#">Bike On Rent in Athens</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <ul class="bottom-fotter2-ul">
+                                            <li><a href="#">Hire Bike in Crete</a></li>
+                                            <li><a href="#">Motorcycle On Rent in Kos</a></li>
+                                            <li><a href="#">Two Wheeler On Rent in Santorini</a></li>
+                                            <li><a href="#">Bike Rentals in Mykonos</a></li>
+                                            <li><a href="#">Bike On Rent in Zakynthos</a></li>
+                                            <li><a href="#">Hire Bike in Barcelona</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <ul class="bottom-fotter2-ul">
+                                            <li><a href="#">Motorcycle On Rent in Madrid</a></li>
+                                            <li><a href="#">Two Wheeler On Rent in Amsterdam</a></li>
+                                            <li><a href="#">Bike Rentals in Ljubljana</a></li>
+                                            <li><a href="#">Bike On Rent in Bratislava</a></li>
+                                            <li><a href="#">Hire Bike in Lisbon</a></li>
+                                            <li><a href="#">Motorcycle On Rent in Vilnius</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="chauffeur-drive" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-3">
+                                        <ul class="bottom-fotter2-ul">
+                                            <li><a href="#">Bike Rentals in Phuket</a></li>
+                                            <li><a href="#">Bike On Rent in Pattaya</a></li>
+                                            <li><a href="#">Hire Bike in Bali</a></li>
+                                            <li><a href="#">Motorcycle On Rent in Kathmandu</a></li>
+                                            <li><a href="#">Two Wheeler On Rent in Coron</a></li>
+                                            <li><a href="#">Bike Rentals in Negombo</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <ul class="bottom-fotter2-ul">
+                                            <li><a href="#">Bike On Rent in Rome</a></li>
+                                            <li><a href="#">Hire Bike in Paris</a></li>
+                                            <li><a href="#">Motorcycle On Rent in Munich</a></li>
+                                            <li><a href="#">Two Wheeler On Rent in Frankfurt</a></li>
+                                            <li><a href="#">Bike Rentals in Hamburg</a></li>
+                                            <li><a href="#">Bike On Rent in Athens</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <ul class="bottom-fotter2-ul">
+                                            <li><a href="#">Hire Bike in Crete</a></li>
+                                            <li><a href="#">Motorcycle On Rent in Kos</a></li>
+                                            <li><a href="#">Two Wheeler On Rent in Santorini</a></li>
+                                            <li><a href="#">Bike Rentals in Mykonos</a></li>
+                                            <li><a href="#">Bike On Rent in Zakynthos</a></li>
+                                            <li><a href="#">Hire Bike in Barcelona</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <ul class="bottom-fotter2-ul">
+                                            <li><a href="#">Motorcycle On Rent in Madrid</a></li>
+                                            <li><a href="#">Two Wheeler On Rent in Amsterdam</a></li>
+                                            <li><a href="#">Bike Rentals in Ljubljana</a></li>
+                                            <li><a href="#">Bike On Rent in Bratislava</a></li>
+                                            <li><a href="#">Hire Bike in Lisbon</a></li>
+                                            <li><a href="#">Motorcycle On Rent in Vilnius</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!--  </div> -->
+        <section class="footer-cls-sty pdtb-50 bottom-fotter3">
+            <div class="container">
+                <div class="footer-copy">
+                    <div class="row">
+                        <div class="col-sm-6 col-xs-12 text-left">
+                            <ul class="list-inline">
+                                <li><img src="images/visa.png"></li>
+                                <li><img src="images/card.png"></li>
+                                <li><img src="images/paypal.png"></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 text-right">
+                            <p>Copyright 2017 to 2018 Urban Drive All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
+    <script>
+    $(document).ready(function() {
+        var owl = $('#owl-demo');
+        owl.owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 2,
+                    nav: true
+                },
+                1000: {
+                    items: 4,
+                    nav: true,
+                    loop: true
+                }
+            }
+
+        })
+
+    });
+    </script>
+    <script>
+    $(document).ready(function() {
+        var owl = $("#clients");
+        owl.owlCarousel({
+            loop: true,
+
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                600: {
+                    items: 4,
+                    nav: false
+                },
+                1000: {
+                    items: 5,
+                    nav: true,
+                    loop: false
+                }
+            }
+        });
+    });
+    </script>
+    <script>
+    $(document).ready(function() {
+          $('#banner').owlCarousel({
+            loop: true,
+            dots: true,
+            nav: false,
+            autoplay: false,
+            smartSpeed: 1000,
+            autoplayTimeout: 1500,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        });
+    });
+    </script>
+    <script>
+    $(document).ready(function() {
+        var owl = $("#reviews");
+        owl.owlCarousel({
+            loop: true,
+            nav: false,
+            items: 1,
+            margin: 10,
+            responsiveClass: false,
+
+        });
+
+    });
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#btn-mob-menu").click(function() {
+            $(".small-screen-menu").toggleClass("show");
+            $(this).toggleClass("nav-xs-menu");
+            $("body").toggleClass("overflow-none");
+        });
+        $('.mn-section-bd').click(function() {
+            if ($('.small-screen-menu').hasClass('show')) {
+                $('.small-screen-menu').removeClass('show');
+            }
+            if ($('#btn-mob-menu').hasClass('nav-xs-menu')) {
+                $('#btn-mob-menu').removeClass('nav-xs-menu');
+            }
+            if ($('body').hasClass('overflow-none')) {
+                $('body').removeClass('overflow-none');
+            } else {
+
+            }
+        });
+    });
+    </script>
+    <script type="text/javascript">
+    $('.form_datetime').datetimepicker({
+        format: 'yyyy-mm-dd -:- hh:ii (IST)',
+        //language:  'fr',
+        weekStart: 1,
+        todayBtn: 1,
+        autoclose: 1,
+        todayHighlight: 0,
+        startView: 2,
+        forceParse: 0,
+        showMeridian: 1
+    });
+    </script>
+    <!-- <script type="text/javascript">
+    $('#myCarousel').carousel({
+  interval: 4000,
+  loop:true
+});
+
+$('.carousel .item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+
+  if (next.next().length>0) {
+ 
+      next.next().children(':first-child').clone().appendTo($(this)).addClass('rightest');
+      
+  }
+  else {
+      $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+     
+  }
+});
+</script> -->
+
+<script type="text/javascript">
+    $(document).ready(function() {
+    $("input[name$='cars']").click(function() {
+        var test = $(this).val();
+
+        $("div.desc").hide();
+        $("#Cars" + test).show();
+    });
+});
+</script>
+</body>
+
+</html>

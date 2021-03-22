@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Profile </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main-stylesheet.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style> .fa.fa-rupee{font-size: 14px; margin-right: 3px;}</style>
+    
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navigation-cls-sty navbar-expand-md navbar-dark bg-dark fixed-top navbar-fixed-top full-screen-menu">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
+        <button class="navbar-toggler" type="button" id="btn-mob-menu">
+        <span class="navbar-toggler-icon"></span>
+        <span id="show-cancel"><img src="images/cancel-menu.svg" style="width: 20px;"></span>
+        </button>
+        <div class="cart-small-show">
+          <ul class="navbar-nav full-screen-menu">
+            <li class="nav-item btn-log-cls signup-btn cart-icon-right">
+              <a class="nav-link" data-toggle="modal" data-target="#myModal" href="login.html" style="background: #fa4a0c00;"><i class="fa fa-shopping-cart"></i>&nbsp; Cart</a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="collapse navbar-collapse small-navbar-collapse">
+          <ul class="navbar-nav full-screen-menu">
+            <li class="nav-item">
+              <a class="nav-link" href="our-partners.html">Our Partners </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">About us <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Policy.html">Policy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQ</a>
+            </li>
+            
+            <li class="nav-item btn-log-cls signup-btn">
+              <a class="nav-link"  data-toggle="modal" data-target="#myModal" href="login.html">Login/signup</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="navbar navigation-cls-sty  small-screen-menu">
+        
+        
+        <div  id="mob-navigation">
+          <ul class="navbar-nav small-screen-menu">
+            <li class="nav-item btn-log-cls signup-btn">
+              <a class="nav-link"  data-toggle="modal" data-target="#myModal" href="login.html">Login/signup</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">About us <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Policy.html">Policy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bottom-small" href="faq.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bottom-small" href="#">Monthly booking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bottom-small" href="#">Ladakh</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bottom-small" href="#">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bottom-small" href="#">Terms & Conditions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bottom-small" href="#">Contact us</a>
+            </li>
+            <br>
+            <ul class="inline-icon">
+              <li class="nav-item"><a class="nav-link bottom-small" href="#"><img src="images/facebook.svg"></a></li>
+              <li class="nav-item"><a class="nav-link bottom-small" href="#"><img src="images/twitter.svg"></a></li>
+              <li class="nav-item"><a class="nav-link bottom-small" href="#"><img src="images/instagram.png" style="width: 32px; height: 31px;"></a></li>
+            </ul>
+            <br><br><br>
+          </ul>
+          
+        </div>
+      </nav>
+    </header>
+    
+    <main class="mn-section-bd ">
+      <div class="container-fluid">
+        <section class="pts-60">
+          <div class="container pt-5 pb-5">
+            <div class="row">
+              <div class="col-md-3 border">
+                <div class="profile-box mt-4 mb-4  ">
+                  <div class="profile-img border border-left-0 border-right-0 border-top-0 mb-3">
+                    <div class="circle">
+                      <!-- User Profile Image -->
+                      <img class="profile-pic" src="images/user.png">
+                         <a href="#" class="remove-profile"><i class="fa fa-trash"></i></a>
+                      <!-- Default Image -->
+                      <div class="p-image">
+                        <a href="#">
+                        <i class="fa fa-camera upload-button"></i>
+                        <input class="file-upload" type="file" accept="image/*"/>
+                      </a>
+                     
+                      </div>
+                    </div>
+
+                    
+                    <div class="ditails">
+                      <h5 class="mt-3 mb-1"><strong>Parneet Kaur</strong></h5>
+                      <p>1234567810 <br>ponikaur848@gmail.com</p>
+                    </div>
+                  </div>
+                  <div class="row bg-light">
+                    <div class="col p-2 profile">
+                      
+                      <i class="fa fa-shield bg-dark rounded-circle p-1 pr-2 pl-2 text-white"></i><small> Profile verification </small>
+                      <span class="badge bg-transparent float-right small text-danger pt-2"> incomplete</span>
+                      
+                    </div>
+                  </div>
+                  <div class="vertical-tab row">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li role="presentation" class="nav-item"><a class="nav-link active" href="#Section1"data-toggle="tab" role="tab" aria-controls="home" aria-selected="true">My Profile</a></li>
+                      <li role="presentation" class="nav-item"><a class="nav-link" href="#Section2" data-toggle="tab" role="tab" aria-controls="home" aria-selected="false">Documents/ Licences</a></li>
+                      <li role="presentation" class="nav-item"><a class="nav-link" href="#Section3" data-toggle="tab" role="tab" aria-controls="home" aria-selected="false">My Bookings</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-9 border">
+                <div class="profile-box box1">
+                  <div class="tab-content tabs">
+                    <div role="tabpanel" class="tab-pane fade in active" id="Section1">
+                      <div class="details">
+                        <h3>My <strong>Profile</strong></h3>
+                      </div>
+                      <div class="tabs-box">
+                        <div class="profile-headings">
+                          <h5>Account Details</h5>
+                        </div>
+                        
+                        <form>
+                          <div class="form-group row">
+                            <label class="col-md-2 col-form-label">Email</label>
+                            <div class="col-md-4 col-9">
+                              <input type="text" class="form-control-plaintext" value="ponikaur848@gmail.com"></div>
+                              <div class="col-md-2 col-3">
+                                <a href="#" class="btn btn-outline-success btn-xs rounded-pill"> Verified</a>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label class="col-md-2 col-form-label">Mobile No</label>
+                              <div class="col-md-4 col-9">
+                                <input type="type" name="" class="form-control" value="7645745449">
+                              </div>
+                              <div class="col-md-2 col-3">
+                                <a href="#" class="btn btn-outline-success btn-xs rounded-pill">  Verified</a>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label class="col-md-2 col-form-label">Password</label>
+                              <div class="col-md-4 col-9">
+                                <input type="password" name="" class="form-control" value="*******">
+                              </div>
+                              <div class="col-md-2 col-3">
+                                <a href="#" class="btn btn-default"> <i class="fa fa-lock fa-2x"></i></a>
+                              </div>
+                            </div>
+                            <div class="profile-headings">
+                              <h5>Personal Details</h5>
+                            </div>
+                            
+                            
+                            
+                            <div class="form-group row">
+                              <label class="col-md-2 col-form-label">First Name</label>
+                              <div class="col-md-4">
+                                <input type="type" name="" placeholder="Enter you first Name" class="form-control">
+                                </div><label class="col-md-2 col-form-label">Last Name</label>
+                                <div class="col-md-4">
+                                  <input type="type" placeholder="Enter your last Name" name="" class="form-control">
+                                </div>
+                              </div>
+                              <div class="form-group row">
+                                <label class="col-md-2 col-form-label">Date of Birth</label>
+                                <div class="col-md-4">
+                                  <input type="type" name="" class="form-control" value="dd/mm/yyy (min 18 Years)">
+                                  </div><label class="col-md-2 col-form-label">Gender</label>
+                                  <div class="col-md-4">
+                                    <select class="form-control">
+                                      <option>Gender</option>
+                                      <option>Gender</option>
+                                      <option>Gender</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="form-group row">
+                                  <label class="col-md-2 col-form-label">Company Email</label>
+                                  <div class="col-md-4">
+                                    <input type="type" placeholder="Company email" name="" class="form-control">
+                                    </div><label class="col-md-2 col-form-label">Profession</label>
+                                    <div class="col-md-4">
+                                      <input type="type" name="" class="form-control">
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label class="col-md-2 col-form-label">Facebook URL</label>
+                                    <div class="col-md-4">
+                                      <input type="type" placeholder="facebook url" name="" class="form-control">
+                                    </div>
+                                    
+                                    <label class="col-md-2 col-form-label">Linkedin URL</label>
+                                    <div class="col-md-4">
+                                      <input type="type" name="" placeholder="Linkedin url" class="form-control">
+                                    </div>
+                                  </div>
+                                  
+                                  
+                                  <div class="col-md-12">
+                                    <div class="form-group row">
+                                      <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1" checked="true">
+                                        <label class="custom-control-label" for="customCheck1">GST Number for business travel (optional)</label>
+                                      </div>
+                                      
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="form-group row">
+                                    <label class="col-md-2 col-form-label">GST Number</label>
+                                    <div class="col-md-4">
+                                      <input type="type" name="" placeholder="Enter your GST Number" class="form-control">
+                                    </div>
+                                    <label class="col-md-2 col-form-label">Company Name</label>
+                                    <div class="col-md-4">
+                                      <input type="type" name="" placeholder="Enter your GST Company name" class="form-control">
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label class="col-md-2 col-form-label">Company Address</label>
+                                    <div class="col-md-4">
+                                      <input type="type" placeholder="Enter your GST Company Address" name="" class="form-control">
+                                    </div>
+                                  </div>
+                                  <div class="profile-headings">
+                                    <h5>Travellers Detail</h5>
+                                  </div>
+                                  <div class="traveller">
+                                    <h6><strong><u>Traveller 01:</u></strong></h6>
+                                    
+                                    <div class="form-group row">
+                                      <label class="col-md-2 col-form-label">First Name</label>
+                                      <div class="col-md-4">
+                                        <input type="type" placeholder="Enter you fist name" name="" class="form-control">
+                                      </div>
+                                      <label class="col-md-2 col-form-label">Last Name</label>
+                                      <div class="col-md-4">
+                                        <input type="type" name="" placeholder="Enter you last name" class="form-control">
+                                      </div>
+                                    </div>
+                                    <div class="form-group row">
+                                      <label class="col-md-2 col-form-label">Email</label>
+                                      <div class="col-md-4">
+                                        <input type="type" placeholder="Enter your email ID" name="" class="form-control">
+                                      </div>
+                                      
+                                      <label class="col-md-2 col-form-label">Mobile</label>
+                                      <div class="col-md-4">
+                                        <input type="type" name="" placeholder="Enter your mobile number" class="form-control">
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="form-row">
+                                      <div class=" mb-3 btn btn-dark btn-copy btn-block rounded-0 text-left">
+                                        <i class="fa fa-plus-circle" ></i> Add Travellers
+                                      </div>
+                                    </div>
+                                  </div>
+                                </form>
+                                <div class="row justify-content-center">
+                                  <a href="#" class="btn btn-warning update-btn">UPDATE</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="Section2">
+                              <div class="details">
+                                <h3>My <strong>Documents/ Licences</strong></h3>
+                              </div>
+                              <div class="tabs-box">
+                                <ul class="list-inline">
+                                  <li class="list-inline-item percentage">100%</li>
+                                  <li class="list-inline-item percentage1">Approved</li>
+                                </ul>
+                                <div class="bor1"></div>
+                                <form>
+                                  <div class="form-row mb-3">
+                                    <div class="col-sm-12">
+                                      <div class="position-relative">
+                                        <span class="left-absolute position-absolute"><i class="fa text-warning fa-2x fa-flag"></i></span>
+                                        <div class="selectdiv ">
+ 
+      <select class="form-control form-control-lg rounded-0 pr-4 pl-55">
+                                          <option>India</option>
+                                          <option>India</option>
+                                          <option>India</option>
+                                          <option>India</option>
+                                          <option>India</option>
+                                          <option>India</option>
+                                        </select>
+                                  
+                                    </div>
+                                       <!--  <span class="right-absolute position-absolute"><i class="fa text-warning fa-2x fa-chevron-down"></i></span> -->
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="form-row mt-3">
+                                    <div class="col-sm-12">
+                                      <div class="position-relative" data-toggle="modal" data-target="#exampleModal">
+                                        <span class="left-absolute position-absolute"><i class="fa text-warning fa-2x fa-id-card"></i></span>
+                                        
+                                        <input type="text" class="form-control rounded-0 form-control-lg pl-55" placeholder="Driving Licence">
+                                        <span class="right-absolute position-absolute">
+                                          <a  href="#"><img src="images/upload.png"> </a>
+                                          <span class="ap pt-1"><img src="images/check.png"> APPROVED</span>
+                                        </span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="form-row mt-3">
+                                    <div class="col-sm-12">
+                                      <div class="position-relative" data-toggle="modal" data-target="#exampleModal1">
+                                        <span class="left-absolute position-absolute"><i class="fa text-warning fa-2x fa-id-card"></i></span>
+                                        
+                                        <input type="text" class="form-control rounded-0 form-control-lg pl-55" placeholder="Driving Licence document">
+                                        <span class="right-absolute position-absolute">
+                                          <a  href="#"><img src="images/upload.png"> </a>
+                                          <span class="ap pt-1"><img src="images/check.png"> APPROVED</span>
+                                        </span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  
+                                  
+                                </form>
+                                <div class="verify ">
+                                  <div class="jumbotron bg-transparent">
+                                    <h4>Why do I need to verify my profile</h4>
+                                    <p><strong>Driving LicenceYour profile verification aallows the Urban Drive community to share cars seamlesssly.</strong></p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                  <div class="modal-content log">
+                                    <div class="modal-header border-0">
+                                      <h4 class="modal-title ml-auto" id="exampleModalLabel">
+                                      <strong>Upload Driving Licence</strong></h4>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body ">
+                                      <div class="mod-box">
+                                        <form>
+                                          <!-- <img id="blah" src="images/gallery.jpg" alt="your image"  class="pic" />
+                                          <input type='file' onchange="readURL(this);" /> -->
+                                          <div class="image-upload-wrap">
+                                            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                                            <div class="drag-text">
+                                              <img src="images/gallery.jpg" alt="" class="img-fluid">
+                                            </div>
+                                          </div>
+                                          <div class="file-upload-content">
+                                            <img class="file-upload-image" src="#" alt="your image" />
+                                            <div class="image-title-wrap">
+                                              <a  href="#" onclick="removeUpload()" class="remove-image"><i class="fa fa-trash"></i></a>
+                                            </div>
+                                          </div>
+                                        </form>
+                                        
+                                        
+                                        <div class="text-center p-sm-5 px-2 py-2">
+                                          <h4><strong>Guidelines</strong></h4>
+                                          <div class="text-muted">
+                                          <p>- Name, DOB and document Number should be clearly visible</p>
+                                          <p>
+                                          - Complete address (Including house#, street, Building name, locality etc.) should be clearly visible</p>
+                                          <p>
+                                          -Both FRONT and BACk of the document must be uploaded</p>
+                                          <p>
+                                          -Image should not be blurry or have any reflection</p>
+                                          <p>
+                                          -Documents accepted are Passport, Vother ID and Others</p>
+                                          <p>
+                                          -Document already registered with anothet Urban Drive account will not be accepted.</p>
+                                        </div>
+                                          <button class="btn btn-warning update-btn disabled"> Upload</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg " role="document">
+                                  <div class="modal-content log">
+                                    <div class="modal-header border-0">
+                                      <h4 class="modal-title ml-auto" id="exampleModalLabel">
+                                      <strong>Upload Driving Licence Document</strong></h4>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body ">
+                                      <div class="mod-box">
+                                        <div class="replace-image p-2 justify-content-center">
+                                          <img src="images/banner-1.jpg" class="img-fluid" width="200px">
+                                        </div>
+                                        <div class="row justify-content-center">
+                                          <div class="imgUp text-center">
+                                            <div class="imagePreview"></div>
+                                            <label class="upload-document">
+                                              <i class="fa fa-camera"></i> <input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+                                            </label>
+                                            </div><!-- col-2 -->
+                                            <i class="fa fa-plus imgAdd"></i>
+                                            </div><!-- row -->
+                                            
+                                            
+                                            <div class="text-center p-sm-5 px-2 py-2">
+                                              <h4><strong>Guidelines</strong></h4>
+                                              <div class="text-muted">
+                                              <p>- Name, DOB and document Number should be clearly visible</p>
+                                              <p>
+                                              - Complete address (Including house#, street, Building name, locality etc.) should be clearly visible</p>
+                                              <p>
+                                              -Both FRONT and BACk of the document must be uploaded</p>
+                                              <p>
+                                              -Image should not be blurry or have any reflection</p>
+                                              <p>
+                                              -Documents accepted are Passport, Vother ID and Others</p>
+                                              <p>
+                                              -Document already registered with anothet Urban Drive account will not be accepted.</p>
+                                            </div>
+                                              <button class="btn btn-warning update-btn"> Upload</button>
+                                            </div></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div role="tabpanel" class="tab-pane fade" id="Section3">
+                                    <div class="details">
+                                      <h3>My <strong>Booking</strong></h3>
+                                    </div>
+                                    <div class="tabs-box">
+                                      <ul class="nav nav-tabs nav-justified" role="tablist">
+                                        <li class="nav-item">
+                                          <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Live Bookings</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Upcoming Bookings</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Completed Bookings</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">Cancelled Bookings</a>
+                                        </li>
+                                      </ul>
+                                      <div class="tab-content pt-4">
+                                        <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                          <div class="car">
+                                            <img src="images/car-pn.png" alt="">
+                                            <br>
+                                            <h4>No Booking  Found!</h4>
+                                            <h3>Not tried cars yet!</h3>
+                                            <h3>Try one now.</h3>
+                                            <button class="btn btn-warning update-btn">Book Now</button>
+                                          </div>
+                                        </div>
+                                        <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                          
+                                        </div>
+                                        <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                          <div class="tabs-box">
+                                            <div class="row">
+                                              <div class="col-md-3">
+                                                <img src="images/car.png" alt="" class="img-fluid">
+                                              </div>
+                                              <div class="col-md-9">
+                                                <div class="row">
+                                                  <div class="col-md-3 pd">
+                                                    <div class="det">
+                                                      <span class="colo colo1">Booking Id</span>
+                                                      <div class="bor1"></div>
+                                                      <h6>JP5668</h6>
+                                                      <p>Scorpio</p>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-md-3 pd col-6">
+                                                    <div class="det"> <span class="to">To</span>
+                                                      <span class="colo colo1">Pickup Date & Time</span>
+                                                      <div class="bor1"></div>
+                                                      <h6>09:00AM</h6>
+                                                      <p>Fri, 10 Aug</p>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-md-3 pd col-6">
+                                                    <div class="det">
+                                                      <span class="colo colo1">Drop Date & Time</span>
+                                                      <div class="bor1"></div>
+                                                      <h6>11:30PM</h6>
+                                                      <p>Sun, 12 Aug</p>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-md-3 pd">
+                                                    <div class="det">
+                                                      <span class="colo colo1">Plan</span>
+                                                      <div class="bor1"></div>
+                                                      <h6>Limited Plan</h6>
+                                                    </div>
+                                                  </div>
+                                                </div></div>
+                                                <div class="fut d-flex">
+                                                  <div class="col-8">
+                                                  <ul class="list-inline mt-2">
+                                                    <li class="list-inline-item colo">HUB: <span>Andrews Gang</span></li>
+                                                    <li class="list-inline-item colo">FREE KM: <span>1200/km</span></li>
+                                                    
+                                                  </ul>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                  <a href="#" class="float-right pt-2 colo"><img src="images/invoice.png"> <span>Invoice</span></a>
+                                                </div>
+                                                </div>
+                                              </div>
+                                              </div><div class="tabs-box">
+                                            <div class="row">
+                                              <div class="col-md-3">
+                                                <img src="images/bike.png" alt="" class="img-fluid">
+                                              </div>
+                                              <div class="col-md-9">
+                                                <div class="row">
+                                                  <div class="col-md-3 pd">
+                                                    <div class="det">
+                                                      <span class="colo colo1">Booking Id</span>
+                                                      <div class="bor1"></div>
+                                                      <h6>JP5668</h6>
+                                                      <p>Scorpio</p>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-md-3 col-6 pd">
+                                                    <div class="det">
+                                                      <span class="to">To</span>
+                                                      <span class="colo colo1">Pickup Date & Time</span>
+                                                      <div class="bor1"></div>
+                                                      <h6>09:00AM</h6>
+                                                      <p>Fri, 10 Aug</p>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-md-3 col-6 pd">
+                                                    <div class="det">
+                                                      <span class="colo colo1">Drop Date & Time</span>
+                                                      <div class="bor1"></div>
+                                                      <h6>11:30PM</h6>
+                                                      <p>Sun, 12 Aug</p>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-md-3 pd">
+                                                    <div class="det">
+                                                      <span class="colo colo1">Plan</span>
+                                                      <div class="bor1"></div>
+                                                      <h6>Limited Plan</h6>
+                                                    </div>
+                                                  </div>
+                                                </div></div>
+                                                <div class="fut d-flex">
+                                                  <div class="col-8">
+                                                  <ul class="list-inline mt-2">
+                                                    <li class="list-inline-item colo">HUB: <span>Andrews Gang</span></li>
+                                                    <li class="list-inline-item colo">FREE KM: <span>1200/km</span></li>
+                                                    <li class="list-inline-item colo">EXTRA HELMET: <span>1</span></li>
+                                                    
+                                                  </ul>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                  <a href="#" class="float-right pt-2 colo"><img src="images/invoice.png"> <span>Invoice</span></a>
+                                                </div>
+                                                </div>
+                                              </div>
+                                              </div>
+
+                                                </div>
+                                                <div class="tab-pane" id="tabs-4" role="tabpanel">
+                                                  
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </section>
+                            </div>
+                            <section class="footer-cls-sty pdtb-50 bottom-fotter1">
+                              <div class="container">
+                                <div class="row">
+                                  <div class="col-sm-6 col-md-6">
+                                  <figure> <img src="images/logo.png"> </figure>
+                                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                  <div class="social-foot-cls">
+                                    <ul class="list-inline flex-cls">
+                                      <li>
+                                      <h6>Follow us </h6></li>
+                                      <li>
+                                        <a href="https://www.facebook.com/Urban-Drive-1117900178315777/">
+                                          <i class="fa fa-facebook"></i>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="https://twitter.com/urbanselfdrive">
+                                          <i class="fa fa-twitter"></i>
+                                        </a>
+                                      </li>
+                                      <li><a href="https://plus.google.com/u/0/103734751805183845735"><i class="fa fa-google-plus"></i></a>
+                                    </li>
+                                    <li><a href="https://www.linkedin.com/company/13329566/"><i class="fa  fa-linkedin"></i></a>
+                                  </li>
+                                  <li><a href="https://www.instagram.com/urbandrive.co.in/">
+                                    <i class="fa fa-instagram"></i>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-3">
+                            <h2> Company</h2>
+                            <ul class="list-unstyled">
+                              <li><a href="about-us.html">About Us</a></li>
+                              <li><a href="testimonials.html">Testimonials</a></li>
+                              <li><a href="disclaimer-privacy-ploicy.html">Disclaimer & Privacy Policy</a></li>
+                              <li><a href="Policy.html">Booking Policy</a></li>
+                              <li><a href="faq.html">Frequently Asked Question</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-sm-6 col-md-3">
+                            <h2>Contact With us</h2>
+                            <ul class="list-unstyled contact-foot-sty">
+                              <li>
+                                <a href="#"> <i class="fa  fa-envelope"></i> +91-9773-881-881</a>
+                              </li>
+                              <li>
+                                <a href="#"> <i class="fa fa-phone"></i> care@urbandrive.co.in</a>
+                              </li>
+                            </ul>
+                            <div class="news-cls-foot">
+                              <h3>Newsletter</h3>
+                              <input type="text" class="form-control" placeholder="Your Email">
+                              <button class="btn btn-news-cls">Submit</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <!-- <div class="container-fluid"> -->
+                    <section class="footer-cls-sty pdtb-50 bottom-fotter2">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-sm-12 ">
+                            <nav>
+                              <div class="nav nav-tabs nav-fill nav-tabsss" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-links nav-fill-nav-item active" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Read More</a>
+                                <a class="nav-item nav-links show nav-fill-nav-item" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Car</a>
+                                <a class="nav-item nav-links nav-fill-nav-item" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Bike</a>
+                                <a class="nav-item nav-links nav-fill-nav-item" id="nav-contact-tab" data-toggle="tab" href="#chauffeur-drive" role="tab" aria-controls="nav-contact" aria-selected="false"> Chauffeur Drive</a>
+                              </div>
+                            </nav>
+                            <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                              <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                <div class="row">
+                                  <div class="col-sm-6 col-md-3">
+                                    <ul class="bottom-fotter2-ul">
+                                      <li><a href="#">Bike Rentals in Delhi</a></li>
+                                      <li><a href="#">Bike On Rent in Delhi - Ladakh</a></li>
+                                      <li><a href="#">Hire Bike in Bangalore</a></li>
+                                      <li><a href="#">Motorcycle On Rent in Pune</a></li>
+                                      <li><a href="#">Two Wheeler On Rent in Mumbai</a></li>
+                                      <li><a href="#">Bike Rentals in Chandigarh</a></li>
+                                    </ul>
+                                  </div>
+                                  <div class="col-sm-6 col-md-3">
+                                    <ul class="bottom-fotter2-ul">
+                                      <li><a href="#">Bike On Rent in Hyderabad</a></li>
+                                      <li><a href="#">Hire Bike in Kolkata</a></li>
+                                      <li><a href="#">Motorcycle On Rent in Jaipur</a></li>
+                                      <li><a href="#">Two Wheeler On Rent in Chennai</a></li>
+                                      <li><a href="#">Bike Rentals in Rishikesh</a></li>
+                                      <li><a href="#">Bike On Rent in Manali</a></li>
+                                    </ul>
+                                  </div>
+                                  <div class="col-sm-6 col-md-3">
+                                    <ul class="bottom-fotter2-ul">
+                                      <li><a href="#">Hire Bike in Ahmedabad</a></li>
+                                      <li><a href="#">Motorcycle On Rent in Goa</a></li>
+                                      <li><a href="#">Two Wheeler On Rent in Pondicherry</a></li>
+                                      <li><a href="#">Bike Rentals in Guwahati</a></li>
+                                      <li><a href="#">Bike On Rent in Ooty</a></li>
+                                      <li><a href="#">Hire Bike in Mysore</a></li>
+                                    </ul>
+                                  </div>
+                                  <div class="col-sm-6 col-md-3">
+                                    <ul class="bottom-fotter2-ul">
+                                      <li><a href="#">Motorcycle On Rent in Nainital</a></li>
+                                      <li><a href="#">Two Wheeler On Rent in Raipur</a></li>
+                                      <li><a href="#">Bike Rentals in Udaipur</a></li>
+                                      <li><a href="#">Bike On Rent in Gurgaon</a></li>
+                                      <li><a href="#">Hire Bike in Siliguri</a></li>
+                                      <li><a href="#">Motorcycle On Rent in Mount</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade bottom-fotter2-ul active show" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                Urban Drive – bike rentals started its operations from Delhi in 2014. It started working with bike renting vendors in Karol bagh for a start. These are the vendors who are giving bike on rent to Indian and foreign customers to go to Ladakh. They are giving bikes on rent since last 30-40 years and have grown since then.
+                                <br>
+                                <br> Urban Drive started working with them and started giving business to these vendors through out the year even it it is not a Ladakh season. The vendors started to earn 4-5 Lakhs a month and the market of bike hire grew tremendously. Then Urban Drive started its bike rentals business in Bangalore and Banaglore is a even huge market then Delhi. People here are taking bike on rent for daily commute. They go to office, Mall, Cinema or pub’s , they take a bike on rent and enjoy the beautiful weather of Urban Drive.
+                                <br>
+                                <br> Now in 2017 Urban Drive has its operations in almost 15 cities giving bikes on rent. Urban Drive works on a market place model and works with many vendors giving business to each one. Now you can get a bike on rent in Mumbai, bike on rent in Pune, bike on rent in Chandigarh, bike on rent in Kolkata, bike on rent in Jaipur, bike on rent in Bagdogra, bike on rent in Jaisalmer, bike on rent in Darjeeling, bike on rent in delhi, bike on rent in Bangalore, bike on rent in Manali, bike on rent in Rishikesh and bike on rent in Hyderabad.
+                                <br>
+                                <br> If you are in any of these cities you can book a bike on rent and experience the hasslefree bike renting.
+                                <br>
+                                <br> You can take bikes for rent in Bangalore or any of the operational city of Urban Drive to explore city. Also, if you face problems in daily commute you can rent a bike for daily travel. Hire bike for tours as the world is beautiful and unexplored. Rental bike for office travel. Bikes on rent for just some hours to ride to a exotic dinner with your girl friend or wife is the best thing to do. Rent Royal Enfield's Bullet, Ducati, Harley Davidson, Classic 350, Thunderbird 350, Standard 500. You can rent Rent KTM Duke 200, 390, RC 200, RC 390, Thunderbird 500, Desert Storm, Himalayan, Continental GT. Renting KTM Duke 200, 390, RC 200, RC 390, Avenger, Benelli, Ninja, Kawasaki, Triumph and many more is now your cup of tea. Avenger for rent in Bangalore. Motorcycle rentals for long weekends and extended long weekends. Rent a motorcycle for special days and occasions. Motorcycle rental for anniversary and birthday celebrations. Hire a motorcycle for promotion. For amazing entrance of groom rental bikes is an amazing option. Weekend leisure bike rentals. Bike rentals for road trips. The rental motorcycles come with 999 deposit and cheapest rent across city and easy booking and pickup. Bike rentals in Bangalore from Urban Drive is most preferred and highly rated by users. We conduct expeditions to Spiti Valley, Ladakh, Leh, Goa and many exotic destinations across India.
+                                <br>
+                                <br> You can now have bike rentals experience across 15 cities of India. Bike rentals in Delhi was always an option. Motorcycle hire in Bangalore, rent a bike in Pune, two wheeler rentals in manali, bike on rent in Kolkata, bike on rent in Mumbai, motorcycle rentals in Jaipur, bike on rent in Jaisalmer, bike on rent in Hyderabad, bike on rent in ladakh etc.
+                              </div>
+                              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <div class="row">
+                                  <div class="col-sm-6 col-md-3">
+                                    <ul class="bottom-fotter2-ul">
+                                      <li><a href="#">Bike Rentals in Phuket</a></li>
+                                      <li><a href="#">Bike On Rent in Pattaya</a></li>
+                                      <li><a href="#">Hire Bike in Bali</a></li>
+                                      <li><a href="#">Motorcycle On Rent in Kathmandu</a></li>
+                                      <li><a href="#">Two Wheeler On Rent in Coron</a></li>
+                                      <li><a href="#">Bike Rentals in Negombo</a></li>
+                                    </ul>
+                                  </div>
+                                  <div class="col-sm-6 col-md-3">
+                                    <ul class="bottom-fotter2-ul">
+                                      <li><a href="#">Bike On Rent in Rome</a></li>
+                                      <li><a href="#">Hire Bike in Paris</a></li>
+                                      <li><a href="#">Motorcycle On Rent in Munich</a></li>
+                                      <li><a href="#">Two Wheeler On Rent in Frankfurt</a></li>
+                                      <li><a href="#">Bike Rentals in Hamburg</a></li>
+                                      <li><a href="#">Bike On Rent in Athens</a></li>
+                                    </ul>
+                                  </div>
+                                  <div class="col-sm-6 col-md-3">
+                                    <ul class="bottom-fotter2-ul">
+                                      <li><a href="#">Hire Bike in Crete</a></li>
+                                      <li><a href="#">Motorcycle On Rent in Kos</a></li>
+                                      <li><a href="#">Two Wheeler On Rent in Santorini</a></li>
+                                      <li><a href="#">Bike Rentals in Mykonos</a></li>
+                                      <li><a href="#">Bike On Rent in Zakynthos</a></li>
+                                      <li><a href="#">Hire Bike in Barcelona</a></li>
+                                    </ul>
+                                  </div>
+                                  <div class="col-sm-6 col-md-3">
+                                    <ul class="bottom-fotter2-ul">
+                                      <li><a href="#">Motorcycle On Rent in Madrid</a></li>
+                                      <li><a href="#">Two Wheeler On Rent in Amsterdam</a></li>
+                                      <li><a href="#">Bike Rentals in Ljubljana</a></li>
+                                      <li><a href="#">Bike On Rent in Bratislava</a></li>
+                                      <li><a href="#">Hire Bike in Lisbon</a></li>
+                                      <li><a href="#">Motorcycle On Rent in Vilnius</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade" id="chauffeur-drive" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <div class="row">
+                                  <div class="col-sm-6 col-md-3">
+                                    <ul class="bottom-fotter2-ul">
+                                      <li><a href="#">Bike Rentals in Phuket</a></li>
+                                      <li><a href="#">Bike On Rent in Pattaya</a></li>
+                                      <li><a href="#">Hire Bike in Bali</a></li>
+                                      <li><a href="#">Motorcycle On Rent in Kathmandu</a></li>
+                                      <li><a href="#">Two Wheeler On Rent in Coron</a></li>
+                                      <li><a href="#">Bike Rentals in Negombo</a></li>
+                                    </ul>
+                                  </div>
+                                  <div class="col-sm-6 col-md-3">
+                                    <ul class="bottom-fotter2-ul">
+                                      <li><a href="#">Bike On Rent in Rome</a></li>
+                                      <li><a href="#">Hire Bike in Paris</a></li>
+                                      <li><a href="#">Motorcycle On Rent in Munich</a></li>
+                                      <li><a href="#">Two Wheeler On Rent in Frankfurt</a></li>
+                                      <li><a href="#">Bike Rentals in Hamburg</a></li>
+                                      <li><a href="#">Bike On Rent in Athens</a></li>
+                                    </ul>
+                                  </div>
+                                  <div class="col-sm-6 col-md-3">
+                                    <ul class="bottom-fotter2-ul">
+                                      <li><a href="#">Hire Bike in Crete</a></li>
+                                      <li><a href="#">Motorcycle On Rent in Kos</a></li>
+                                      <li><a href="#">Two Wheeler On Rent in Santorini</a></li>
+                                      <li><a href="#">Bike Rentals in Mykonos</a></li>
+                                      <li><a href="#">Bike On Rent in Zakynthos</a></li>
+                                      <li><a href="#">Hire Bike in Barcelona</a></li>
+                                    </ul>
+                                  </div>
+                                  <div class="col-sm-6 col-md-3">
+                                    <ul class="bottom-fotter2-ul">
+                                      <li><a href="#">Motorcycle On Rent in Madrid</a></li>
+                                      <li><a href="#">Two Wheeler On Rent in Amsterdam</a></li>
+                                      <li><a href="#">Bike Rentals in Ljubljana</a></li>
+                                      <li><a href="#">Bike On Rent in Bratislava</a></li>
+                                      <li><a href="#">Hire Bike in Lisbon</a></li>
+                                      <li><a href="#">Motorcycle On Rent in Vilnius</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <!--  </div> -->
+                    <section class="footer-cls-sty pdtb-50 bottom-fotter3">
+                      <div class="container">
+                        <div class="footer-copy">
+                          <div class="row">
+                            <div class="col-sm-6 col-xs-12 text-left">
+                              <ul class="list-inline">
+                                <li><img src="images/visa.png"></li>
+                                <li><img src="images/card.png"></li>
+                                <li><img src="images/paypal.png"></li>
+                              </ul>
+                            </div>
+                            <div class="col-sm-6 col-xs-12 text-right">
+                              <p>Copyright 2017 to 2018 Urban Drive All Rights Reserved</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </main>
+                  <script src="js/jquery3.3.1.min.js"></script>
+                  <script src="js/bootstrap.min.js"></script>
+                  <script src="js/popper.min.js"></script>
+
+
+                  <script type="text/javascript">
+                  $(document).ready(function(){
+                  $(".btn-copy").on('click', function(){
+                  var ele = $(this).closest('.traveller').clone(true);
+                  $(this).closest('.traveller').after(ele);
+                  return true;
+                  this.hide;
+                  });
+                  });
+                  </script>
+                  <script type="text/javascript">
+                  function toggleIcon(e) {
+                  $(e.target)
+                  .prev('.panel-heading')
+                  .find(".more-less")
+                  .toggleClass('fa fa-angle-down fa fa-angle-up');
+                  }
+                  $('.panel-group').on('hidden.bs.collapse', toggleIcon);
+                  $('.panel-group').on('shown.bs.collapse', toggleIcon);
+                  </script>
+                  <script type="text/javascript">
+                  $(document).ready(function () {
+                  $('.tablinks').click(function(e) {
+                  $('.tablinks').removeClass('active');
+                  var $this = $(this);
+                  if (!$this.hasClass('active')) {
+                  $this.addClass('active');
+                  }
+                  //e.preventDefault();
+                  });
+                  });
+                  </script>
+                  <script>
+                  $(document).ready(function(){
+                  $("#btn-mob-menu").click(function(){
+                  $(".small-screen-menu").toggleClass("show");
+                  $(this).toggleClass("nav-xs-menu");
+                  });
+                  $('.mn-section-bd').click(function() {
+                  if ($('.small-screen-menu').hasClass('show') ){
+                  $('.small-screen-menu').removeClass('show');
+                  }
+                  if ($('#btn-mob-menu').hasClass('nav-xs-menu')){
+                  $('#btn-mob-menu').removeClass('nav-xs-menu');
+                  }
+                  if ($('body').hasClass('overflow-none')){
+                  $('body').removeClass('overflow-none');
+                  }
+                  else {
+                  
+                  }
+                  });
+                  
+                  });
+                  
+                  </script>
+                  
+                  <script>
+                  function readURL(input) {
+                  if (input.files && input.files[0]) {
+                  var reader = new FileReader();
+                  reader.onload = function(e) {
+                  $('.image-upload-wrap').hide();
+                  $('.file-upload-image').attr('src', e.target.result);
+                  $('.file-upload-content').show();
+                  $('.image-title').html(input.files[0].name);
+                  };
+                  reader.readAsDataURL(input.files[0]);
+                  } else {
+                  removeUpload();
+                  }
+                  }
+                  function removeUpload() {
+                  $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+                  $('.file-upload-content').hide();
+                  $('.image-upload-wrap').show();
+                  }
+                  $('.image-upload-wrap').bind('dragover', function () {
+                  $('.image-upload-wrap').addClass('image-dropping');
+                  });
+                  $('.image-upload-wrap').bind('dragleave', function () {
+                  $('.image-upload-wrap').removeClass('image-dropping');
+                  });
+                  </script>
+                  <script type="text/javascript">
+                  $(document).ready(function() {
+                  
+                  var readURL = function(input) {
+                  if (input.files && input.files[0]) {
+                  var reader = new FileReader();
+                  reader.onload = function (e) {
+                  $('.profile-pic').attr('src', e.target.result);
+                  }
+                  
+                  reader.readAsDataURL(input.files[0]);
+                  }
+                  }
+                  
+                  $(".file-upload").on('change', function(){
+                  readURL(this);
+                  });
+                  
+                  $(".upload-button").on('click', function() {
+                  $(".file-upload").click();
+                  });
+                  });
+                  </script>
+                  <script type="text/javascript">
+                    $(".imgAdd").click(function(){
+  $(this).closest(".row").find('.imgAdd').before('<div class="imgUp"><div class="imagePreview"></div><label class="upload-document"><i class="fa fa-camera"></i> <input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;"></label><i class="fa fa-times del"></i></div>');
+});
+$(document).on("click", "i.del" , function() {
+  $(this).parent().remove();
+});
+$(function() {
+    $(document).on("change",".uploadFile", function()
+    {
+        var uploadFile = $(this);
+        var files = !!this.files ? this.files : [];
+        if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
+ 
+        if (/^image/.test( files[0].type)){ // only image file
+            var reader = new FileReader(); // instance of the FileReader
+            reader.readAsDataURL(files[0]); // read the local file
+ 
+            reader.onloadend = function(){ // set image data as background of div
+                //alert(uploadFile.closest(".upimage").find('.imagePreview').length);
+uploadFile.closest(".imgUp").find('.imagePreview').css("background-image", "url("+this.result+")");
+            }
+        }
+      
+    });
+});
+                  </script>
+                </body>
+              </html>

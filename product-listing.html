@@ -1,0 +1,1859 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Urban Drive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main-stylesheet.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navigation-cls-sty navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
+        <div class="card opacity-card banner-tab-cls banner-tab-cls-middle opacity-manoj ">
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="self-drive">
+              <div class="frm-banner-cls frm-oadd-clsm">
+                <div class="row row-bottom-m">
+                  <div class="col-sm-3 frm-banner-col3">
+                    <div class="form-group">
+                      <!-- <label for="usr">City:</label> -->
+                      <div class="input-cls-new">
+                        <input type="text" class="form-control" placeholder="Select your City">
+                        <img src="images/target-icon.png" class="icon-frm-cls">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 frm-banner-col3">
+                    <div class="form-group">
+                      <!-- <label for="usr">Start Date and Time:</label> -->
+                      <div class="input-cls-new">
+                        <input type="text" class="form-control" placeholder="Select your City">
+                        <img src="images/calender-icon.png" class="icon-frm-cls">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 frm-banner-col3">
+                    <div class="form-group">
+                      <!-- <label for="usr">End Date and Time:</label> -->
+                      <div class="input-cls-new"> <input type="text" class="form-control" placeholder="Select your City">
+                      <img src="images/calender-icon.png" class="icon-frm-cls">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3 frm-banner-col3"><button class="btn btn-banner search-btn button-martop-m">Search</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="navbar-toggler" type="button" id="btn-mob-menu">
+      <span class="navbar-toggler-icon"></span>
+      <span id="show-cancel"><img src="images/cancel-menu.svg" style="width: 20px;"></span>
+      </button>
+      <div class="cart-small-show">
+        <ul class="navbar-nav full-screen-menu">
+          <li class="nav-item btn-log-cls signup-btn cart-icon-right">
+            <a class="nav-link" data-toggle="modal" data-target="#myModal" href="login.html" style="background: #fa4a0c00;"><i class="fa fa-shopping-cart"></i>&nbsp; Cart</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="collapse navbar-collapse small-navbar-collapse">
+        <ul class="navbar-nav full-screen-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="our-partners.html">Our Partners </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="offers.html">Our Offers </a>
+          </li>
+          <li class="nav-item btn-log-cls signup-btn cart-icon-right">
+            <a class="nav-link" data-toggle="modal" data-target="#myModal" href="login.html" style="background: #fa4a0c00;"><i class="fa fa-shopping-cart"></i>&nbsp; Cart</a>
+          </li>
+          <li class="nav-item btn-log-cls signup-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#myModal" href="login.html">Login/signup</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="navbar navigation-cls-sty  small-screen-menu">
+      <div  id="mob-navigation">
+        <ul class="navbar-nav small-screen-menu">
+          <li class="nav-item btn-log-cls signup-btn">
+            <a class="nav-link"  data-toggle="modal" data-target="#myModal" href="login.html">Login/signup</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about-us.html">About us <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Policy.html">Policy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link bottom-small" href="faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link bottom-small" href="#">Monthly booking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link bottom-small" href="#">Ladakh</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link bottom-small" href="#">Contact us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link bottom-small" href="#">Terms & Conditions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link bottom-small" href="#">Contact us</a>
+          </li>
+          <br>
+          <ul class="inline-icon">
+            <li class="nav-item"><a class="nav-link bottom-small" href="#"><img src="images/facebook.svg"></a></li>
+            <li class="nav-item"><a class="nav-link bottom-small" href="#"><img src="images/twitter.svg"></a></li>
+            <li class="nav-item"><a class="nav-link bottom-small" href="#"><img src="images/instagram.png" style="width: 32px; height: 31px;"></a></li>
+          </ul>
+          <br><br><br>
+          <!-- <li class="nav-item">
+            <a class="nav-link bottom-small" href="index.html"><img src="images/logo.png"></a>
+          </li> -->
+          <!-- <li class="nav-item">
+            <a class="nav-link bottom-small small-screen-a" href="#">India's largest bike rental </a>
+          </li> -->
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="mn-section-bd">
+    <div class="container-fluid">
+      <!-- Trigger the modal with a button -->
+      <!--  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Large Modal</button> -->
+      <!-- Modal -->
+      <div class="modal fade login-pop-cls" id="myModal" role="dialog" style="padding-right: 0px;">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content modal-contentss">
+            <div class="modal-header modal-headerss">
+              <button type="button" class="close close-btn" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <!-- <button type="button" class="close close-btn" data-dismiss="modal">&times;</button> -->
+              <div class="row rowss">
+                
+                <div class="col-sm-12 pull-right">
+                  <ul class="nav nav-pills nav-pills-modal">
+                    <li class="active"><a data-toggle="pill" href="#home" class="active">Sign In </a></li>
+                    <li class=""><a data-toggle="pill" href="#menu1">Sign Up </a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div id="home" class="tab-pane fade in active">
+                      <form class="form-horizontal" action="/action_page.php">
+                        <div class="form-group form-group-modal" style="margin-top: 50px !important;">
+                          <label class="control-label col-sm-2" for="envelope"><img src="images/login-email.svg" alt="img-log"></label>
+                          <div class="col-sm-10">
+                            <input type="text" class="form-control" id="pwd" placeholder="Email Or Mobile No.">
+                          </div>
+                        </div>
+                        <div class="form-group form-group-modal">
+                          <label class="control-label col-sm-2" for="lock"><img src="images/login-locked.svg" alt="img-log"></i></label>
+                          <div class="col-sm-10">
+                            <input type="text" class="form-control" id="text" placeholder="Password">
+                          </div>
+                        </div>
+                        <div class="checkbox form-group-modal" style="margin-top: 13px !important;">
+                          <label class="left"><input type="checkbox"> Remember Me</label>
+                        </div>
+                        <div class="form-group form-group-modal">
+                          <div class="col-sm-10">
+                            <button type="submit" class="btn btn-default">Login &nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                          </div>
+                        </div>
+                        <div class="userauthTabs__orDivider"> <span class="ng-binding">or</span> </div>
+                        <div class="btn-social-log">
+                          <a href="javascript:void(0)" class="btn_login-cls goo-plus-cls" onclick="LoginWithGooglePlus()"><i class="fa fa-linkedin-square" aria-hidden="true"></i>  Login with LinkedIn</a>
+                          <a href="javascript:void(0)" class="btn_login-cls facebook-cls" onclick="LoginWithFacebook()"><i class="fa fa-facebook-square" aria-hidden="true"></i>  Login with Facebook</a>
+                        </div>
+                      </form>
+                    </div>
+                    <div id="menu1" class="tab-pane fade">
+                      <form class="form-horizontal" action="/action_page.php">
+                        <div class="form-group form-group-modal" style="margin-top: 50px !important;">
+                          <label class="control-label col-sm-2" for="user"><img src="images/login-user.svg" alt="img-log"></label>
+                          <div class="col-sm-10">
+                            <input type="text" class="form-control" id="text" placeholder="Name">
+                          </div>
+                        </div>
+                        <div class="form-group form-group-modal">
+                          <label class="control-label col-sm-2" for="envelope"><img src="images/login-email.svg" alt="img-log"></label>
+                          <div class="col-sm-10">
+                            <input type="text" class="form-control" id="pwd" placeholder="Email">
+                          </div>
+                        </div>
+                        <div class="form-group form-group-modal">
+                          <label class="control-label col-sm-2" for="phone"><img src="images/login-phone.svg" alt="img-log"></label>
+                          <div class="col-sm-10">
+                            <input type="text" class="form-control" id="text" placeholder="Mobile No.">
+                          </div>
+                        </div>
+                        <div class="form-group form-group-modal">
+                          <label class="control-label col-sm-2" for="lock"><img src="images/login-locked.svg" alt="img-log"></label>
+                          <div class="col-sm-10">
+                            <input type="text" class="form-control" id="text" placeholder="Password">
+                          </div>
+                        </div>
+                        <div class="checkbox form-group-modal" style="margin-top: 13px !important;">
+                          <label class="left"><input type="checkbox" checked> I agree to the <a href="disclaimer-privacy-ploicy.html" style="text-decoration:underline">Terms & Conditions</a></label>
+                        </div>
+                        <div class="form-group form-group-modal">
+                          <div class="col-sm-10">
+                            <button type="submit" class="btn btn-default">Register &nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                          </div>
+                        </div>
+                        <div class="userauthTabs__orDivider"> <span class="ng-binding">or</span> </div>
+                        <div class="btn-social-log">
+                          <a href="javascript:void(0)" class="btn_login-cls goo-plus-cls" onclick="LoginWithGooglePlus()"><i class="fa fa-linkedin-square" aria-hidden="true"></i> Sign up with LinkedIn</a>
+                          <a href="javascript:void(0)" class="btn_login-cls facebook-cls" onclick="LoginWithFacebook()"><i class="fa fa-facebook-square" aria-hidden="true"></i> Sign up with Facebook</a>
+                        </div>
+                        
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bottom Slider Menu Section -->
+    <section class="btm-slider-menu btm-slider-menu-shaow">
+      <div class="container-fluid">
+        <div class="menu-list-items">
+          <ul class="inline-list">
+            <li><a href="#">HOME</a></li>
+            <li>//</li>
+            <li><a href="#"><span class="orange-color"><strong>PRODUCT LISTING</strong></span></a></li>
+            <li class="pull-right filter-small-none" id="filter-small" style="display:none"><a href="#"><span class="orange-color"><strong class="filter-text">FILTER</strong>   <img src="images/left-arrow-back.svg" class="filter-back-icon"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- End of Bottom Slider Menu Section -->
+    <!-- Start Product listing -->
+    <section class="product-listing pb-150 mar-left-right product-listing-smallscreen">
+      <div class="">
+        <div id="sticky-anchor"></div>
+        <div class="row">
+          <!-- Product Listing left Part-->
+          
+          <div class="col-md-3 lft-listing">
+            <div class="promo-wrap side-menu-fix side-menu-fix-change">
+              <div class="product-listing-left-part">
+                <div class="product-sidebar-area">
+                  <div class="sidebar-widget pb-55">
+                    <h3 class="sidebar-widget">SEARCH BY LOCATION</h3>
+                    <div class="sidebar-search">
+                      <form action="#">
+                        <input type="text" placeholder="Search Products...">
+                        <!-- <button> --><i class="fa fa-search"></i><!-- </button> -->
+                      </form>
+                    </div>
+                  </div>
+                  <div class="sidebar-widget mb-55">
+                    <div class="product-compare">
+                      <ul>
+                        <li><a href="#">INA Metro Station <span><input type="checkbox"></span></a></li>
+                        <li><a href="#">Tagore Garden Extension<span><input type="checkbox"></span></a></li>
+                        <li><a href="#">Near Shahdara Metro Station <span><input type="checkbox"></span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-listing-left-part">
+                <div class="product-sidebar-area">
+                  <div class="sidebar-widget pb-55">
+                    <h3 class="sidebar-widget">SEARCH BY MODEL</h3>
+                    <div class="sidebar-search">
+                      <form action="#">
+                        <input type="text" placeholder="Search Products...">
+                        <!-- <button> --><i class="fa fa-search"></i><!-- </button> -->
+                      </form>
+                    </div>
+                  </div>
+                  <div class="sidebar-widget mb-55">
+                    <div class="product-compare">
+                      <ul>
+                        <li><a href="#">Gixxer 150 CC <span><input type="checkbox"></span></a></li>
+                        <li><a href="#">Pulsar 220F<span><input type="checkbox"></span></a></li>
+                        <li><a href="#">Stunner <span><input type="checkbox"></span></a></li>
+                        <li><a href="#">Avenger Street 150 <span><input type="checkbox"></span></a></li>
+                        
+                      </ul>
+                      <p class="text-center pt-4">
+                      <button class="apply-btn btn btn-warning rounded-0 border-0">Apply</button>
+                    </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Product Listing left Part End-->
+          <!-- Product Listing Right Part-->
+          <div class="col-md-9 listing-rht-cls" style="margin-top: 40px;">
+            <div class="d-lg-none d-block mb-4">
+              <div role="tabpanel" class="tab-pane active" id="self-drive">
+                <div class="frm-banner-cls frm-oadd-clsm">
+                  <div class="row row-bottom-m">
+                    <div class="col-sm-3 frm-banner-col3">
+                      <div class="form-group">
+                        <!-- <label for="usr">City:</label> -->
+                        <div class="input-cls-new">
+                          <input type="text" class="form-control" placeholder="Select your City">
+                          <img src="images/target-icon.png" class="icon-frm-cls">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 frm-banner-col3">
+                      <div class="form-group">
+                        <!-- <label for="usr">Start Date and Time:</label> -->
+                        <div class="input-cls-new">
+                          <input type="text" class="form-control" placeholder="Select your City">
+                          <img src="images/calender-icon.png" class="icon-frm-cls">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 frm-banner-col3">
+                      <div class="form-group">
+                        <!-- <label for="usr">End Date and Time:</label> -->
+                        <div class="input-cls-new"> <input type="text" class="form-control" placeholder="Select your City">
+                        <img src="images/calender-icon.png" class="icon-frm-cls">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 frm-banner-col3"><button class="btn btn-banner search-btn button-martop-m">Search</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="shop-topbar-wrapper shop-topbar-wrapper-style">
+            
+            <div class="product-sorting">
+            
+                <div class="col p-0">
+                <select class="section-small d-md-none d-block">
+                  <option value="">Cruiser</option>
+                  <option value="">Sports Bike</option>
+                  <option value="">Super Bikes</option>
+                </select>
+                <div class="d-md-block d-none">
+                <a  href="#">Cruiser</a>
+                <a href="#" class="">Sports Bike</a>
+                <a  href="#" class="">Super Bikes</a>
+              </div>
+              </div>
+              <div class="col p-0">
+                <div class="row justify-content-end pr-4">
+                <div class="grid-list-options">
+                  <ul class="nav nav-tabs view-mode" role="tablist">
+                    <li><a href="#product-grid" aria-controls="home" class="active show" role="tab" data-toggle="tab"><i class="fa fa-th-large"></i></a></li>
+                    <li><a href="#product-list" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-reorder"></i></a></li>
+                    
+                  </ul>
+                  
+                </div>
+                <div class="sorting sorting-bg-1 sorting-bg-position">
+                  <form>
+                    <select class="select">
+                      <option value="">Price (Lowest to Highest)</option>
+                      <option value="">Price (Highest to Lowest)</option>
+                      <option value="">Bestseller</option>
+                    </select>
+                  </form>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+       
+          <div class="grid-list-product-wrapper tab-content">
+            <div id="product-grid" class="product-grid product-view tab-pane active" role="tabpanel">
+              <div class="row">
+                <div class="product-width col-md-6 col-xl-4 col-lg-6">
+                  <div class="product-wrapper mb-35">
+                    <div class="product-img">
+                      <a href="#">
+                        <img src="images/products-1.png" alt="">
+                      </a>
+                      <div class="sorting sorting-bg-1 Select-Plan" style="padding: 0 15px;">
+                        <form>
+                          <select class="select">
+                            <option value="">Hub select </option>
+                            <option value="">Limited Kms</option>
+                            <option value="">Unlimited Kms</option>
+                          </select>
+                        </form>
+                      </div>
+                      <div class="product-content-wrapper">
+                        <div class="product-title-spreed">
+                          <h4><a href="product-details.html">Gloriori GSX 250 R</a></h4>
+                          <!-- <span>6600 RPM</span> -->
+                          <div class="product-price">
+                            <span>$2549</span>
+                          </div>
+                        </div>
+                        
+                        <div>
+                          <ul class="ul-gear">
+                            <li><img src="images/gear-icon.svg"> Gear</li>
+                            <li><img src="images/fuel-icon.svg"> Fuel</li>
+                            <li><img src="images/seat-icon.svg" style="width:22%;"> Seats</li>
+                          </ul>
+                        </div>
+                        <div class="add-cart-view-detail">
+                          
+                          <button class="button view-button">VIEW DETAILS</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-list-details">
+                      <h2><a href="#">Gloriori GSX 250 R</a></h2>
+                      <div class="quick-view-rating">
+                        <i class="fa fa-star reting-color"></i>
+                        <i class="fa fa-star reting-color"></i>
+                        <i class="fa fa-star reting-color"></i>
+                        <i class="fa fa-star reting-color"></i>
+                        <i class="fa fa-star reting-color"></i>
+                      </div>
+                      <div class="product-price">
+                        <span>$2549</span>
+                      </div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipic it, sed do eiusmod tempor incididunt ut labore et dolore mag aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo it. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                      <div class="shop-list-cart">
+                        <a href="#"><i class="fa icon-shopping-cart"></i> Add to cart</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-width col-md-6 col-xl-4 col-lg-6">
+                  <div class="product-wrapper mb-35">
+                    <div class="product-img">
+                      <a href="product-details.html">
+                        <img src="images/products-2.png" alt="">
+                      </a>
+                      <div class="sorting sorting-bg-1 Select-Plan" style="padding: 0 15px;">
+                        <form>
+                          <select class="select">
+                            <option value="">Hub Select </option>
+                            <option value="">Limited Kms</option>
+                            <option value="">Unlimited Kms</option>
+                          </select>
+                        </form>
+                      </div>
+                      <div class="product-content-wrapper">
+                        <div class="product-title-spreed">
+                          <h4><a href="#">Klager GSX 250 R</a></h4>
+                          <!-- <span>6600 RPM</span> -->
+                          <div class="product-price">
+                            <span>$2549</span>
+                          </div>
+                        </div>
+                        
+                        <div>
+                          <ul class="ul-gear">
+                            <li><img src="images/gear-icon.svg"> Gear</li>
+                            <li><img src="images/fuel-icon.svg"> Fuel</li>
+                            <li><img src="images/seat-icon.svg" style="width:22%;"> Seats</li>
+                          </ul>
+                        </div>
+                        <div class="add-cart-view-detail">
+                          
+                          <button class="button view-button">VIEW DETAILS</button>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="product-width col-md-6 col-xl-4 col-lg-6">
+                  <div class="product-wrapper mb-35">
+                    <div class="product-img">
+                      <a href="#">
+                        <img src="images/products-3.png" alt="">
+                      </a>
+                      <div class="sorting sorting-bg-1 Select-Plan" style="padding: 0 15px;">
+                        <form>
+                          <select class="select">
+                            <option value="">Hub Select </option>
+                            <option value="">Limited Kms</option>
+                            <option value="">Unlimited Kms</option>
+                            
+                          </select>
+                        </form>
+                      </div>
+                      <div class="product-content-wrapper">
+                        <div class="product-title-spreed">
+                          <h4><a href="#">Matrio Max</a></h4>
+                          <!-- <span>6600 RPM</span> -->
+                          <div class="product-price">
+                            <span>$2549</span>
+                          </div>
+                        </div>
+                        
+                        <div>
+                          <ul class="ul-gear">
+                            <li><img src="images/gear-icon.svg"> Gear</li>
+                            <li><img src="images/fuel-icon.svg"> Fuel</li>
+                            <li><img src="images/seat-icon.svg" style="width:22%;"> Seats</li>
+                          </ul>
+                        </div>
+                        <div class="add-cart-view-detail">
+                          
+                          <button class="button view-button">VIEW DETAILS</button>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>  
+                </div>
+                  <div class="product-width col-md-6 col-xl-4 col-lg-6">
+                    <div class="product-wrapper mb-35">
+                      <div class="product-img">
+                        <a href="#">
+                          <img src="images/products-4.png" alt="">
+                        </a>
+                        <div class="sorting sorting-bg-1 Select-Plan" style="padding: 0 15px;">
+                          <form>
+                            <select class="select">
+                              <option value="">Hub Select </option>
+                              <option value="">Limited Kms</option>
+                              <option value="">Unlimited Kms</option>
+                            </select>
+                          </form>
+                        </div>
+                        <div class="product-content-wrapper">
+                          <div class="product-title-spreed">
+                            <h4><a href="#">Demonissi Gori</a></h4>
+                            <!-- <span>6600 RPM</span> -->
+                            <div class="product-price">
+                              <span>$2549</span>
+                            </div>
+                          </div>
+                          
+                          <div>
+                            <ul class="ul-gear">
+                              <li><img src="images/gear-icon.svg"> Gear</li>
+                              <li><img src="images/fuel-icon.svg"> Fuel</li>
+                              <li><img src="images/seat-icon.svg" style="width:22%;"> Seats</li>
+                            </ul>
+                          </div>
+                          <div class="add-cart-view-detail">
+                            
+                            <button class="button view-button">VIEW DETAILS</button>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div class="product-width col-md-6 col-xl-4 col-lg-6">
+                    <div class="product-wrapper mb-35">
+                      <div class="product-img">
+                        <a href="#">
+                          <img src="images/products-5.png" alt="">
+                        </a>
+                        <div class="sorting sorting-bg-1 Select-Plan" style="padding: 0 15px;">
+                          <form>
+                            <select class="select">
+                              <option value="">Hub Select </option>
+                              <option value="">Limited Kms</option>
+                              <option value="">Unlimited Kms</option>
+                            </select>
+                          </form>
+                        </div>
+                        <div class="product-content-wrapper">
+                          <div class="product-title-spreed">
+                            <h4><a href="#">Maxclon ZPE 54</a></h4>
+                            <!-- <span>6600 RPM</span> -->
+                            <div class="product-price">
+                              <span>$2549</span>
+                            </div>
+                          </div>
+                          
+                          <div>
+                            <ul class="ul-gear">
+                              <li><img src="images/gear-icon.svg"> Gear</li>
+                              <li><img src="images/fuel-icon.svg"> Fuel </li>
+                              <li><img src="images/seat-icon.svg" style="width:22%;"> Seats </li>
+                            </ul>
+                          </div>
+                          <div class="add-cart-view-detail">
+                            
+                            <button class="button view-button">VIEW DETAILS</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-width col-md-6 col-xl-4 col-lg-6">
+                    <div class="product-wrapper mb-35">
+                      <div class="product-img">
+                        <a href="#">
+                          <img src="images/products-6.png" alt="">
+                        </a>
+                        <div class="sorting sorting-bg-1 Select-Plan" style="padding: 0 15px;">
+                          <form>
+                            <select class="select">
+                              <option value="">Hub Select </option>
+                              <option value="">Limited Kms</option>
+                              <option value="">Unlimited Kms</option>
+                            </select>
+                          </form>
+                        </div>
+                        <div class="product-content-wrapper">
+                          <div class="product-title-spreed">
+                            <h4><a href="#">Rigoniss Z 1000</a></h4>
+                            <!-- <span>6600 RPM</span> -->
+                            <div class="product-price">
+                              <span>$2549</span>
+                            </div>
+                          </div>
+                          
+                          <div>
+                            <ul class="ul-gear">
+                              <li><img src="images/gear-icon.svg"> Gear</li>
+                              <li><img src="images/fuel-icon.svg"> Fuel</li>
+                              <li><img src="images/seat-icon.svg" style="width:22%;"> Seats</li>
+                            </ul>
+                          </div>
+                          <div class="add-cart-view-detail">
+                            
+                            <button class="button view-button">VIEW DETAILS</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><div class="product-width col-md-6 col-xl-4 col-lg-6">
+                    <div class="product-wrapper mb-35">
+                      <div class="product-img">
+                        <a href="#">
+                          <img src="images/products-6.png" alt="">
+                        </a>
+                        <div class="sorting sorting-bg-1 Select-Plan" style="padding: 0 15px;">
+                          <form>
+                            <select class="select">
+                              <option value="">Hub Select </option>
+                              <option value="">Limited Kms</option>
+                              <option value="">Unlimited Kms</option>
+                            </select>
+                          </form>
+                        </div>
+                        <div class="product-content-wrapper">
+                          <div class="product-title-spreed">
+                            <h4><a href="#">Rigoniss Z 1000</a></h4>
+                            <!-- <span>6600 RPM</span> -->
+                            <div class="product-price">
+                              <span>$2549</span>
+                            </div>
+                          </div>
+                          
+                          <div>
+                            <ul class="ul-gear">
+                              <li><img src="images/gear-icon.svg"> Gear</li>
+                              <li><img src="images/fuel-icon.svg"> Fuel</li>
+                              <li><img src="images/seat-icon.svg" style="width:22%;"> Seats</li>
+                            </ul>
+                          </div>
+                          <div class="add-cart-view-detail">
+                            
+                            <button class="button view-button">VIEW DETAILS</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><div class="product-width col-md-6 col-xl-4 col-lg-6">
+                    <div class="product-wrapper mb-35">
+                      <div class="product-img">
+                        <a href="#">
+                          <img src="images/products-6.png" alt="">
+                        </a>
+                        <div class="sorting sorting-bg-1 Select-Plan" style="padding: 0 15px;">
+                          <form>
+                            <select class="select">
+                              <option value="">Hub Select </option>
+                              <option value="">Limited Kms</option>
+                              <option value="">Unlimited Kms</option>
+                            </select>
+                          </form>
+                        </div>
+                        <div class="product-content-wrapper">
+                          <div class="product-title-spreed">
+                            <h4><a href="#">Rigoniss Z 1000</a></h4>
+                            <!-- <span>6600 RPM</span> -->
+                            <div class="product-price">
+                              <span>$2549</span>
+                            </div>
+                          </div>
+                          
+                          <div>
+                            <ul class="ul-gear">
+                              <li><img src="images/gear-icon.svg"> Gear</li>
+                              <li><img src="images/fuel-icon.svg"> Fuel</li>
+                              <li><img src="images/seat-icon.svg" style="width:22%;"> Seats</li>
+                            </ul>
+                          </div>
+                          <div class="add-cart-view-detail">
+                            
+                            <button class="button view-button">VIEW DETAILS</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><div class="product-width col-md-6 col-xl-4 col-lg-6">
+                    <div class="product-wrapper mb-35">
+                      <div class="product-img">
+                        <a href="#">
+                          <img src="images/products-6.png" alt="">
+                        </a>
+                        <div class="sorting sorting-bg-1 Select-Plan" style="padding: 0 15px;">
+                          <form>
+                            <select class="select">
+                              <option value="">Hub Select </option>
+                              <option value="">Limited Kms</option>
+                              <option value="">Unlimited Kms</option>
+                            </select>
+                          </form>
+                        </div>
+                        <div class="product-content-wrapper">
+                          <div class="product-title-spreed">
+                            <h4><a href="#">Rigoniss Z 1000</a></h4>
+                            <!-- <span>6600 RPM</span> -->
+                            <div class="product-price">
+                              <span>$2549</span>
+                            </div>
+                          </div>
+                          
+                          <div>
+                            <ul class="ul-gear">
+                              <li><img src="images/gear-icon.svg"> Gear</li>
+                              <li><img src="images/fuel-icon.svg"> Fuel</li>
+                              <li><img src="images/seat-icon.svg" style="width:22%;"> Seats</li>
+                            </ul>
+                          </div>
+                          <div class="add-cart-view-detail">
+                            
+                            <button class="button view-button">VIEW DETAILS</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><div class="product-width col-md-6 col-xl-4 col-lg-6">
+                    <div class="product-wrapper mb-35">
+                      <div class="product-img">
+                        <a href="#">
+                          <img src="images/products-6.png" alt="">
+                        </a>
+                        <div class="sorting sorting-bg-1 Select-Plan" style="padding: 0 15px;">
+                          <form>
+                            <select class="select">
+                              <option value="">Hub Select </option>
+                              <option value="">Limited Kms</option>
+                              <option value="">Unlimited Kms</option>
+                            </select>
+                          </form>
+                        </div>
+                        <div class="product-content-wrapper">
+                          <div class="product-title-spreed">
+                            <h4><a href="#">Rigoniss Z 1000</a></h4>
+                            <!-- <span>6600 RPM</span> -->
+                            <div class="product-price">
+                              <span>$2549</span>
+                            </div>
+                          </div>
+                          
+                          <div>
+                            <ul class="ul-gear">
+                              <li><img src="images/gear-icon.svg"> Gear</li>
+                              <li><img src="images/fuel-icon.svg"> Fuel</li>
+                              <li><img src="images/seat-icon.svg" style="width:22%;"> Seats</li>
+                            </ul>
+                          </div>
+                          <div class="add-cart-view-detail">
+                            
+                            <button class="button view-button">VIEW DETAILS</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><div class="product-width col-md-6 col-xl-4 col-lg-6">
+                    <div class="product-wrapper mb-35">
+                      <div class="product-img">
+                        <a href="#">
+                          <img src="images/products-6.png" alt="">
+                        </a>
+                        <div class="sorting sorting-bg-1 Select-Plan" style="padding: 0 15px;">
+                          <form>
+                            <select class="select">
+                              <option value="">Hub Select </option>
+                              <option value="">Limited Kms</option>
+                              <option value="">Unlimited Kms</option>
+                            </select>
+                          </form>
+                        </div>
+                        <div class="product-content-wrapper">
+                          <div class="product-title-spreed">
+                            <h4><a href="#">Rigoniss Z 1000</a></h4>
+                            <!-- <span>6600 RPM</span> -->
+                            <div class="product-price">
+                              <span>$2549</span>
+                            </div>
+                          </div>
+                          
+                          <div>
+                            <ul class="ul-gear">
+                              <li><img src="images/gear-icon.svg"> Gear</li>
+                              <li><img src="images/fuel-icon.svg"> Fuel</li>
+                              <li><img src="images/seat-icon.svg" style="width:22%;"> Seats</li>
+                            </ul>
+                          </div>
+                          <div class="add-cart-view-detail">
+                            
+                            <button class="button view-button">VIEW DETAILS</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><div class="product-width col-md-6 col-xl-4 col-lg-6">
+                    <div class="product-wrapper mb-35">
+                      <div class="product-img">
+                        <a href="#">
+                          <img src="images/products-6.png" alt="">
+                        </a>
+                        <div class="sorting sorting-bg-1 Select-Plan" style="padding: 0 15px;">
+                          <form>
+                            <select class="select">
+                              <option value="">Hub Select </option>
+                              <option value="">Limited Kms</option>
+                              <option value="">Unlimited Kms</option>
+                            </select>
+                          </form>
+                        </div>
+                        <div class="product-content-wrapper">
+                          <div class="product-title-spreed">
+                            <h4><a href="#">Rigoniss Z 1000</a></h4>
+                            <!-- <span>6600 RPM</span> -->
+                            <div class="product-price">
+                              <span>$2549</span>
+                            </div>
+                          </div>
+                          
+                          <div>
+                            <ul class="ul-gear">
+                              <li><img src="images/gear-icon.svg"> Gear</li>
+                              <li><img src="images/fuel-icon.svg"> Fuel</li>
+                              <li><img src="images/seat-icon.svg" style="width:22%;"> Seats</li>
+                            </ul>
+                          </div>
+                          <div class="add-cart-view-detail">
+                            
+                            <button class="button view-button">VIEW DETAILS</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><div class="product-width col-md-6 col-xl-4 col-lg-6">
+                    <div class="product-wrapper mb-35">
+                      <div class="product-img">
+                        <a href="#">
+                          <img src="images/products-6.png" alt="">
+                        </a>
+                        <div class="sorting sorting-bg-1 Select-Plan" style="padding: 0 15px;">
+                          <form>
+                            <select class="select">
+                              <option value="">Hub Select </option>
+                              <option value="">Limited Kms</option>
+                              <option value="">Unlimited Kms</option>
+                            </select>
+                          </form>
+                        </div>
+                        <div class="product-content-wrapper">
+                          <div class="product-title-spreed">
+                            <h4><a href="#">Rigoniss Z 1000</a></h4>
+                            <!-- <span>6600 RPM</span> -->
+                            <div class="product-price">
+                              <span>$2549</span>
+                            </div>
+                          </div>
+                          
+                          <div>
+                            <ul class="ul-gear">
+                              <li><img src="images/gear-icon.svg"> Gear</li>
+                              <li><img src="images/fuel-icon.svg"> Fuel</li>
+                              <li><img src="images/seat-icon.svg" style="width:22%;"> Seats</li>
+                            </ul>
+                          </div>
+                          <div class="add-cart-view-detail">
+                            
+                            <button class="button view-button">VIEW DETAILS</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><div class="product-width col-md-6 col-xl-4 col-lg-6">
+                    <div class="product-wrapper mb-35">
+                      <div class="product-img">
+                        <a href="#">
+                          <img src="images/products-6.png" alt="">
+                        </a>
+                        <div class="sorting sorting-bg-1 Select-Plan" style="padding: 0 15px;">
+                          <form>
+                            <select class="select">
+                              <option value="">Hub Select </option>
+                              <option value="">Limited Kms</option>
+                              <option value="">Unlimited Kms</option>
+                            </select>
+                          </form>
+                        </div>
+                        <div class="product-content-wrapper">
+                          <div class="product-title-spreed">
+                            <h4><a href="#">Rigoniss Z 1000</a></h4>
+                            <!-- <span>6600 RPM</span> -->
+                            <div class="product-price">
+                              <span>$2549</span>
+                            </div>
+                          </div>
+                          
+                          <div>
+                            <ul class="ul-gear">
+                              <li><img src="images/gear-icon.svg"> Gear</li>
+                              <li><img src="images/fuel-icon.svg"> Fuel</li>
+                              <li><img src="images/seat-icon.svg" style="width:22%;"> Seats</li>
+                            </ul>
+                          </div>
+                          <div class="add-cart-view-detail">
+                            
+                            <button class="button view-button">VIEW DETAILS</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><div class="product-width col-md-6 col-xl-4 col-lg-6">
+                    <div class="product-wrapper mb-35">
+                      <div class="product-img">
+                        <a href="#">
+                          <img src="images/products-6.png" alt="">
+                        </a>
+                        <div class="sorting sorting-bg-1 Select-Plan" style="padding: 0 15px;">
+                          <form>
+                            <select class="select">
+                              <option value="">Hub Select </option>
+                              <option value="">Limited Kms</option>
+                              <option value="">Unlimited Kms</option>
+                            </select>
+                          </form>
+                        </div>
+                        <div class="product-content-wrapper">
+                          <div class="product-title-spreed">
+                            <h4><a href="#">Rigoniss Z 1000</a></h4>
+                            <!-- <span>6600 RPM</span> -->
+                            <div class="product-price">
+                              <span>$2549</span>
+                            </div>
+                          </div>
+                          
+                          <div>
+                            <ul class="ul-gear">
+                              <li><img src="images/gear-icon.svg"> Gear</li>
+                              <li><img src="images/fuel-icon.svg"> Fuel</li>
+                              <li><img src="images/seat-icon.svg" style="width:22%;"> Seats</li>
+                            </ul>
+                          </div>
+                          <div class="add-cart-view-detail">
+                            
+                            <button class="button view-button">VIEW DETAILS</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><div class="product-width col-md-6 col-xl-4 col-lg-6">
+                    <div class="product-wrapper mb-35">
+                      <div class="product-img">
+                        <a href="#">
+                          <img src="images/products-6.png" alt="">
+                        </a>
+                        <div class="sorting sorting-bg-1 Select-Plan" style="padding: 0 15px;">
+                          <form>
+                            <select class="select">
+                              <option value="">Hub Select </option>
+                              <option value="">Limited Kms</option>
+                              <option value="">Unlimited Kms</option>
+                            </select>
+                          </form>
+                        </div>
+                        <div class="product-content-wrapper">
+                          <div class="product-title-spreed">
+                            <h4><a href="#">Rigoniss Z 1000</a></h4>
+                            <!-- <span>6600 RPM</span> -->
+                            <div class="product-price">
+                              <span>$2549</span>
+                            </div>
+                          </div>
+                          
+                          <div>
+                            <ul class="ul-gear">
+                              <li><img src="images/gear-icon.svg"> Gear</li>
+                              <li><img src="images/fuel-icon.svg"> Fuel</li>
+                              <li><img src="images/seat-icon.svg" style="width:22%;"> Seats</li>
+                            </ul>
+                          </div>
+                          <div class="add-cart-view-detail">
+                            
+                            <button class="button view-button">VIEW DETAILS</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><div class="product-width col-md-6 col-xl-4 col-lg-6">
+                    <div class="product-wrapper mb-35">
+                      <div class="product-img">
+                        <a href="#">
+                          <img src="images/products-6.png" alt="">
+                        </a>
+                        <div class="sorting sorting-bg-1 Select-Plan" style="padding: 0 15px;">
+                          <form>
+                            <select class="select">
+                              <option value="">Hub Select </option>
+                              <option value="">Limited Kms</option>
+                              <option value="">Unlimited Kms</option>
+                            </select>
+                          </form>
+                        </div>
+                        <div class="product-content-wrapper">
+                          <div class="product-title-spreed">
+                            <h4><a href="#">Rigoniss Z 1000</a></h4>
+                            <!-- <span>6600 RPM</span> -->
+                            <div class="product-price">
+                              <span>$2549</span>
+                            </div>
+                          </div>
+                          
+                          <div>
+                            <ul class="ul-gear">
+                              <li><img src="images/gear-icon.svg"> Gear</li>
+                              <li><img src="images/fuel-icon.svg"> Fuel</li>
+                              <li><img src="images/seat-icon.svg" style="width:22%;"> Seats</li>
+                            </ul>
+                          </div>
+                          <div class="add-cart-view-detail">
+                            
+                            <button class="button view-button">VIEW DETAILS</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><div class="product-width col-md-6 col-xl-4 col-lg-6">
+                    <div class="product-wrapper mb-35">
+                      <div class="product-img">
+                        <a href="#">
+                          <img src="images/products-6.png" alt="">
+                        </a>
+                        <div class="sorting sorting-bg-1 Select-Plan" style="padding: 0 15px;">
+                          <form>
+                            <select class="select">
+                              <option value="">Hub Select </option>
+                              <option value="">Limited Kms</option>
+                              <option value="">Unlimited Kms</option>
+                            </select>
+                          </form>
+                        </div>
+                        <div class="product-content-wrapper">
+                          <div class="product-title-spreed">
+                            <h4><a href="#">Rigoniss Z 1000</a></h4>
+                            <!-- <span>6600 RPM</span> -->
+                            <div class="product-price">
+                              <span>$2549</span>
+                            </div>
+                          </div>
+                          
+                          <div>
+                            <ul class="ul-gear">
+                              <li><img src="images/gear-icon.svg"> Gear</li>
+                              <li><img src="images/fuel-icon.svg"> Fuel</li>
+                              <li><img src="images/seat-icon.svg" style="width:22%;"> Seats</li>
+                            </ul>
+                          </div>
+                          <div class="add-cart-view-detail">
+                            
+                            <button class="button view-button">VIEW DETAILS</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><div class="product-width col-md-6 col-xl-4 col-lg-6">
+                    <div class="product-wrapper mb-35">
+                      <div class="product-img">
+                        <a href="#">
+                          <img src="images/products-6.png" alt="">
+                        </a>
+                        <div class="sorting sorting-bg-1 Select-Plan" style="padding: 0 15px;">
+                          <form>
+                            <select class="select">
+                              <option value="">Hub Select </option>
+                              <option value="">Limited Kms</option>
+                              <option value="">Unlimited Kms</option>
+                            </select>
+                          </form>
+                        </div>
+                        <div class="product-content-wrapper">
+                          <div class="product-title-spreed">
+                            <h4><a href="#">Rigoniss Z 1000</a></h4>
+                            <!-- <span>6600 RPM</span> -->
+                            <div class="product-price">
+                              <span>$2549</span>
+                            </div>
+                          </div>
+                          
+                          <div>
+                            <ul class="ul-gear">
+                              <li><img src="images/gear-icon.svg"> Gear</li>
+                              <li><img src="images/fuel-icon.svg"> Fuel</li>
+                              <li><img src="images/seat-icon.svg" style="width:22%;"> Seats</li>
+                            </ul>
+                          </div>
+                          <div class="add-cart-view-detail">
+                            
+                            <button class="button view-button">VIEW DETAILS</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><div class="product-width col-md-6 col-xl-4 col-lg-6">
+                    <div class="product-wrapper mb-35">
+                      <div class="product-img">
+                        <a href="#">
+                          <img src="images/products-6.png" alt="">
+                        </a>
+                        <div class="sorting sorting-bg-1 Select-Plan" style="padding: 0 15px;">
+                          <form>
+                            <select class="select">
+                              <option value="">Hub Select </option>
+                              <option value="">Limited Kms</option>
+                              <option value="">Unlimited Kms</option>
+                            </select>
+                          </form>
+                        </div>
+                        <div class="product-content-wrapper">
+                          <div class="product-title-spreed">
+                            <h4><a href="#">Rigoniss Z 1000</a></h4>
+                            <!-- <span>6600 RPM</span> -->
+                            <div class="product-price">
+                              <span>$2549</span>
+                            </div>
+                          </div>
+                          
+                          <div>
+                            <ul class="ul-gear">
+                              <li><img src="images/gear-icon.svg"> Gear</li>
+                              <li><img src="images/fuel-icon.svg"> Fuel</li>
+                              <li><img src="images/seat-icon.svg" style="width:22%;"> Seats</li>
+                            </ul>
+                          </div>
+                          <div class="add-cart-view-detail">
+                            
+                            <button class="button view-button">VIEW DETAILS</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><div class="product-width col-md-6 col-xl-4 col-lg-6">
+                    <div class="product-wrapper mb-35">
+                      <div class="product-img">
+                        <a href="#">
+                          <img src="images/products-6.png" alt="">
+                        </a>
+                        <div class="sorting sorting-bg-1 Select-Plan" style="padding: 0 15px;">
+                          <form>
+                            <select class="select">
+                              <option value="">Hub Select </option>
+                              <option value="">Limited Kms</option>
+                              <option value="">Unlimited Kms</option>
+                            </select>
+                          </form>
+                        </div>
+                        <div class="product-content-wrapper">
+                          <div class="product-title-spreed">
+                            <h4><a href="#">Rigoniss Z 1000</a></h4>
+                            <!-- <span>6600 RPM</span> -->
+                            <div class="product-price">
+                              <span>$2549</span>
+                            </div>
+                          </div>
+                          
+                          <div>
+                            <ul class="ul-gear">
+                              <li><img src="images/gear-icon.svg"> Gear</li>
+                              <li><img src="images/fuel-icon.svg"> Fuel</li>
+                              <li><img src="images/seat-icon.svg" style="width:22%;"> Seats</li>
+                            </ul>
+                          </div>
+                          <div class="add-cart-view-detail">
+                            
+                            <button class="button view-button">VIEW DETAILS</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><div class="product-width col-md-6 col-xl-4 col-lg-6">
+                    <div class="product-wrapper mb-35">
+                      <div class="product-img">
+                        <a href="#">
+                          <img src="images/products-6.png" alt="">
+                        </a>
+                        <div class="sorting sorting-bg-1 Select-Plan" style="padding: 0 15px;">
+                          <form>
+                            <select class="select">
+                              <option value="">Hub Select </option>
+                              <option value="">Limited Kms</option>
+                              <option value="">Unlimited Kms</option>
+                            </select>
+                          </form>
+                        </div>
+                        <div class="product-content-wrapper">
+                          <div class="product-title-spreed">
+                            <h4><a href="#">Rigoniss Z 1000</a></h4>
+                            <!-- <span>6600 RPM</span> -->
+                            <div class="product-price">
+                              <span>$2549</span>
+                            </div>
+                          </div>
+                          
+                          <div>
+                            <ul class="ul-gear">
+                              <li><img src="images/gear-icon.svg"> Gear</li>
+                              <li><img src="images/fuel-icon.svg"> Fuel</li>
+                              <li><img src="images/seat-icon.svg" style="width:22%;"> Seats</li>
+                            </ul>
+                          </div>
+                          <div class="add-cart-view-detail">
+                            
+                            <button class="button view-button">VIEW DETAILS</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><div class="product-width col-md-6 col-xl-4 col-lg-6">
+                    <div class="product-wrapper mb-35">
+                      <div class="product-img">
+                        <a href="#">
+                          <img src="images/products-6.png" alt="">
+                        </a>
+                        <div class="sorting sorting-bg-1 Select-Plan" style="padding: 0 15px;">
+                          <form>
+                            <select class="select">
+                              <option value="">Hub Select </option>
+                              <option value="">Limited Kms</option>
+                              <option value="">Unlimited Kms</option>
+                            </select>
+                          </form>
+                        </div>
+                        <div class="product-content-wrapper">
+                          <div class="product-title-spreed">
+                            <h4><a href="#">Rigoniss Z 1000</a></h4>
+                            <!-- <span>6600 RPM</span> -->
+                            <div class="product-price">
+                              <span>$2549</span>
+                            </div>
+                          </div>
+                          
+                          <div>
+                            <ul class="ul-gear">
+                              <li><img src="images/gear-icon.svg"> Gear</li>
+                              <li><img src="images/fuel-icon.svg"> Fuel</li>
+                              <li><img src="images/seat-icon.svg" style="width:22%;"> Seats</li>
+                            </ul>
+                          </div>
+                          <div class="add-cart-view-detail">
+                            
+                            <button class="button view-button">VIEW DETAILS</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+                <div id="product-list" class="product-grid product-view tab-pane" role="tabpanel">
+                  <div class="row">
+                    <div class="col-md-12">
+                      
+                      <div class="product-list-view">
+                        
+                        <div class="product-img">
+                          <figure>
+                            <img src="images/products-1.png" alt="">
+                          </figure>
+                          
+                          <div class="rht-list-view">
+                            <div class="sorting sorting-bg-1 Select-Plan">
+                              <form>
+                                <select class="select">
+                                  <option value="">Hub select </option>
+                                  <option value="">Limited Kms</option>
+                                  <option value="">Unlimited Kms</option>
+                                </select>
+                              </form>
+                            </div>
+                            <div class="product-content-wrapper">
+                              <div class="product-title-spreed">
+                                <h4><a href="product-details.html">Gloriori GSX 250 R</a></h4>
+                                <!-- <span>6600 RPM</span> -->
+                              </div>
+                              <div class="flex-cls justi-space">
+                                <div class="product-price">
+                                  <span>$2549</span>
+                                </div>
+                                <div class="feat-list-cls">
+                                  <ul class="ul-gear">
+                                    <li><img src="images/gear-icon.svg"> Gear</li>
+                                    <li><img src="images/fuel-icon.svg"> Fuel</li>
+                                    <li><img src="images/seat-icon.svg" style="width:22%;"> Seats</li>
+                                  </ul>
+                                </div> </div>
+                                <div class="add-cart-view-detail">
+                                  
+                                  <button class="button view-button">VIEW DETAILS</button>
+                                </div>
+                              </div>
+                            </div> </div>
+                            
+                            
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          
+                          <div class="product-list-view">
+                            
+                            <div class="product-img">
+                              <figure>
+                                <img src="images/products-1.png" alt="">
+                              </figure>
+                              
+                              <div class="rht-list-view">
+                                <div class="sorting sorting-bg-1 Select-Plan">
+                                  <form>
+                                    <select class="select">
+                                      <option value="">Hub select </option>
+                                      <option value="">Limited Kms</option>
+                                      <option value="">Unlimited Kms</option>
+                                    </select>
+                                  </form>
+                                </div>
+                                <div class="product-content-wrapper">
+                                  <div class="product-title-spreed">
+                                    <h4><a href="product-details.html">Gloriori GSX 250 R</a></h4>
+                                    <!-- <span>6600 RPM</span> -->
+                                  </div>
+                                  <div class="flex-cls justi-space">
+                                    <div class="product-price">
+                                      <span>$2549</span>
+                                    </div>
+                                    <div class="feat-list-cls">
+                                      <ul class="ul-gear">
+                                        <li><img src="images/gear-icon.svg"> Gear</li>
+                                        <li><img src="images/fuel-icon.svg"> Fuel</li>
+                                        <li><img src="images/seat-icon.svg" style="width:22%;"> Seats</li>
+                                      </ul>
+                                    </div> </div>
+                                    <div class="add-cart-view-detail">
+                                      
+                                      <button class="button view-button">VIEW DETAILS</button>
+                                    </div>
+                                  </div>
+                                </div> </div>
+                                
+                                
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              
+                              <div class="product-list-view">
+                                
+                                <div class="product-img">
+                                  <figure>
+                                    <img src="images/products-1.png" alt="">
+                                  </figure>
+                                  
+                                  <div class="rht-list-view">
+                                    <div class="sorting sorting-bg-1 Select-Plan">
+                                      <form>
+                                        <select class="select">
+                                          <option value="">Hub select </option>
+                                          <option value="">Limited Kms</option>
+                                          <option value="">Unlimited Kms</option>
+                                        </select>
+                                      </form>
+                                    </div>
+                                    <div class="product-content-wrapper">
+                                      <div class="product-title-spreed">
+                                        <h4><a href="product-details.html">Gloriori GSX 250 R</a></h4>
+                                        <!-- <span>6600 RPM</span> -->
+                                      </div>
+                                      <div class="flex-cls justi-space">
+                                        <div class="product-price">
+                                          <span>$2549</span>
+                                        </div>
+                                        <div class="feat-list-cls">
+                                          <ul class="ul-gear">
+                                            <li><img src="images/gear-icon.svg"> Gear</li>
+                                            <li><img src="images/fuel-icon.svg"> Fuel</li>
+                                            <li><img src="images/seat-icon.svg" style="width:22%;"> Seats</li>
+                                          </ul>
+                                        </div> </div>
+                                        <div class="add-cart-view-detail">
+                                          
+                                          <button class="button view-button">VIEW DETAILS</button>
+                                        </div>
+                                      </div>
+                                    </div> </div>
+                                    
+                                    
+                                  </div>
+                                </div>
+                                <div class="col-md-12">
+                                  
+                                  <div class="product-list-view">
+                                    
+                                    <div class="product-img">
+                                      <figure>
+                                        <img src="images/products-1.png" alt="">
+                                      </figure>
+                                      
+                                      <div class="rht-list-view">
+                                        <div class="sorting sorting-bg-1 Select-Plan">
+                                          <form>
+                                            <select class="select">
+                                              <option value="">Hub select </option>
+                                              <option value="">Limited Kms</option>
+                                              <option value="">Unlimited Kms</option>
+                                            </select>
+                                          </form>
+                                        </div>
+                                        <div class="product-content-wrapper">
+                                          <div class="product-title-spreed">
+                                            <h4><a href="product-details.html">Gloriori GSX 250 R</a></h4>
+                                            <!-- <span>6600 RPM</span> -->
+                                          </div>
+                                          <div class="flex-cls justi-space">
+                                            <div class="product-price">
+                                              <span>$2549</span>
+                                            </div>
+                                            <div class="feat-list-cls">
+                                              <ul class="ul-gear">
+                                                <li><img src="images/gear-icon.svg"> Gear</li>
+                                                <li><img src="images/fuel-icon.svg"> Fuel</li>
+                                                <li><img src="images/seat-icon.svg" style="width:22%;"> Seats</li>
+                                              </ul>
+                                            </div> </div>
+                                            <div class="add-cart-view-detail">
+                                              
+                                              <button class="button view-button">VIEW DETAILS</button>
+                                            </div>
+                                          </div>
+                                        </div> </div>
+                                        
+                                        
+                                      </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                      
+                                      <div class="product-list-view">
+                                        
+                                        <div class="product-img">
+                                          <figure>
+                                            <img src="images/products-1.png" alt="">
+                                          </figure>
+                                          
+                                          <div class="rht-list-view">
+                                            <div class="sorting sorting-bg-1 Select-Plan">
+                                              <form>
+                                                <select class="select">
+                                                  <option value="">Hub select </option>
+                                                  <option value="">Limited Kms</option>
+                                                  <option value="">Unlimited Kms</option>
+                                                </select>
+                                              </form>
+                                            </div>
+                                            <div class="product-content-wrapper">
+                                              <div class="product-title-spreed">
+                                                <h4><a href="product-details.html">Gloriori GSX 250 R</a></h4>
+                                                <!-- <span>6600 RPM</span> -->
+                                              </div>
+                                              <div class="flex-cls justi-space">
+                                                <div class="product-price">
+                                                  <span>$2549</span>
+                                                </div>
+                                                <div class="feat-list-cls">
+                                                  <ul class="ul-gear">
+                                                    <li><img src="images/gear-icon.svg"> Gear</li>
+                                                    <li><img src="images/fuel-icon.svg"> Fuel</li>
+                                                    <li><img src="images/seat-icon.svg" style="width:22%;"> Seats</li>
+                                                  </ul>
+                                                </div> </div>
+                                                <div class="add-cart-view-detail">
+                                                  
+                                                  <button class="button view-button">VIEW DETAILS</button>
+                                                </div>
+                                              </div>
+                                            </div> </div>
+                                            
+                                            
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Product Listing Right Part End-->
+                          </section>
+                          <div id="footer">
+                            <section class="footer-cls-sty pdtb-50 bottom-fotter1">
+                              <div class="container">
+                                <div class="row">
+                                  <div class="col-sm-6 col-md-6">
+                                  <figure> <img src="images/logo.png"> </figure>
+                                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                  <div class="social-foot-cls">
+                                    <ul class="list-inline flex-cls">
+                                      <li>
+                                      <h6>Follow us </h6></li>
+                                      <li><a href="https://www.facebook.com/Urban-Drive-1117900178315777/"><i class="fa fa-facebook"></a></i>
+                                    </li>
+                                    <li><a href="https://twitter.com/urbanselfdrive"><i class="fa fa-twitter"></a></i>
+                                  </li>
+                                  <li><a href="https://plus.google.com/u/0/103734751805183845735"><i class="fa fa-google-plus"></a></i>
+                                </li>
+                                <li><a href="https://www.linkedin.com/company/13329566/"><i class="fa  fa-linkedin"></a></i>
+                              </li>
+                              <li><a href="https://www.instagram.com/urbandrive.co.in/"><i class="fa fa-instagram"></a></i>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-3">
+                        <h2> Company</h2>
+                        <ul class="list-unstyled">
+                          <li><a href="about-us.html">About Us</a></li>
+                          <li><a href="testimonials.html">Testimonials</a></li>
+                          <li><a href="disclaimer-privacy-ploicy.html">Disclaimer & Privacy Policy</a></li>
+                          <li><a href="Policy.html">Booking Policy</a></li>
+                          <li><a href="faq.html">Frequently Asked Question</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-6 col-md-3">
+                        <h2>Contact With us</h2>
+                        <ul class="list-unstyled contact-foot-sty">
+                          <li>
+                            <a href="#"> <i class="fa  fa-envelope"></i> +91-9773-881-881</a>
+                          </li>
+                          <li>
+                            <a href="#"> <i class="fa fa-phone"></i> care@urbandrive.co.in</a>
+                          </li>
+                        </ul>
+                        <div class="news-cls-foot">
+                          <h3>Newsletter</h3>
+                          <input type="text" class="form-control" placeholder="Your Email">
+                          <button class="btn btn-news-cls">Submit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <!-- <div class="container-fluid"> -->
+                
+                <section class="footer-cls-sty pdtb-50 bottom-fotter2">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-12 ">
+                        <nav>
+                          <div class="nav nav-tabs nav-fill nav-tabsss" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-links nav-fill-nav-item active" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Read More</a>
+                            <a class="nav-item nav-links show nav-fill-nav-item" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Car</a>
+                            <a class="nav-item nav-links nav-fill-nav-item" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Bike</a>
+                            <a class="nav-item nav-links nav-fill-nav-item" id="nav-contact-tab" data-toggle="tab" href="#chauffeur-drive" role="tab" aria-controls="nav-contact" aria-selected="false"> Chauffeur Drive</a>
+                          </div>
+                        </nav>
+                        <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                          <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <div class="row">
+                              <div class="col-sm-6 col-md-3">
+                                <ul class="bottom-fotter2-ul">
+                                  <li><a href="#">Bike Rentals in Delhi</a></li>
+                                  <li><a href="#">Bike On Rent in Delhi - Ladakh</a></li>
+                                  <li><a href="#">Hire Bike in Bangalore</a></li>
+                                  <li><a href="#">Motorcycle On Rent in Pune</a></li>
+                                  <li><a href="#">Two Wheeler On Rent in Mumbai</a></li>
+                                  <li><a href="#">Bike Rentals in Chandigarh</a></li>
+                                </ul>
+                              </div>
+                              <div class="col-sm-6 col-md-3">
+                                <ul class="bottom-fotter2-ul">
+                                  <li><a href="#">Bike On Rent in Hyderabad</a></li>
+                                  <li><a href="#">Hire Bike in Kolkata</a></li>
+                                  <li><a href="#">Motorcycle On Rent in Jaipur</a></li>
+                                  <li><a href="#">Two Wheeler On Rent in Chennai</a></li>
+                                  <li><a href="#">Bike Rentals in Rishikesh</a></li>
+                                  <li><a href="#">Bike On Rent in Manali</a></li>
+                                </ul>
+                              </div>
+                              <div class="col-sm-6 col-md-3">
+                                <ul class="bottom-fotter2-ul">
+                                  <li><a href="#">Hire Bike in Ahmedabad</a></li>
+                                  <li><a href="#">Motorcycle On Rent in Goa</a></li>
+                                  <li><a href="#">Two Wheeler On Rent in Pondicherry</a></li>
+                                  <li><a href="#">Bike Rentals in Guwahati</a></li>
+                                  <li><a href="#">Bike On Rent in Ooty</a></li>
+                                  <li><a href="#">Hire Bike in Mysore</a></li>
+                                </ul>
+                              </div>
+                              <div class="col-sm-6 col-md-3">
+                                <ul class="bottom-fotter2-ul">
+                                  <li><a href="#">Motorcycle On Rent in Nainital</a></li>
+                                  <li><a href="#">Two Wheeler On Rent in Raipur</a></li>
+                                  <li><a href="#">Bike Rentals in Udaipur</a></li>
+                                  <li><a href="#">Bike On Rent in Gurgaon</a></li>
+                                  <li><a href="#">Hire Bike in Siliguri</a></li>
+                                  <li><a href="#">Motorcycle On Rent in Mount</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade bottom-fotter2-ul active show" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            Urban Drive – bike rentals started its operations from Delhi in 2014. It started working with bike renting vendors in Karol bagh for a start. These are the vendors who are giving bike on rent to Indian and foreign customers to go to Ladakh. They are giving bikes on rent since last 30-40 years and have grown since then.
+                            <br>
+                            <br> Urban Drive started working with them and started giving business to these vendors through out the year even it it is not a Ladakh season. The vendors started to earn 4-5 Lakhs a month and the market of bike hire grew tremendously. Then Urban Drive started its bike rentals business in Bangalore and Banaglore is a even huge market then Delhi. People here are taking bike on rent for daily commute. They go to office, Mall, Cinema or pub’s , they take a bike on rent and enjoy the beautiful weather of Urban Drive.
+                            <br>
+                            <br> Now in 2017 Urban Drive has its operations in almost 15 cities giving bikes on rent. Urban Drive works on a market place model and works with many vendors giving business to each one. Now you can get a bike on rent in Mumbai, bike on rent in Pune, bike on rent in Chandigarh, bike on rent in Kolkata, bike on rent in Jaipur, bike on rent in Bagdogra, bike on rent in Jaisalmer, bike on rent in Darjeeling, bike on rent in delhi, bike on rent in Bangalore, bike on rent in Manali, bike on rent in Rishikesh and bike on rent in Hyderabad.
+                            <br>
+                            <br> If you are in any of these cities you can book a bike on rent and experience the hasslefree bike renting.
+                            <br>
+                            <br> You can take bikes for rent in Bangalore or any of the operational city of Urban Drive to explore city. Also, if you face problems in daily commute you can rent a bike for daily travel. Hire bike for tours as the world is beautiful and unexplored. Rental bike for office travel. Bikes on rent for just some hours to ride to a exotic dinner with your girl friend or wife is the best thing to do. Rent Royal Enfield's Bullet, Ducati, Harley Davidson, Classic 350, Thunderbird 350, Standard 500. You can rent Rent KTM Duke 200, 390, RC 200, RC 390, Thunderbird 500, Desert Storm, Himalayan, Continental GT. Renting KTM Duke 200, 390, RC 200, RC 390, Avenger, Benelli, Ninja, Kawasaki, Triumph and many more is now your cup of tea. Avenger for rent in Bangalore. Motorcycle rentals for long weekends and extended long weekends. Rent a motorcycle for special days and occasions. Motorcycle rental for anniversary and birthday celebrations. Hire a motorcycle for promotion. For amazing entrance of groom rental bikes is an amazing option. Weekend leisure bike rentals. Bike rentals for road trips. The rental motorcycles come with 999 deposit and cheapest rent across city and easy booking and pickup. Bike rentals in Bangalore from Urban Drive is most preferred and highly rated by users. We conduct expeditions to Spiti Valley, Ladakh, Leh, Goa and many exotic destinations across India.
+                            <br>
+                            <br> You can now have bike rentals experience across 15 cities of India. Bike rentals in Delhi was always an option. Motorcycle hire in Bangalore, rent a bike in Pune, two wheeler rentals in manali, bike on rent in Kolkata, bike on rent in Mumbai, motorcycle rentals in Jaipur, bike on rent in Jaisalmer, bike on rent in Hyderabad, bike on rent in ladakh etc.
+                          </div>
+                          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <div class="row">
+                              <div class="col-sm-6 col-md-3">
+                                <ul class="bottom-fotter2-ul">
+                                  <li><a href="#">Bike Rentals in Phuket</a></li>
+                                  <li><a href="#">Bike On Rent in Pattaya</a></li>
+                                  <li><a href="#">Hire Bike in Bali</a></li>
+                                  <li><a href="#">Motorcycle On Rent in Kathmandu</a></li>
+                                  <li><a href="#">Two Wheeler On Rent in Coron</a></li>
+                                  <li><a href="#">Bike Rentals in Negombo</a></li>
+                                </ul>
+                              </div>
+                              <div class="col-sm-6 col-md-3">
+                                <ul class="bottom-fotter2-ul">
+                                  <li><a href="#">Bike On Rent in Rome</a></li>
+                                  <li><a href="#">Hire Bike in Paris</a></li>
+                                  <li><a href="#">Motorcycle On Rent in Munich</a></li>
+                                  <li><a href="#">Two Wheeler On Rent in Frankfurt</a></li>
+                                  <li><a href="#">Bike Rentals in Hamburg</a></li>
+                                  <li><a href="#">Bike On Rent in Athens</a></li>
+                                </ul>
+                              </div>
+                              <div class="col-sm-6 col-md-3">
+                                <ul class="bottom-fotter2-ul">
+                                  <li><a href="#">Hire Bike in Crete</a></li>
+                                  <li><a href="#">Motorcycle On Rent in Kos</a></li>
+                                  <li><a href="#">Two Wheeler On Rent in Santorini</a></li>
+                                  <li><a href="#">Bike Rentals in Mykonos</a></li>
+                                  <li><a href="#">Bike On Rent in Zakynthos</a></li>
+                                  <li><a href="#">Hire Bike in Barcelona</a></li>
+                                </ul>
+                              </div>
+                              <div class="col-sm-6 col-md-3">
+                                <ul class="bottom-fotter2-ul">
+                                  <li><a href="#">Motorcycle On Rent in Madrid</a></li>
+                                  <li><a href="#">Two Wheeler On Rent in Amsterdam</a></li>
+                                  <li><a href="#">Bike Rentals in Ljubljana</a></li>
+                                  <li><a href="#">Bike On Rent in Bratislava</a></li>
+                                  <li><a href="#">Hire Bike in Lisbon</a></li>
+                                  <li><a href="#">Motorcycle On Rent in Vilnius</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="chauffeur-drive" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <div class="row">
+                              <div class="col-sm-6 col-md-3">
+                                <ul class="bottom-fotter2-ul">
+                                  <li><a href="#">Bike Rentals in Phuket</a></li>
+                                  <li><a href="#">Bike On Rent in Pattaya</a></li>
+                                  <li><a href="#">Hire Bike in Bali</a></li>
+                                  <li><a href="#">Motorcycle On Rent in Kathmandu</a></li>
+                                  <li><a href="#">Two Wheeler On Rent in Coron</a></li>
+                                  <li><a href="#">Bike Rentals in Negombo</a></li>
+                                </ul>
+                              </div>
+                              <div class="col-sm-6 col-md-3">
+                                <ul class="bottom-fotter2-ul">
+                                  <li><a href="#">Bike On Rent in Rome</a></li>
+                                  <li><a href="#">Hire Bike in Paris</a></li>
+                                  <li><a href="#">Motorcycle On Rent in Munich</a></li>
+                                  <li><a href="#">Two Wheeler On Rent in Frankfurt</a></li>
+                                  <li><a href="#">Bike Rentals in Hamburg</a></li>
+                                  <li><a href="#">Bike On Rent in Athens</a></li>
+                                </ul>
+                              </div>
+                              <div class="col-sm-6 col-md-3">
+                                <ul class="bottom-fotter2-ul">
+                                  <li><a href="#">Hire Bike in Crete</a></li>
+                                  <li><a href="#">Motorcycle On Rent in Kos</a></li>
+                                  <li><a href="#">Two Wheeler On Rent in Santorini</a></li>
+                                  <li><a href="#">Bike Rentals in Mykonos</a></li>
+                                  <li><a href="#">Bike On Rent in Zakynthos</a></li>
+                                  <li><a href="#">Hire Bike in Barcelona</a></li>
+                                </ul>
+                              </div>
+                              <div class="col-sm-6 col-md-3">
+                                <ul class="bottom-fotter2-ul">
+                                  <li><a href="#">Motorcycle On Rent in Madrid</a></li>
+                                  <li><a href="#">Two Wheeler On Rent in Amsterdam</a></li>
+                                  <li><a href="#">Bike Rentals in Ljubljana</a></li>
+                                  <li><a href="#">Bike On Rent in Bratislava</a></li>
+                                  <li><a href="#">Hire Bike in Lisbon</a></li>
+                                  <li><a href="#">Motorcycle On Rent in Vilnius</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <!--  </div> -->
+                <section class="footer-cls-sty pdtb-50 bottom-fotter3">
+                  <div class="container">
+                    <div class="footer-copy">
+                      <div class="row">
+                        <div class="col-sm-6 col-xs-12 text-left">
+                          <ul class="list-inline">
+                            <li><img src="images/visa.png"></li>
+                            <li><img src="images/card.png"></li>
+                            <li><img src="images/paypal.png"></li>
+                          </ul>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 text-right">
+                          <p>Copyright 2017 to 2018 Urban Drive All Rights Reserved</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </main>
+            <script src="js/jquery3.3.1.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/popper.min.js"></script>
+            <script type="text/javascript">
+            
+            function sticky_relocate() {
+            var window_top = $(window).scrollTop();
+            var footer_top = $("#footer").offset().top;
+            var div_top = $('#sticky-anchor').offset().top;
+            var div_height = $(".side-menu-fix").height();
+            
+            var padding = 20;  // tweak here or get from margins etc
+            
+            if (window_top + div_height > footer_top - padding)
+            $('.side-menu-fix').css({top: (window_top + div_height - footer_top + padding) * -1})
+            else if (window_top > div_top) {
+            $('.side-menu-fix').addClass('stick');
+            $('.side-menu-fix').css({top: 35})
+            } else {
+            $('.side-menu-fix').removeClass('stick');
+            }
+            }
+            $(function () {
+            $(window).scroll(sticky_relocate);
+            sticky_relocate();
+            });
+            </script>
+            <script type="text/javascript">
+            /*   $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            
+            if (scroll >= 440) {
+            $(".side-menu-fix").addClass("side-menu-absul");
+            } else {
+            $(".side-menu-fix").removeClass("side-menu-absul");
+            }
+            
+            if (scroll >= 1) {
+            $(".btm-slider-menu").addClass("btm-slider-menu-scrollfixed");
+            } else {
+            $(".btm-slider-menu").removeClass("btm-slider-menu-scrollfixed");
+            }
+            
+            });*/
+            </script>
+            <script>
+            $(document).ready(function(){
+            $("#filter-small").click(function(){
+            $(this).toggleClass("filtershow");
+            $("body").toggleClass("overflow-none");
+            $(".side-menu-fix").toggleClass("fliteropen");
+            
+            });
+            $('.listing-rht-cls').click(function() {
+            if ($('.side-menu-fix').hasClass('fliteropen') ){
+            $('.side-menu-fix').removeClass('fliteropen');
+            }
+            if ($('#filter-small').hasClass('filtershow')){
+            $('#filter-small').removeClass('filtershow');
+            }
+            if ($('body').hasClass('overflow-none')){
+            $('body').removeClass('overflow-none');
+            }
+            else {
+            
+            }
+            });
+            });
+            </script>
+            <script>
+            $(document).ready(function(){
+            $("#btn-mob-menu").click(function(){
+            $(".small-screen-menu").toggleClass("show");
+            $("body").toggleClass("overflow-none");
+            $(this).toggleClass("nav-xs-menu");
+            });
+            $('.mn-section-bd').click(function() {
+            if ($('.small-screen-menu').hasClass('show') ){
+            $('.small-screen-menu').removeClass('show');
+            }
+            if ($('#btn-mob-menu').hasClass('nav-xs-menu')){
+            $('#btn-mob-menu').removeClass('nav-xs-menu');
+            }
+            if ($('body').hasClass('overflow-none')){
+            $('body').removeClass('overflow-none');
+            }
+            else {
+            
+            }
+            });
+            
+            });
+            </script>
+          </body>
+        </html>

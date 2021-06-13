@@ -1,18 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+:root {
+    --theme-color: #f58634;
+}
+
+:root {
+    --color1: #f58634;
+    --color2: #00179B;
+    --color3: #2b2859;
+    --color4: #0f0834;
+    --color5: #0a0521;
+    --color6: #ff76d5;
+    --color7: #1ad688;
+    --color8: #ffc600;
+    --color9: #c40172;
+    --color10: #990fff;
+    --color11: #ff7500;
+    --color12: #0072b1;
+    --color13: #55a61d;
+    --color14: #e90133;
+    --color15: #02728e;
+    --color16: #1ec8bf;
+    --color17: #ff4747;
+    --color18: #ffe27a;
+    --color19: #1f5abc;
+    --color20: #d2eaff;
+    --transition: all 0.2s cubic-bezier(0.19, 0.68, 0.49, 1.21);
+    --transition2: all .3s linear;
+    --round: 50%;
+    --curve: 3px;
+    --full: 100%;
+}
+
 
 body {
-    /*font-family: 'Open Sans', sans-serif;*/
-    font-family: 'Rubik', sans-serif;
-    padding-top: 50px;
+    font-family: 'Open Sans', sans-serif;
+
+    /*padding-top: 50px;*/
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
+    color: #404040;
+}
+.container {
+    max-width: 1140px;
 }
 
 .banner-content {
     padding-top: 11rem;
     padding-left: 3rem;
 
+}
+
+.text-primary{
+    color: var(--color1) !important;
+}
+
+.side-menu-fix {
+    position: sticky;
+    top: 150px;
 }
 
 .nav-tabs .nav-item.show .nav-link,
@@ -23,8 +68,10 @@ body {
 }
 
 .bg-primary {
-    background-color: #00179b !important;
+    background-color: var(--color1) !important;
 }
+
+
 
 .form-control:disabled,
 .form-control:read-only {
@@ -45,8 +92,26 @@ body {
 
 .btn-primary {
     color: #fff;
-    background-color: #00179b;
-    border-color: #00179b;
+    background-color: var(--color1);
+    border-color: var(--color1);
+}
+
+.shop-product-sorting a.active {
+    color: #fa4a0c
+}
+.shop-product-sorting .form-check {
+    font-size: 12px;
+    padding: 2px;
+}
+
+.shop-product-sorting a,
+.product-sorting a {
+    color: #001232;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 0;
+    padding: 10px 10px 0;
+    text-decoration: none;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -56,17 +121,86 @@ body {
     font-weight: 400;
 }
 
-.fa-2x {
+.about-img::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/patter-bg2.png);
+    height: 22.5rem;
+    width: 33.125rem;
+    bottom: 0;
+    left: 0;
+}
+.about-img {
+    position: relative;
+    padding-left: 1.875rem;
+    padding-bottom: 1.875rem;
+    overflow: hidden;
+}
+.about-img img {
+    position: relative;
+    
+    z-index: 99;
+}
+
+.affixed {
+    position: fixed;
+    top: 0;
+    background: white !important;
+    transition: var(--transition);
+    padding: 5px 0 !important;
+}
+
+#nav {
+    background: linear-gradient(0deg, #0000, #00000059);
+}
+
+#nav .navbar-nav .nav-link {
+    color: white;
+}
+
+.affixed .nav-link {
+    color: #333 !important;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--color1) !important;
+}
+
+/*.fa-2x {
     font-size: 2vw !important;
+}*/
+#filter {
+    transition: all linear;
+    transition-duration: 2s;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.add-cart-section h3 {
+    font-size: 1.5rem;
+    color: var(--theme-color);
+
+
+}
+
+.add-cart-section h3 small {
+    font-size: 1rem;
+    margin-right: 10px;
+    color: var(--color2);
+
 }
 
 .affix {
-    position: fixed;
+    position: sticky;
+    top: 0;
     left: 0;
     right: 0;
     top: -1px;
-    transition: all linear 0.22s;
+    /*   transition: all linear 0.22s;*/
     z-index: 999;
+    transition-duration: 2s;
 }
 
 ::placeholder {
@@ -143,16 +277,32 @@ body {
     background-color: #f58634;
     border-color: #f58634 #f58634 #f58634;
     font-size: 14px;
-    font-weight: bold;
     transition: linear all 0.22s;
 }
 
-.car-listing .btn {
-    background: #001B94;
+.car-listing .add-cart-section .btn {
+    background: var(--color1);
+    border-color: var(--color1);
     padding: 5px 1rem;
     border-radius: 25px;
     font-size: 12px;
     text-transform: uppercase;
+}
+.car-listing .add-cart-section .btn:hover {
+    background: var(--color2);
+    border-color: var(--color2);
+    padding: 5px 1rem;
+    border-radius: 25px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.fare-details-btn{
+    padding: 2px 10px;
+    border-radius: 25px;
+    font-size: 11px;
+    background: transparent;
+    text-transform: uppercase;
+    border-color: var(--color1);
 }
 
 .frm-banner-cls .card {
@@ -171,30 +321,108 @@ body {
     margin-bottom: 15px;
 }
 
-#banner {
-    width: auto;
+#booking-form {
+    position: absolute;
+    top: 20%;
+    left: 11%;
+    z-index: 99;
+    width: 35%;
+}
+#banner .owl-dots{
+    position: absolute;
+bottom: 20px;
+left: 50%;
+right: 10%;
+}
+#banner .owl-nav{
+    opacity: 0;
+}
+#banner .owl-prev{
+    left: 50%;
 }
 
-#banner .owl-dots {
-    position: absolute;
+#banner:hover .owl-nav{
+    opacity: 1;
+    transition: var(--transition);
+}
+
+#banner-container #banner {
+    width: auto;
+    position: relative;
+    top: 0;
     left: 0;
     right: 0;
-    bottom: 5px;
+    z-index: 1;
+    min-height: 500px;
+    overflow: hidden;
 }
+
+#banner .owl-item img {
+    display: block;
+    min-height: 500px;
+}
+
+#banner-container .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    padding-top: 9rem !important;
+}
+
+#banner .banner-content {
+    position: absolute;
+    left: 50%;
+    right: 10%;
+    bottom: 0;
+    color: white;
+    top: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: end;
+    padding: 3%;
+}
+#banner-small-screen .banner-content {
+    left: 1rem;
+right: 1rem;
+bottom: 0;
+color: black;
+top: 0;
+display: flex;
+align-items: center;
+flex-direction: column;
+text-align: center;
+justify-content: end;
+padding: 3%;
+background: #fff;
+border-radius: 10px;
+box-sizing: border-box;
+width: 92%;
+}
+
+
 
 .banner-cls-sty1 {
     padding-top: 75px;
-    background: #001B94;
+    background: #00179B;
     /*    background: #001C92;*/
     /* min-height: 550px;*/
     /*width: 100%*/
 }
+.fa.fa-rupee {
+    font-size: 88%;
+    margin-right: 3px;
+
+}
 
 .category-name {
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 600;
     margin: 0;
-    color: royalblue;
+    color: var(--color11);
     text-transform: uppercase;
 }
 
@@ -218,16 +446,202 @@ body {
 
 }
 
-@media(max-width: 480px) {
-    .banner-cls-sty1 .banner-content {
-        margin-top: 3rem;
-        padding-left: 25px;
-        padding-top: 0rem;
-
-    }
+.price-details li span {
+    float: right;
+    font-weight: 500;
+    color: black;
 }
 
-.chauffeur-tabs {}
+.price-details li {
+    line-height: 1.9;
+    font-weight: 500;
+    color: #515151;
+}
+
+.head {
+    font-size: 1.6rem;
+    color: var(--color1);
+}
+.subscribe-area {
+background-image: linear-gradient(to top, #f58634 0%, #f26c12 100%)
+}
+
+.dropdown-menu {
+    border: 0;
+    box-shadow: 0 3px 5px #0000000f;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.dropdown-item {
+    font-size: 13px;
+}
+
+.dropdown-menu-arrow {
+    top: -25px;
+    left: 50px;
+    width: 0;
+    height: 0;
+    position: relative;
+}
+
+.dropdown-menu-arrow:before,
+.dropdown-menu-arrow:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: 13px 12px;
+    border-style: solid;
+    border-color: transparent;
+    z-index: 1001;
+}
+
+.dropdown-menu-arrow:after {
+    bottom: -18px;
+    right: -8px;
+    border-bottom-color: #fff;
+}
+
+.dropdown-menu-arrow:before {
+    bottom: -17px;
+    right: -8px;
+    border-bottom-color: rgba(238, 238, 238, 0.15);
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+    right: 0;
+}
+
+
+.dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+.features li {
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.features .features-icon {
+background: url(../images/features-icon.jpg) no-repeat;
+height: 20px;
+width: 30px;
+font-size: 0px;
+background-position: 0 0px;
+float: left;
+transition: all ease-in-out 0.22s;
+-webkit-transition: all ease-in-out 0.22s;
+-moz-transition: all ease-in-out 0.22s
+}
+
+.features .car-icon {
+background-position: 0px 0
+}
+
+.features li:hover .car-icon {
+background-position: -0px -21px;
+transition: all ease-in-out 0.22s;
+-webkit-transition: all ease-in-out 0.22s;
+-moz-transition: all ease-in-out 0.22s
+}
+
+.features .luggage {
+background-position: -50px 0
+}
+
+.text-warning {
+color: #027BFF !important
+}
+
+.features li:hover .luggage {
+background-position: -50px -21px;
+transition: all ease-in-out 0.22s;
+-webkit-transition: all ease-in-out 0.22s;
+-moz-transition: all ease-in-out 0.22s
+}
+
+.features .seat-capacity {
+background-position: -26px 0
+}
+
+.features li:hover .seat-capacity {
+background-position: -26px -22px;
+transition: all ease-in-out 0.22s;
+-webkit-transition: all ease-in-out 0.22s;
+-moz-transition: all ease-in-out 0.22s
+}
+.pb-50 {
+    padding-bottom: 50px;
+}
+.pt-70 {
+    padding-top: 70px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.subscribe-text span {
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 5px;
+}
+.subscribe-text h2 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 0;
+    margin-top: 6px;
+}
+.subscribe-wrapper {
+    overflow: hidden;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+.subscribe-form {
+}
+.subscribe2-wrapper .subscribe-form input {
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    color: #fff;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 300;
+    height: 57px;
+    margin-right: 17px;
+    padding-left: 35px;
+    width: 70%;
+    cursor: pointer;
+}
+ 
+.subscribe2-wrapper .subscribe-form button {
+    background: #ffff;
+    border: none;
+    border-radius: 30px;
+    color: #4b5d73;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    padding: 18px 2rem;
+    transition: all 0.3s ease 0s;
+}
+.subscribe2-wrapper .subscribe-form button i {
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+
+
 
 /*----------Start------------*/
 .profile-pic {
@@ -454,37 +868,16 @@ img {
     position: absolute;
     background: gray;
     height: 2px;
-    width: 45px;
+    width: 48u0pi7ij;/5px;
     content: '';
     top: 49%;
     z-index: -1;
     left: -10px;
 }
 
-#banner {
-    position: relative;
-}
-
-#banner .banner-content {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    /*background: #000000a6;*/
-    /*top: 0;*/
-    padding: 5%;
 
 
-    color: white;
-    text-align: center;
 
-}
-
-#banner .owl-item img {
-    display: block;
-    width: 100%;
-    /*  border-radius: 5px;*/
-}
 
 @media(max-width: 770px) {
     .banner-content {
@@ -1021,25 +1414,6 @@ img {
     font-weight: 600
 }
 
-#demo .carousel-indicators {
-    margin-bottom: -25px
-}
-
-#demo .carousel-indicators li.active {
-    background: #f58634
-}
-
-#demo .carousel-indicators li {
-    background: #ccc
-}
-
-#demo.carousel.slide {
-    margin-bottom: -20px
-}
-
-.mt-10 {
-    margin-top: 10px
-}
 
 .pdtb-50 {
     padding: 50px 0
@@ -1117,13 +1491,6 @@ img {
     color: #f58634
 }
 
-/*#tour .owl-item {
-    padding-right: 15px
-}*/
-
-.realtives {
-    position: relative
-}
 
 #owl-demo .item {
     margin: 3px;
@@ -1171,19 +1538,15 @@ img {
     width: 33px
 }
 
-.customNavigation {
-    display: none;
-}
-
 .owl-prev {
     background: #ffffffde !important;
     position: absolute;
-    top: 50%;
+    top: 40%;
     z-index: 99;
     padding: 0;
     height: 33px;
-    font-size: 17px;
-    border-radius: 50px;
+    font-size: 2rem;
+    border-radius: 5px;
     left: 10px;
     padding-top: 3px;
     width: 33px
@@ -1192,12 +1555,12 @@ img {
 .owl-next {
     background: #ffffffde !important;
     position: absolute;
-    top: 50%;
+    top: 40%;
     z-index: 99;
     padding: 0;
     height: 33px;
-    font-size: 17px;
-    border-radius: 50px;
+    font-size:2rem;
+    border-radius: 5px;
     right: 30px;
     padding-top: 3px;
     width: 33px
@@ -1233,7 +1596,7 @@ header .bg-dark {
 }
 
 #booking-form .tab-content {
-    min-height: 250px;
+    min-height: 230px;
     border-radius: 0 10px 10px;
     overflow: hidden;
 }
@@ -1273,23 +1636,71 @@ header .bg-dark {
     position: relative;
 }
 
-@media(max-width:480px) {
-    .test-panel-cls {
-    height: 335px;
-    text-align: center;
-    width: 90%;
+@media(max-width: 1200px) and (min-width: 960px){
+    #booking-form {
+    position: absolute;
+    top: 12%;
+    left: 2%;
+    z-index: 99;
+    width: 35%;
 }
-    #banner .banner-content {
+}
+@media(max-width: 960px) and (min-width: 768px){
+#booking-form {
+    position: relative;
+    top: 5rem;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    padding: 5rem;
+}
+}
+@media(max-width: 768px){
+#booking-form {
+    position: relative;
+top: 5rem;
+left: 0;
+z-index: 99;
+width: 100%;
+margin-bottom: 4rem;
+}
+.subscribe-form input {
+    width: 98% !important;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+}
+
+@media(max-width: 480px) {
+    .banner-cls-sty1 .banner-content {
+        margin-top: 3rem;
+        padding-left: 25px;
+        padding-top: 0rem;
+
+    }
+    .subscribe-area{
+        text-align: center;
+    }
+ 
+    .test-panel-cls {
+        height: 335px;
+        text-align: center;
+        width: 90%;
+    }
+
+    #banner-small-screen .banner-content {
         position: relative;
         margin-top: -3rem;
     }
 
-    .car-listing .btn {
+    /*  .car-listing .btn {
         font-size: 10px;
     }
-
-    .add-cart-section .btn {
-        margin-top: -10px;
+*/
+    .add-cart-section {
+        margin-top: 5px;
+        border-top: 1px solid #f9f9f9;
+        padding-top: 5px;
     }
 
 

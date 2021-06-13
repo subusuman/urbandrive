@@ -6,9 +6,9 @@
     <meta name="theme-color" content="#343a40">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Owl Stylesheets -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl-theme-default.css">
-    <!--  <link rel="stylesheet" href="css/main-stylesheet.css"> -->
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <nav class="navbar navigation-cls-sty navbar-expand-md navbar-light bg-light fixed-top navbar-fixed-top full-screen-menu">
+        <nav id="nav" class="navbar navigation-cls-sty navbar-expand-md navbar-light fixed-top navbar-fixed-top full-screen-menu">
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img src="images/logo_1.png"></a>
                 <div class="cart-small-show d-none">
@@ -36,18 +36,21 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="our-partners.html">Our Partners </a>
-                        </li><li class="nav-item">
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="our-partners.html">Promotions </a>
-                        </li><li class="nav-item">
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="our-partners.html">Holidays </a>
-                        </li><li class="nav-item">
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="our-partners.html">Hotels </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="offers.html">Our Offers </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn btn-primary text-white py-1 mt-1" data-bs-toggle="modal" data-bs-target="#myModal" href="javascript:void(0)" data-backdrop="static" data-keyboard="false">Login/ Sign up</a>
+                        <li class="nav-item ps-lg-3">
+                            <a class="nav-link btn btn-primary text-white py-1 mt-1" data-bs-toggle="modal" data-bs-target="#myModal" href="javascript:void(0)" data-backdrop="static" data-keyboard="false">Login / Sign up</a>
                         </li>
                     </ul>
                 </div>
@@ -154,131 +157,125 @@
         </div>
     </div>
     </div>
-    <div class="bg-primary pt-5 pb-4">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-sm-12  col-lg-6 ml-auto ">
-                    <div class="card bg-transparent border-0 shadow" id="booking-form">
-                        <div  class="card-body p-0">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="chauffeur-tab" data-bs-toggle="tab" data-bs-target="#chauffeur" type="button" role="tab" aria-controls="home" aria-selected="true">Chauffeur Drive</button>
-                        </li>
-                       <!--  <li class="nav-item" role="presentation">
+    <div id="banner-container">
+        <!-- Start Booking form -->
+         <div class="card bg-transparent border-0 shadow" id="booking-form">
+            <div class="card-body p-0">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="chauffeur-tab" data-bs-toggle="tab" data-bs-target="#chauffeur" type="button" role="tab" aria-controls="home" aria-selected="true">Chauffeur Drive</button>
+                    </li>
+                    <!--  <li class="nav-item" role="presentation">
                             <button class="nav-link" id="self-drive-tab" data-bs-toggle="tab" data-bs-target="#self-drive" type="button" role="tab" aria-controls="profile" aria-selected="false">Self-Drive</button>
                         </li> -->
-                    </ul>
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="chauffeur" role="tabpanel" aria-labelledby="chauffeur-tab">
-                            <!-- Nav tabs -->
-                            <div class="card border-0 rounded-0 banner-tab-cls">
-                                <div class="nav nav-pills chauffeur-tabs justify-content-center mt-4" id="pills-tab" role="tablist">
-                                     <a class="nav-link active" id="pills-contact-tab" data-bs-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Airport Transfer</a>
-
-                                    <a class="nav-link" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Hourly Rentals</a>
-                                    <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Outstation</a>
-                                   
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="chauffeur" role="tabpanel" aria-labelledby="chauffeur-tab">
+                        <!-- Nav tabs -->
+                        <div class="card border-0 rounded-0 banner-tab-cls">
+                            <div class="nav nav-pills chauffeur-tabs justify-content-center mt-3" id="pills-tab" role="tablist">
+                                <a class="nav-link active" id="pills-contact-tab" data-bs-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Airport Transfer</a>
+                                <a class="nav-link" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Hourly Rentals</a>
+                                <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Outstation</a>
+                            </div>
+                            <div class="tab-content px-4 pb-4  pt-2 bg-white" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                    <div class="row">
+                                        <div class="col-sm-6 form-group">
+                                            <label for="city" class="small mb-0">City:</label>
+                                            <div class="input-cls-new">
+                                                <input type="text" class="form-control" placeholder="Pickup City">
+                                                <img src="images/target-icon.png" class="icon-frm-cls">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 form-group">
+                                            <label for="city" class="small mb-0">Trip Type:</label>
+                                            <div class="input-cls-new">
+                                                <select class="form-control">
+                                                    <option>Pickup from Airport</option>
+                                                    <option>Drop to Airport</option>
+                                                </select>
+                                                <img src="images/down-arrow.png" class="icon-frm-cls bg-white p-2 mr-0">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6 form-group">
+                                            <label for="start date and time" class="small mb-0">Pickup Date</label>
+                                            <div class="input-cls-new">
+                                                <input type="text" class="form-control form_datetime" placeholder="Start Date and Time">
+                                                <img src="images/calender-icon.png" class="icon-frm-cls">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 form-group">
+                                            <label for="start date and time" class="small mb-0">Pickup Time</label>
+                                            <div class="input-cls-new">
+                                                <input type="text" class="form-control form_datetime" placeholder="Start Date and Time">
+                                                <img src="images/calender-icon.png" class="icon-frm-cls">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 form-group">
+                                            <button class="btn btn-primary btn-block">Search</button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="tab-content p-4 bg-white" id="pills-tabContent">
-                                     <div class="tab-pane fade show active" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                                        <div class="row">
-                                            <div class="col-sm-6 form-group">
-                                                <label for="city" class="small mb-0">City:</label>
-                                                <div class="input-cls-new">
-                                                    <input type="text" class="form-control" placeholder="Pickup City">
-                                                    <img src="images/target-icon.png" class="icon-frm-cls">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 form-group">
-                                                <label for="city" class="small mb-0">Trip Type:</label>
-                                                <div class="input-cls-new">
-                                                    <select class="form-control">
-                                                        <option>Pickup from Airport</option>
-                                                        <option>Drop to Airport</option>
-                                                    </select>
-                                                    <img src="images/down-arrow.png" class="icon-frm-cls bg-white p-2 mr-0">
-                                                </div>
+                                <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                    <div class="row">
+                                        <div class="col-sm-6 form-group">
+                                            <label for="city" class="small mb-0">City:</label>
+                                            <div class="input-cls-new">
+                                                <input type="text" class="form-control" placeholder="Pickup City">
+                                                <img src="images/target-icon.png" class="icon-frm-cls">
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-sm-6 form-group">
-                                                <label for="start date and time" class="small mb-0">Pickup Date</label>
-                                                <div class="input-cls-new">
-                                                    <input type="text" class="form-control form_datetime" placeholder="Start Date and Time">
-                                                    <img src="images/calender-icon.png" class="icon-frm-cls">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 form-group">
-                                                <label for="start date and time" class="small mb-0">Pickup Time</label>
-                                                <div class="input-cls-new">
-                                                    <input type="text" class="form-control form_datetime" placeholder="Start Date and Time">
-                                                    <img src="images/calender-icon.png" class="icon-frm-cls">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 form-group">
-                                                <button class="btn btn-primary btn-block">Search</button>
+                                        <div class="col-sm-6 form-group">
+                                            <label for="city" class="small mb-0">Trip Type:</label>
+                                            <div class="input-cls-new">
+                                                <select class="form-control">
+                                                    <option>Pickup from Airport</option>
+                                                    <option>Drop to Airport</option>
+                                                </select>
+                                                <img src="images/down-arrow.png" class="icon-frm-cls bg-white p-2 mr-0">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                                        <div class="row">
-                                            <div class="col-sm-6 form-group">
-                                                <label for="city" class="small mb-0">City:</label>
-                                                <div class="input-cls-new">
-                                                    <input type="text" class="form-control" placeholder="Pickup City">
-                                                    <img src="images/target-icon.png" class="icon-frm-cls">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 form-group">
-                                                <label for="city" class="small mb-0">Trip Type:</label>
-                                                <div class="input-cls-new">
-                                                    <select class="form-control">
-                                                        <option>Pickup from Airport</option>
-                                                        <option>Drop to Airport</option>
-                                                    </select>
-                                                    <img src="images/down-arrow.png" class="icon-frm-cls bg-white p-2 mr-0">
-                                                </div>
+                                    <div class="row">
+                                        <div class="col-sm-6 form-group">
+                                            <label for="start date and time" class="small mb-0">Pickup Date</label>
+                                            <div class="input-cls-new">
+                                                <input type="text" class="form-control form_datetime" placeholder="Start Date and Time">
+                                                <img src="images/calender-icon.png" class="icon-frm-cls">
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-sm-6 form-group">
-                                                <label for="start date and time" class="small mb-0">Pickup Date</label>
-                                                <div class="input-cls-new">
-                                                    <input type="text" class="form-control form_datetime" placeholder="Start Date and Time">
-                                                    <img src="images/calender-icon.png" class="icon-frm-cls">
-                                                </div>
+                                        <div class="col-sm-6 form-group">
+                                            <label for="start date and time" class="small mb-0">Pickup Time</label>
+                                            <div class="input-cls-new">
+                                                <input type="text" class="form-control form_datetime" placeholder="Start Date and Time">
+                                                <img src="images/calender-icon.png" class="icon-frm-cls">
                                             </div>
-                                            <div class="col-sm-6 form-group">
-                                                <label for="start date and time" class="small mb-0">Pickup Time</label>
-                                                <div class="input-cls-new">
-                                                    <input type="text" class="form-control form_datetime" placeholder="Start Date and Time">
-                                                    <img src="images/calender-icon.png" class="icon-frm-cls">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 form-group">
-                                                <button class="btn btn-primary btn-block">Search</button>
-                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 form-group">
+                                            <button class="btn btn-primary btn-block">Search</button>
                                         </div>
                                     </div>
-                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                                        <div class="row mb-2">
-                                              <div class="col-auto">
-                                                <div class="form-check">
-                                                    <input type="radio" id="customRadioInline1" checked="checked"  name="cars" value="1" class="form-check-input">
-                                                    
-                                                     <label class="form-check-label" for="customRadioInline1">
-   One Way
-  </label>
-                                                </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                    <div class="row mb-2">
+                                        <div class="col-auto">
+                                            <div class="form-check">
+                                                <input type="radio" id="customRadioInline1" checked="checked" name="cars" value="1" class="form-check-input">
+                                                <label class="form-check-label" for="customRadioInline1">
+                                                    One Way
+                                                </label>
                                             </div>
-                                            <div class="col-auto">
-                                                <div class="form-check">
-                                                    <input type="radio" id="customRadioInline2" class="form-check-input" name="cars"  value="2">
-                                                    <label class="form-check-label" for="customRadioInline2">Round Trip</label>
-                                                </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="form-check">
+                                                <input type="radio" id="customRadioInline2" class="form-check-input" name="cars" value="2">
+                                                <label class="form-check-label" for="customRadioInline2">Round Trip</label>
                                             </div>
-                                          
-                                            <!--   <div class="custom-control custom-radio custom-control-inline">
+                                        </div>
+                                        <!--   <div class="custom-control custom-radio custom-control-inline">
                                                     <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
                                                     <label class="custom-control-label" for="customRadioInline3">Local</label>
                                                 </div>
@@ -286,9 +283,9 @@
                                                     <input type="radio" id="customRadioInline4" name="customRadioInline1" class="custom-control-input">
                                                     <label class="custom-control-label" for="customRadioInline4">Airport Transfer</label>
                                                 </div> -->
-                                        </div>
-                                        <div id="Cars1" class="desc" >
-                                            <div class="row">
+                                    </div>
+                                    <div id="Cars1" class="desc">
+                                        <div class="row">
                                             <div class="col-sm-6 form-group">
                                                 <label for="city" class="small mb-0">Source:</label>
                                                 <div class="input-cls-new">
@@ -303,7 +300,6 @@
                                                     <img src="images/target-icon.png" class="icon-frm-cls">
                                                 </div>
                                             </div>
-                                           
                                         </div>
                                         <div class="row">
                                             <div class="col-sm-6 form-group">
@@ -320,18 +316,17 @@
                                                     <img src="images/calender-icon.png" class="icon-frm-cls">
                                                 </div>
                                             </div>
-                                            
                                         </div>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <a href="car-listing.html" class="btn btn-primary">Search</a>
-                                                    <!-- <button class="btn btn-primary">Search</button> -->
-                                                    <span class="small font-italic float-end">*One Way</span>
-                                                </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <a href="car-listing.html" class="btn btn-primary">Search</a>
+                                                <!-- <button class="btn btn-primary">Search</button> -->
+                                                <span class="small font-italic float-end">*One Way</span>
                                             </div>
                                         </div>
-                                        <div id="Cars2" class="desc" style="display: none;">
-                                            <div class="row">
+                                    </div>
+                                    <div id="Cars2" class="desc" style="display: none;">
+                                        <div class="row">
                                             <div class="col-sm-6 form-group">
                                                 <label for="city" class="small mb-0">Source:</label>
                                                 <div class="input-cls-new">
@@ -346,7 +341,6 @@
                                                     <img src="images/target-icon.png" class="icon-frm-cls">
                                                 </div>
                                             </div>
-                                             
                                         </div>
                                         <div class="row">
                                             <div class="col-sm-6 form-group">
@@ -376,128 +370,264 @@
                                                     <a href="car-listing.html" class="btn btn-primary btn-block">Search</a>
                                                 </div>
                                             </div>
-                                           
                                         </div>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                   
-                                                    <!-- <button class="btn btn-primary">Search</button> -->
-                                                    <span class="small font-italic float-end">*Round Trip</span>
-                                                </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <!-- <button class="btn btn-primary">Search</button> -->
+                                                <span class="small font-italic float-end">*Round Trip</span>
                                             </div>
                                         </div>
-                                        
                                     </div>
-                                   
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="self-drive" role="tabpanel" aria-labelledby="self-drive-tab">...</div>
                     </div>
-                </div>
-                </div>
-                </div>
-                <div class="col-sm-12   col-lg-6 h-100">
-                    <div class="owl-carousel row" id="banner">
-                        <div>
-                            <img src="images/02.png" class="d-block w-100">
-                            <div class="banner-content">
-                                <h3>Banner title Goes Here</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="images/02.png" class="d-block w-100">
-                        </div>
-                    </div>
+                    <div class="tab-pane fade" id="self-drive" role="tabpanel" aria-labelledby="self-drive-tab">...</div>
                 </div>
             </div>
         </div>
+        <!-- End Booking form -->
+        <div class="owl-carousel owl-theme d-none d-block" id="banner">
+            <div>
+                <img src="images/homepage-banner.jpg" class="d-block">
+                <div class="banner-content">
+                    <h3>Banner title Goes Here</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div>
+                <img src="images/homepage-banner1.jpg" class="d-block">
+            </div>
+            <div>
+                <img src="images/homepage-banner2.jpg" class="d-block">
+                <div class="banner-content">
+                    <h3>Banner title Goes Here</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div>
+                <img src="images/homepage-banner3.jpg" class="d-block">
+                <div class="banner-content">
+                    <h3>Banner title Goes Here</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="btn btn-warning">read more</a>
+                </div>
+            </div>
+        </div>
+<!-- Small Screen Banner -->
+        <div class="owl-carousel owl-theme d-lg-none d-block" id="banner-small-screen">
+            <div>
+                <img src="images/homepage-banner-small.jpg" class="d-block">
+                <div class="banner-content">
+                    <h3>Banner title Goes Here</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div>
+                <img src="images/homepage-banner1-small.jpg" class="d-block">
+                <div class="banner-content">
+                    <h3>Banner title Goes Here</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div>
+                <img src="images/homepage-banner2-small.jpg" class="d-block">
+                <div class="banner-content">
+                    <h3>Banner title Goes Here</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            
+        </div>
+
     </div>
+    </div>
+    </div>
+    <section class="news-part news-part-footer-comp">
+        <div class="container">
+            <div id="offers" class="owl-carousel owl-theme">
+                <div class="item">
+                    <figure><img src="images/offer.jpg" class="img-fluid rounded shadow-sm" /></figure>
+                    <figcaption>
+                        <p><strong>Freeom to change</strong></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna <a href="#">read more</a></p>
+                    </figcaption>
+                </div>
+                <div class="item">
+                    <figure><img src="images/offer.jpg" class="img-fluid rounded shadow-sm" /></figure>
+                    <figcaption>
+                        <p><strong>Freeom to change</strong></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna <a href="#">read more</a></p>
+                    </figcaption>
+                </div>
+                <div class="item">
+                    <figure><img src="images/offer.jpg" class="img-fluid rounded shadow-sm" /></figure>
+                    <figcaption>
+                        <p><strong>Freeom to change</strong></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna <a href="#">read more</a></p>
+                    </figcaption>
+                </div>
+                <div class="item">
+                    <figure><img src="images/offer.jpg" class="img-fluid rounded shadow-sm" /></figure>
+                    <figcaption>
+                        <p><strong>Freeom to change</strong></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna <a href="#">read more</a></p>
+                    </figcaption>
+                </div>
+                <div class="item">
+                    <figure><img src="images/offer.jpg" class="img-fluid rounded shadow-sm" /></figure>
+                    <figcaption>
+                        <p><strong>Freeom to change</strong></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna <a href="#">read more</a></p>
+                    </figcaption>
+                </div>
+                <div class="item">
+                    <figure><img src="images/offer.jpg" class="img-fluid rounded shadow-sm" /></figure>
+                    <figcaption>
+                        <p><strong>Freeom to change</strong></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna <a href="#">read more</a></p>
+                    </figcaption>
+                </div>
+                <div class="item">
+                    <figure><img src="images/offer.jpg" class="img-fluid rounded shadow-sm" /></figure>
+                    <figcaption>
+                        <p><strong>Freeom to change</strong></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna <a href="#">read more</a></p>
+                    </figcaption>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- mentor start here -->
-    <section class="our-mentor">
-        <div class="container pt-5">
-            <div class="row row-cols-md-4 row-cols-2 g-4 justify-content-center align-items-center text-center">
+    <section class="our-mentor bg-white border-top border-bottom">
+        <div class="container py-5">
+
+            <div class="row row-cols-md-4 row-cols-1 g-4 justify-content-center align-items-center">
+                
+                 <div class="col border-right">
+                    <div class="d-flex align-items-center">
+                        <div class="flex-shrink-0">
+                             <i class="fa fa-user-circle-o fa-4x text-primary"></i>
+                        </div>
+                        <div class="flex-grow-1 small ms-3">
+                            <h6>lorem ipsum dollar sit amet</h6>
+                            This is some content from a some content from a  
+                        </div>
+                    </div>
+                </div>
+                <div class="col border-right">
+                    <div class="d-flex align-items-center">
+                        <div class="flex-shrink-0">
+                               <i class="fa fa-star fa-4x text-primary"></i>
+                        </div>
+                        <div class="flex-grow-1 ms-3 small">
+                            <h6>lorem ipsum dollar sit amet</h6>
+                            ou can replace this with any content and adjust it as needed.
+                        </div>
+                    </div>
+                </div>
+                <div class="col border-right">
+                    <div class="d-flex align-items-center">
+                        <div class="flex-shrink-0">
+                               <i class="fa fa-camera fa-4x text-primary"></i>
+                        </div>
+                        <div class="flex-grow-1 ms-3 small">
+                            <h6>lorem ipsum dollar sit amet</h6>
+                            can replace this with any content and adjust it as needed.
+                        </div>
+                    </div>
+                </div>
+                <div class="col border-right">
+                    <div class="d-flex align-items-center">
+                        <div class="flex-shrink-0">
+                               <i class="fa fa-calendar fa-4x text-primary"></i>
+                        </div>
+                        <div class="flex-grow-1 ms-3 small">
+                            <h6>lorem ipsum dollar sit amet</h6>
+                            This is some content from a media component.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- About start here -->
+    <section class="bg-white border-top border-bottom">
+        <div class="container py-5">
+            <div class="heading-cls-sty text-center">
+                <h2>  About us</h2>
+                <div class="line-heading-cls"></div>
+            </div>
+
+            <div class="row row-cols-md-2 row-cols-1 g-4 justify-content-center align-items-center">
+                
+                 <div class="col border-right">
+                      <p> Urban Drive is the newly launched B2C brand of ECOS (India) Mobility & Hospitality Pvt. Ltd. Offering Chauffeur-Driven car rental along with Self Drive car Services in over 100+ cities in India and overseas. We are also the global partner of Europcar, which is Europe’s largest and the world’s 4th largest car rental company. ECO is a leader in corporate employee transport, car rental service, and electric vehicle under ECO Electric for the last 24 years. Our vision is to provide best in class services with operational excellence by constantly investing in human capital and in house technology.</p>
+                      <p>
+
+Thanks to innovative technology built in-house for a seamless experience from car search, Booking and delivery, all become touch & Hassel free. Urban Drive offers Chauffeur Driven cars from mid to luxury segment cars ranging with brands like Tata, Volvo, Imported Mercedes and Toyota Coaches with the only company offering Chrysler Stretch Limousines.
+</p>
+                      <p>
+With a professional management and offices in Delhi, Noida, Gurgaon, Jaipur, Mumbai, Pune, Kolkata, Ahmedabad, Hyderabad, Chennai, Bangalore, Cochin, Goa, Coimbatore, Lucknow and 80 other cities in India, we are now probably India’s largest B2B/B2C passenger transportation company. </p>
+                </div>
                 <div class="col">
-                    <div class="card shadow-sm border-0 h-100">
-                        <div class="card-body">
-                    <img src="https://www.myurbandrive.com/indigo/Content/images/cs_4.png" class="d-block mx-auto" alt="mentor">
-                    <label>Driver with Masks</label>
+                    <div class="about-img w-100">
+                         <img src="images/02.jpg" class="img-fluid">         
+                              
+                                </div>
                 </div>
-            </div>
-                </div>
-               <div class="col">
-                    <div class="card shadow-sm border-0 h-100">
-                        <div class="card-body">
-                    <img src="https://www.myurbandrive.com/indigo/Content/images/cs_2.png" class="d-block mx-auto" alt="mentor">
-                    <label>Sanitized Cabs</label>
-                </div>
-            </div>
-        </div>
-             <div class="col">
-                    <div class="card shadow-sm border-0 h-100">
-                        <div class="card-body">
-                    <img src="https://www.myurbandrive.com/indigo/Content/images/cs_3.png" class="d-block mx-auto" alt="mentor">
-                    <label>Hand Sanitizers</label>
-                </div>
-            </div>
-        </div>
-            <div class="col">
-                    <div class="card shadow-sm border-0 h-100">
-                        <div class="card-body">
-                    <img src="https://www.myurbandrive.com/indigo/Content/images/cs_1.png" class="d-block mx-auto" alt="mentor">
-                    <label>Drivers with Aarogya Setu app</label>
-                </div>
-                </div>
-                </div>
+                  
             </div>
         </div>
     </section>
     <!-- Step start here -->
     <section class="simple-step pdtb-50">
         <div class="container">
-            <div class="heading-cls-sty text-center">
-                <h2>3 Simple Steps</h2>
+             <div class="heading-cls-sty text-center">
+                <h2>  our Locations</h2>
                 <div class="line-heading-cls"></div>
             </div>
-            <div class="row">
-                <div class="col-sm-6 col-md-4 form-group">
-                    <div class="simple-step-cls point-1">
-                        <div class="content-simple">
-                            <div class="point-cls-sty">01</div>
-                            <figure> <img src="images/car-icon.png" /> </figure>
-                            <h3>BOOK</h3>
-                            <p>Pick your favourite car,
-                                <br /> time and place</p>
-                        </div>
+           
+              <div class="row row-cols-md-2 row-cols-1 g-4">
+                
+                 <div class="col">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d56026.08902200702!2d77.18513657016652!3d28.640832477963155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!3m2!1d28.6139391!2d77.2090212!4m5!1s0x390cfd1a88dcc559%3A0x24fa43c081dbe51!2sChandni%20Chowk%2C%20New%20Delhi%2C%20Delhi!3m2!1d28.650533099999997!2d77.23033699999999!5e0!3m2!1sen!2sin!4v1623587423778!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+           
+       </div>
+          <div class="col">
+            <div class="card h-100 border-0">
+                <div class="card-body">
+                    <div class="mb-3"><input placeholder="Search here" type="text" class="form-control" name="">
                     </div>
+<ul class="list-unstyled">
+  <li class="mb-3 border-bottom  pb-2"><strong  class="d-block">Mumbai</strong>New  Delhi, India, 110001</li>
+  <li class="mb-3 border-bottom  pb-2"><strong  class="d-block">Delhi</strong>New  Delhi, India, 110001</li>
+  <li class="mb-3 border-bottom  pb-2"><strong  class="d-block">New  Delhi</strong>Lotus Temple Rd, Bahapur, Shambhu Dayal Bagh, Kalkaji, New Delhi, Delhi 110019</li>
+   
+  
+    
+</ul>
+
                 </div>
-                <div class="col-sm-6 col-md-4 form-group">
-                    <div class="simple-step-cls point-2">
-                        <div class="content-simple">
-                            <div class="point-cls-sty">02</div>
-                            <figure> <img src="images/home-icon.png" /> </figure>
-                            <h3>AT YOUR DOORSTEP</h3>
-                            <p>Upload your driver's license, pay the small security deposit</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 form-group">
-                    <div class="simple-step-cls point-3">
-                        <div class="content-simple">
-                            <div class="point-cls-sty">03</div>
-                            <figure> <img src="images/cab-icon.png" /> </figure>
-                            <h3>ENJOY DRIVE</h3>
-                            <p>Fill the checklist on the our app or by calling us. Enjoy your self drive</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        </div>            
+       </div>
         </div>
     </section>
     <!-- Attribuate start here -->
-    <section class="six-att-cls pdtb-50">
+    <section class="six-att-cls d-none pdtb-50">
         <div class="container">
             <div class="heading-cls-sty text-center">
                 <h2> Six Attributes of URBAN Drive</h2>
@@ -544,7 +674,7 @@
         </div>
     </section>
     <!-- testimonial start here -->
-    <section class="client-test pdtb-50">
+    <section class="client-test pdtb-50 bg-light">
         <div class="container">
             <div class="heading-cls-sty text-center">
                 <h2> Tourist Reviews</h2>
@@ -553,7 +683,7 @@
             </div>
             <div class="test-panel-cls">
                 <!-- Updated By Subodh -->
-                <div id="reviews" class="owl-carousel">
+                <div id="reviews" class="owl-carousel owl-theme">
                     <!-- Indicators -->
                     <div class="col-md-12">
                         <figure class="figure-width"><img src="images/karan.jpg"></figure>
@@ -583,15 +713,20 @@
         </div>
         <div class="bg-test-cls bg-test-cls-top"></div>
     </section>
-    <section class="popular-tour pdtb-50">
-        <div class="container">
+    <section class="popular-tour pdtb-50" style="background:#dcdce6;">
+        <div class="container-fluid">
             <div class="heading-cls-sty text-center">
-                <h2> Places to Visit </h2>
+                <h2>Recent Reviews</h2>
                 <div class="line-heading-cls"></div>
             </div>
-            <div id="tour">
-                <div class="customNavigation"> <a class="btn prev"><i class="fa fa-angle-left"></i></a> <a class="btn next"><i class="fa fa-angle-right"></i></a> </div>
-                <div id="owl-demo" class="owl-carousel">
+            <!-- Placeholder for reviws -->
+            <img src="images/reviews.jpg" class="d-block w-100">
+
+            <!-- End Placeholder -->
+
+            <div id="tour"  class="d-none">
+                <!--   <div class="customNavigation"> <a class="btn prev"><i class="fa fa-angle-left"></i></a> <a class="btn next"><i class="fa fa-angle-right"></i></a> </div> -->
+                <div id="owl-demo" class="owl-carousel owl-theme">
                     <div class="item">
                         <div class="tour-pt-cls">
                             <figure><img src="https://www.tourmyindia.com/states/uttarakhand/images/naini-lake-nainital1.jpg"></figure>
@@ -692,56 +827,68 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class="foot-mob-sec tb-space">
-            <div class="container">
-                <div class="row">
-                    <!-- FAMILY IMAGE(YOU CAN USE ANY PNG IMAGE) -->
-                    <div class="col-md-6 col-sm-12 col-xs-12 family"> <img src="images/mobile.png" alt=""> </div>
-                    <!-- REQUEST A QUOTE -->
-                    <div class="col-md-6 col-sm-12 col-xs-12">
-                        <!-- THANK YOU MESSAGE -->
-                        <div class="foot-mob-app">
-                            <h2>Have you tried our mobile app?</h2>
-                            <p>World's leading tour and travels Booking website,Over 30,000 packages worldwide. Book travel packages and enjoy your holidays with distinctive experience</p>
-                            <ul>
-                                <li><i>1</i> Select Vehicle</li>
-                                <li><i>2</i> Navigate to Drive</li>
-                                <li><i>3</i> Make Payment</li>
-                                <li><i>4</i> Enjoy Drive</li>
-                                <li><i>4</i> Enjoy Drive</li>
-                            </ul>
-                            <p class="get-sms"><b>Get SMS with link to download Our App</b></p>
-                            <!-- Updated by Subodh -->
-                           <div class="input-group mb-3 input-group-lg">
-  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-  <span class="input-group-text" id="basic-addon2">Send</span>
+
+     <!-- Our partners start here -->
+    <section class="six-att-cls pdtb-50">
+        <div class="container">
+            <div class="heading-cls-sty text-center">
+                <h2> Our Partners</h2>
+                <div class="line-heading-cls"></div>
+            </div>
+             <div id="partners" class="owl-carousel owl-theme">
+                <div class="item">
+                    <figure><img src="images/offer.jpg" class="img-fluid rounded shadow-sm" /></figure>
+                     
+                </div><div class="item">
+                    <figure><img src="images/offer.jpg" class="img-fluid rounded shadow-sm" /></figure>
+                     
+                </div><div class="item">
+                    <figure><img src="images/offer.jpg" class="img-fluid rounded shadow-sm" /></figure>
+                     
+                </div><div class="item">
+                    <figure><img src="images/offer.jpg" class="img-fluid rounded shadow-sm" /></figure>
+                     
+                </div><div class="item">
+                    <figure><img src="images/offer.jpg" class="img-fluid rounded shadow-sm" /></figure>
+                     
+                </div><div class="item">
+                    <figure><img src="images/offer.jpg" class="img-fluid rounded shadow-sm" /></figure>
+                     
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscribe-area pb-50 pt-70">
+<div class="container">
+    <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="subscribe-text mb-15">
+                            <span>JOIN OUR NEWSLETTER</span>
+                            <h2>subscribe newsletter</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="subscribe-wrapper subscribe2-wrapper mb-15">
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input placeholder="enter your email address" type="email">
+                                    <button>subscribe <i class="fa fa-long-arrow-right"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 </div>
-                            <br>
-                            <div class="text-md-left text-center pl-md-2">
-                                <div class="app-store row">
-                                    <a href="#" class="col"><img src="images/android.png" alt="" class="img-fluid"> </a>
-                                    <a href="#" class="col"><img src="images/apple.png" class="img-fluid" alt=""> </a>
-                                </div>
-                            </div>
-                            <!-- End Updated by Subodh -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Left and right controls
-<a class="carousel-control-prev" href="#news-part" data-slide="prev">
-<span class="carousel-control-prev-icon"></span>
-</a>
-<a class="carousel-control-next" href="#news-part" data-slide="next">
-<span class="carousel-control-next-icon carousel-control-next-two"></span>
-</a> -->
+</section>
+ 
+ 
     </div>
     <section class="news-part news-part-footer-comp">
         <div class="container">
-            <div id="clients" class="owl-carousel">
+            <div id="clients" class="owl-carousel owl-theme">
                 <div class="col-md-12">
                     <img src="images/client-logo1.png" class="img-fluid" />
                 </div>
@@ -1000,171 +1147,13 @@
     </section>
     </main>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- javascript -->
     <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
-    <script src="js/owl.carousel.js"></script>
     <script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
-    <script>
-    $(document).ready(function() {
-        var owl = $('#owl-demo');
-        owl.owlCarousel({
-            loop: true,
-            margin: 10,
-            responsiveClass: true,
-            responsive: {
-                0: {
-                    items: 1,
-                    nav: true
-                },
-                600: {
-                    items: 2,
-                    nav: true
-                },
-                1000: {
-                    items: 4,
-                    nav: true,
-                    loop: true
-                }
-            }
-
-        })
-
-    });
-    </script>
-    <script>
-    $(document).ready(function() {
-        var owl = $("#clients");
-        owl.owlCarousel({
-            loop: true,
-
-            responsiveClass: true,
-            responsive: {
-                0: {
-                    items: 1,
-                    nav: false
-                },
-                600: {
-                    items: 4,
-                    nav: false
-                },
-                1000: {
-                    items: 5,
-                    nav: true,
-                    loop: false
-                }
-            }
-        });
-    });
-    </script>
-    <script>
-    $(document).ready(function() {
-        $('#banner').owlCarousel({
-            loop: true,
-            dots: true,
-            nav: false,
-            autoplay: false,
-            smartSpeed: 1000,
-            autoplayTimeout: 1500,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 1
-                },
-                1000: {
-                    items: 1
-                }
-            }
-        });
-    });
-    </script>
-    <script>
-    $(document).ready(function() {
-        var owl = $("#reviews");
-        owl.owlCarousel({
-            loop: true,
-            nav: false,
-            items: 1,
-            margin: 10,
-            responsiveClass: false,
-            pagination:true
-
-        });
-
-    });
-    </script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-        $("#btn-mob-menu").click(function() {
-            $(".small-screen-menu").toggleClass("show");
-            $(this).toggleClass("nav-xs-menu");
-            $("body").toggleClass("overflow-none");
-        });
-        $('.mn-section-bd').click(function() {
-            if ($('.small-screen-menu').hasClass('show')) {
-                $('.small-screen-menu').removeClass('show');
-            }
-            if ($('#btn-mob-menu').hasClass('nav-xs-menu')) {
-                $('#btn-mob-menu').removeClass('nav-xs-menu');
-            }
-            if ($('body').hasClass('overflow-none')) {
-                $('body').removeClass('overflow-none');
-            } else {
-
-            }
-        });
-    });
-    </script>
-    <script type="text/javascript">
-    $('.form_datetime').datetimepicker({
-       // format: 'yyyy-mm-dd -:- hh:ii (IST)',
-        //language:  'fr',
-         format: 'yyyy-mm-dd -:- hh:ii (IST)',
-        weekStart: 1,
-        todayBtn: 1,
-        autoclose: 1,
-        todayHighlight: 0,
-        startView: 2,
-        forceParse: 0,
-        showMeridian: 1
-    });
-    </script>
-    <!-- <script type="text/javascript">
-    $('#myCarousel').carousel({
-  interval: 4000,
-  loop:true
-});
-
-$('.carousel .item').each(function(){
-  var next = $(this).next();
-  if (!next.length) {
-    next = $(this).siblings(':first');
-  }
-  next.children(':first-child').clone().appendTo($(this));
-
-  if (next.next().length>0) {
- 
-      next.next().children(':first-child').clone().appendTo($(this)).addClass('rightest');
-      
-  }
-  else {
-      $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-     
-  }
-});
-</script> -->
-    <script type="text/javascript">
-    $(document).ready(function() {
-        $("input[name$='cars']").click(function() {
-            var test = $(this).val();
-
-            $("div.desc").hide();
-            $("#Cars" + test).show();
-        });
-    });
-    </script>
+    <script type="text/javascript" src="js/custom.js"></script>
 </body>
 
 </html>

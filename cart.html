@@ -1,461 +1,255 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Cart </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main-stylesheet.css">
+    <!--  <link rel="stylesheet" href="css/main-stylesheet.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <style> .fa.fa-rupee{font-size: 14px; margin-right: 3px;}</style>
-    
-  </head>
-  <body>
+  
+</head>
+
+<body>
     <header>
-      <nav class="navbar navigation-cls-sty navbar-expand-md navbar-light bg-light fixed-top navbar-fixed-top full-screen-menu">
-        <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
-        <button class="navbar-toggler" type="button" id="btn-mob-menu">
-        <span class="navbar-toggler-icon"></span>
-        <span id="show-cancel"><img src="images/cancel-menu.svg" style="width: 20px;"></span>
-        </button>
-        <div class="cart-small-show">
-          <ul class="navbar-nav full-screen-menu">
-            <li class="nav-item btn-log-cls signup-btn cart-icon-right">
-              <a class="nav-link" data-toggle="modal" data-target="#myModal" href="login.html" style="background: #fa4a0c00;"><i class="fa fa-shopping-cart"></i>&nbsp; Cart</a>
-            </li>
-          </ul>
-        </div>
-        
-        <div class="collapse navbar-collapse small-navbar-collapse">
-          <ul class="navbar-nav full-screen-menu">
-            <li class="nav-item">
-              <a class="nav-link" href="our-partners.html">Our Partners </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about-us.html">About us <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Policy.html">Policy</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="faq.html">FAQ</a>
-            </li>
-            
-            <li class="nav-item btn-log-cls signup-btn">
-              <a class="nav-link"  data-toggle="modal" data-target="#myModal" href="login.html">Login/signup</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <nav class="navbar navigation-cls-sty  small-screen-menu">
-        
-        
-        <div  id="mob-navigation">
-          <ul class="navbar-nav small-screen-menu">
-            <li class="nav-item btn-log-cls signup-btn">
-              <a class="nav-link"  data-toggle="modal" data-target="#myModal" href="login.html">Login/signup</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about-us.html">About us <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Policy.html">Policy</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link bottom-small" href="faq.html">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link bottom-small" href="#">Monthly booking</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link bottom-small" href="#">Ladakh</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link bottom-small" href="#">Contact us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link bottom-small" href="#">Terms & Conditions</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link bottom-small" href="#">Contact us</a>
-            </li>
-            <br>
-            <ul class="inline-icon">
-              <li class="nav-item"><a class="nav-link bottom-small" href="#"><img src="images/facebook.svg"></a></li>
-              <li class="nav-item"><a class="nav-link bottom-small" href="#"><img src="images/twitter.svg"></a></li>
-              <li class="nav-item"><a class="nav-link bottom-small" href="#"><img src="images/instagram.png" style="width: 32px; height: 31px;"></a></li>
-            </ul>
-            <br><br><br>
-          </ul>
-          
-        </div>
-      </nav>
+        <nav class="navbar navigation-cls-sty navbar-expand-md navbar-light bg-light shadow-sm  full-screen-menu">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="images/logo_1.png"></a>
+                <div class="cart-small-show d-none">
+                    <ul class="navbar-nav full-screen-menu">
+                        <li class="nav-item btn-log-cls signup-btn cart-icon-right">
+                            <a class="nav-link" data-bs-toggle="modal" data-target="#myModal" href="login.html" style="background: #fa4a0c00;"><i class="fa fa-shopping-cart"></i>&nbsp; Cart</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);" onclick="homeLogoClick()">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="our-partners.html">Our Partners </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="our-partners.html">Promotions </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="our-partners.html">Holidays </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="our-partners.html">Hotels </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="offers.html">Our Offers </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle-o"></i> username </a>
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">My Profile</a>
+                                <a class="dropdown-item" href="#">Bookings</a>
+                                <a class="dropdown-item" href="#">Logout</a>
+                                <a class="dropdown-item" href="#">UD Money (Coming Soon)</a>
+                            </div>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link btn btn-primary text-white py-1 mt-1" data-bs-toggle="modal" data-bs-target="#myModal" href="javascript:void(0)" data-backdrop="static" data-keyboard="false">Login/ Sign up</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-    
+    <!-- top filter div -->
+    <div class="card opacity-card bg-light d-none border-0 shadow" id="filter">
+        <div class="card-body pb-1 pt-3">
+            <div class="row row-cols-md-5 justify-content-center">
+                <div class="col-lg-auto col-6 frm-banner-col3">
+                    <div class="form-group">
+                        <!-- <label for="usr">City:</label> -->
+                        <div class="input-cls-new">
+                            <input type="text" class="form-control" placeholder="Select your City">
+                            <img src="images/target-icon.png" class="icon-frm-cls">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-auto col-6 frm-banner-col3">
+                    <div class="form-group">
+                        <!-- <label for="usr">City:</label> -->
+                        <div class="input-cls-new">
+                            <input type="text" class="form-control" placeholder="Select your City">
+                            <img src="images/target-icon.png" class="icon-frm-cls">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-auto col-6 frm-banner-col3">
+                    <div class="form-group">
+                        <!-- <label for="usr">Start Date and Time:</label> -->
+                        <div class="input-cls-new">
+                            <input type="text" class="form-control" placeholder="Select your City">
+                            <img src="images/calender-icon.png" class="icon-frm-cls">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-auto col-6 frm-banner-col3">
+                    <div class="form-group">
+                        <!-- <label for="usr">End Date and Time:</label> -->
+                        <div class="input-cls-new"> <input type="text" class="form-control" placeholder="Select your City">
+                            <img src="images/calender-icon.png" class="icon-frm-cls">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-auto col-6">
+                    <div class="d-grid"><button class="btn btn-block btn-primary button-martop-m">Search</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Top Filter DIV -->
     <main class="mn-section-bd">
-      <div class="container-fluid">
-        <!-- Trigger the modal with a button -->
-        <!--  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Large Modal</button> -->
-        <!-- Modal -->
-        <div class="modal fade login-pop-cls" id="myModal" role="dialog" style="padding-right: 0px;">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content modal-contentss">
-              <div class="modal-header modal-headerss">
-                <button type="button" class="close close-btn" data-dismiss="modal">&times;</button>
-              </div>
-              <div class="modal-body">
-                <!-- <button type="button" class="close close-btn" data-dismiss="modal">&times;</button> -->
-                <div class="row rowss">
-                  
-                  <div class="col-sm-12 pull-right">
-                    <ul class="nav nav-pills nav-pills-modal">
-                      <li class="active"><a data-toggle="pill" href="#home" class="active">Sign In </a></li>
-                      <li class=""><a data-toggle="pill" href="#menu1">Sign Up </a></li>
-                    </ul>
-                    <div class="tab-content">
-                      <div id="home" class="tab-pane fade in active">
-                        <form class="form-horizontal" action="/action_page.php">
-                          <div class="form-group form-group-modal" style="margin-top: 50px !important;">
-                            <label class="control-label col-sm-2" for="envelope"><img src="images/login-email.svg" alt="img-log"></label>
-                            <div class="col-sm-10">
-                              <input type="text" class="form-control" id="pwd" placeholder="Email Or Mobile No.">
-                            </div>
-                          </div>
-                          <div class="form-group form-group-modal">
-                            <label class="control-label col-sm-2" for="lock"><img src="images/login-locked.svg" alt="img-log"></i></label>
-                            <div class="col-sm-10">
-                              <input type="text" class="form-control" id="text" placeholder="Password">
-                            </div>
-                          </div>
-                          <div class="checkbox form-group-modal" style="margin-top: 13px !important;">
-                            <label class="left"><input type="checkbox"> Remember Me</label>
-                          </div>
-                          <div class="form-group form-group-modal">
-                            <div class="col-sm-10">
-                              <button type="submit" class="btn btn-default">Login &nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
-                            </div>
-                          </div>
-                          <div class="userauthTabs__orDivider"> <span class="ng-binding">or</span> </div>
-                          <div class="btn-social-log">
-                            <a href="javascript:void(0)" class="btn_login-cls goo-plus-cls" onclick="LoginWithGooglePlus()"><i class="fa fa-linkedin-square" aria-hidden="true"></i>  Login with LinkedIn</a>
-                            <a href="javascript:void(0)" class="btn_login-cls facebook-cls" onclick="LoginWithFacebook()"><i class="fa fa-facebook-square" aria-hidden="true"></i>  Login with Facebook</a>
-                          </div>
-                        </form>
-                      </div>
-                      <div id="menu1" class="tab-pane fade">
-                        <form class="form-horizontal" action="/action_page.php">
-                          <div class="form-group form-group-modal" style="margin-top: 50px !important;">
-                            <label class="control-label col-sm-2" for="user"><img src="images/login-user.svg" alt="img-log"></label>
-                            <div class="col-sm-10">
-                              <input type="text" class="form-control" id="text" placeholder="Name">
-                            </div>
-                          </div>
-                          <div class="form-group form-group-modal">
-                            <label class="control-label col-sm-2" for="envelope"><img src="images/login-email.svg" alt="img-log"></label>
-                            <div class="col-sm-10">
-                              <input type="text" class="form-control" id="pwd" placeholder="Email">
-                            </div>
-                          </div>
-                          <div class="form-group form-group-modal">
-                            <label class="control-label col-sm-2" for="phone"><img src="images/login-phone.svg" alt="img-log"></label>
-                            <div class="col-sm-10">
-                              <input type="text" class="form-control" id="text" placeholder="Mobile No.">
-                            </div>
-                          </div>
-                          <div class="form-group form-group-modal">
-                            <label class="control-label col-sm-2" for="lock"><img src="images/login-locked.svg" alt="img-log"></label>
-                            <div class="col-sm-10">
-                              <input type="text" class="form-control" id="text" placeholder="Password">
-                            </div>
-                          </div>
-                          <div class="checkbox form-group-modal" style="margin-top: 13px !important;">
-                            <label class="left"><input type="checkbox" checked> I agree to the <a href="disclaimer-privacy-ploicy.html" style="text-decoration:underline">Terms & Conditions</a></label>
-                          </div>
-                          <div class="form-group form-group-modal">
-                            <div class="col-sm-10">
-                              <button type="submit" class="btn btn-default">Register &nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
-                            </div>
-                          </div>
-                          <div class="userauthTabs__orDivider"> <span class="ng-binding">or</span> </div>
-                          <div class="btn-social-log">
-                            <a href="javascript:void(0)" class="btn_login-cls goo-plus-cls" onclick="LoginWithGooglePlus()"><i class="fa fa-linkedin-square" aria-hidden="true"></i> Sign up with LinkedIn</a>
-                            <a href="javascript:void(0)" class="btn_login-cls facebook-cls" onclick="LoginWithFacebook()"><i class="fa fa-facebook-square" aria-hidden="true"></i> Sign up with Facebook</a>
-                          </div>
-                          
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div> -->
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!--     <div class="banner-cls-sty9 career-page-banner banner-cls-sty7" style=" background-size: cover;">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="breadcrumb-content bread-smal text-center mar-25">
-                <h2>Cart</h2>
-                <ul>
-                  <li>
-                    <a href="#">home</a>
-                  </li>
-                  <li>Cart</li>
-                </ul>
-              </div>
-              
-            </div>
-            
-          </div>
-        </div>
-      </div> -->
-      
-      <div class="container-fluid">
-        <!-- Trigger the modal with a button -->
-        <!--  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Large Modal</button> -->
-        <!-- Modal -->
-        <div class="modal fade" id="myModal" role="dialog" style="padding-right: 0px;">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content modal-contentss">
-              <div class="modal-header modal-headerss">
-                <button type="button" class="close close-btn" data-dismiss="modal">&times;</button>
-              </div>
-              <div class="modal-body">
-                <!-- <button type="button" class="close close-btn" data-dismiss="modal">&times;</button> -->
-                <div class="row rowss">
-                  <div class="col-sm-6 nopadding logRegLeftImg"></div>
-                  <div class="col-sm-6 pull-right">
-                    <ul class="nav nav-pills nav-pills-modal">
-                      <li class="active"><a data-toggle="pill" href="#home" class="active">Sign In </a></li>
-                      <li class=""><a data-toggle="pill" href="#menu1">Sign Up </a></li>
-                    </ul>
-                    <div class="tab-content">
-                      <div id="home" class="tab-pane fade in active">
-                        <form class="form-horizontal" action="/action_page.php">
-                          <div class="form-group form-group-modal">
-                            <label class="control-label col-sm-2" for="envelope"><img src="images/login-email.svg" alt="img-log"></label>
-                            <div class="col-sm-10">
-                              <input type="text" class="form-control" id="pwd" placeholder="Email Or Mobile No.">
-                            </div>
-                          </div>
-                          <div class="form-group form-group-modal">
-                            <label class="control-label col-sm-2" for="lock"><img src="images/login-locked.svg" alt="img-log"></i></label>
-                            <div class="col-sm-10">
-                              <input type="text" class="form-control" id="text" placeholder="Password">
-                            </div>
-                          </div>
-                          <div class="checkbox form-group-modal" style="margin-top: 13px !important;">
-                            <label class="left"><input type="checkbox"> Remember Me</label>
-                          </div>
-                          <div class="form-group form-group-modal">
-                            <div class="col-sm-10">
-                              <button type="submit" class="btn btn-default">Login &nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                      <div id="menu1" class="tab-pane fade">
-                        <form class="form-horizontal" action="/action_page.php">
-                          <div class="form-group form-group-modal">
-                            <label class="control-label col-sm-2" for="user"><img src="images/login-user.svg" alt="img-log"></label>
-                            <div class="col-sm-10">
-                              <input type="text" class="form-control" id="text" placeholder="Name">
-                            </div>
-                          </div>
-                          <div class="form-group form-group-modal">
-                            <label class="control-label col-sm-2" for="envelope"><img src="images/login-email.svg" alt="img-log"></label>
-                            <div class="col-sm-10">
-                              <input type="text" class="form-control" id="pwd" placeholder="Email">
-                            </div>
-                          </div>
-                          <div class="form-group form-group-modal">
-                            <label class="control-label col-sm-2" for="phone"><img src="images/login-phone.svg" alt="img-log"></label>
-                            <div class="col-sm-10">
-                              <input type="text" class="form-control" id="text" placeholder="Mobile No.">
-                            </div>
-                          </div>
-                          <div class="form-group form-group-modal">
-                            <label class="control-label col-sm-2" for="lock"><img src="images/login-locked.svg" alt="img-log"></label>
-                            <div class="col-sm-10">
-                              <input type="text" class="form-control" id="text" placeholder="Password">
-                            </div>
-                          </div>
-                          <div class="checkbox form-group-modal" style="margin-top: 13px !important;">
-                            <label class="left"><input type="checkbox"> I agree to the Terms & Conditions</label>
-                          </div>
-                          <div class="form-group form-group-modal">
-                            <div class="col-sm-10">
-                              <button type="submit" class="btn btn-default">Register &nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div> -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Modal cart Start-->
-      <div class="container">
+        <!-- Modal cart Start-->
         <div class="modal fade" id="myModalcart" role="dialog">
-          <div class="modal-dialog modalbox__block">
-            
-            <!-- Modal content-->
-            <div class="modal-content">
-              <div class="modal-header couponModal__head">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">APPLY COUPON</h4>
-              </div>
-              <div class="modal-body modal-body-cart">
-                <form action="/action_page.php">
-                  <div class="form-group">
-                    <label for="pwd">Enter a coupon</label>
-                    <input type="text" class="form-control input-type" id="email" placeholder="Type coupon code here">
-                  </div>
-                </form>
-                <div class="text-center span"><span>OR</span></div>
-                <div>
-                  <h4 class="Choose-a-coupon">Choose a coupon</h4>
-                </div>
-                <div class="couponModalcart__listItem">
-                  <label class="radio-inline cart-level-redi"><input type="radio" name="optradio" checked>.</label>
-                  <div class="couponModal__listName"> <span class="couponModal__cpnName ng-binding">DELHI15</span> <span class="couponModal__cpnSaving">Max discount <span class="ng-binding"><i class="fa fa-rupee"></i>500</span></span> </div>
-                  <div class="couponModal__listTerms-ul">
-                    <div class="couponModal__listTerms ng-binding ng-scope" ng-repeat="term in couponDetail.terms"> Flat 15% off up to Rs. 500/- </div>
-                    <div class="couponModal__listTerms ng-binding ng-scope" ng-repeat="term in couponDetail.terms"> Coupon applicable for Delhi </div>
-                    <div class="couponModal__listTerms ng-binding ng-scope" ng-repeat="term in couponDetail.terms"> No minimum booking amount </div>
-                  </div>
-                </div>
-                <hr>
-                <div>
-                  <button type="button" class="btn btn-default apply-sty" data-dismiss="modal">Apply</button>
-                  <button type="button" class="btn btn-default cancel-sty" data-dismiss="modal">Cancel</button>
-                </div>
-              </div>
-              <!-- <div class="modal-footer">
+            <div class="modal-dialog modalbox__block">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header couponModal__head">
+                        <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">APPLY COUPON</h4>
+                    </div>
+                    <div class="modal-body modal-body-cart">
+                        <form action="/action_page.php">
+                            <div class="form-group">
+                                <label for="pwd">Enter a coupon</label>
+                                <input type="text" class="form-control input-type" id="email" placeholder="Type coupon code here">
+                            </div>
+                        </form>
+                        <div class="text-center span"><span>OR</span></div>
+                        <div>
+                            <h4 class="Choose-a-coupon">Choose a coupon</h4>
+                        </div>
+                        <div class="couponModalcart__listItem">
+                            <label class="radio-inline cart-level-redi"><input type="radio" name="optradio" checked>.</label>
+                            <div class="couponModal__listName"> <span class="couponModal__cpnName ng-binding">DELHI15</span> <span class="couponModal__cpnSaving">Max discount <span><i class="fa fa-rupee"></i>500</span></span> </div>
+                            <div class="couponModal__listTerms-ul">
+                                <div class="couponModal__listTerms ng-binding ng-scope" ng-repeat="term in couponDetail.terms"> Flat 15% off up to Rs. 500/- </div>
+                                <div class="couponModal__listTerms ng-binding ng-scope" ng-repeat="term in couponDetail.terms"> Coupon applicable for Delhi </div>
+                                <div class="couponModal__listTerms ng-binding ng-scope" ng-repeat="term in couponDetail.terms"> No minimum booking amount </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div>
+                            <button type="button" class="btn btn-default apply-sty" data-dismiss="modal">Apply</button>
+                            <button type="button" class="btn btn-default cancel-sty" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                    <!-- <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Apply</button>
               </div> -->
-            </div>
-            
-          </div>
-        </div>
-      </div>
-      <!-- Modal cart End -->
-      <section class="ptb-95"><!-- ptb-130 news-part-->
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 tab-8 rows">
-            <div class="alert alert-success alert-dismissible cart__guestLoginInner ng-binding">
-              <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-              <a href="" class="login">Login</a></span> to get exciting offers
-            </div>
-            <div class="cart__sctnLeftHeaderTitle">
-              <h4 class="cart__sctnLeftTitle ng-binding">My Cart (1)</h4>
-              <div class="clearfix cart__sctnLeftSubTitle"> <span class="cart__sctnLeftduration ng-binding"><span class="ng-binding">Booking Time:&nbsp;</span>22 Nov 18, 09 PM &nbsp;to&nbsp; 23 Nov 18, 02 AM</span> </div> </div>
-              <br>
-              <div class="col-sm-12 rows cart__sctnLeftCartBike cartmn-cls rounded">
-                <div class="row">
-                  <div class="col-md-3 col-4">
-                    
-                    <img src="images/mercedese.jpg" class="img-fluid">
-                    
-                    
-                  </div>
-                   <div class="col-md-6 col-8">
-                        <h4 class="media-heading cart__sctnLeftCartBikeName"><b>Activa</b></h4>
-                        <p class="cart__sctnLeftCartBikeLctn mx-2"><span>From:</span>INA Metro Station</p>
-                        <p class="cart__sctnLeftCartBikeRmv mx-2"><span>To:</span>Rs.3/Km</p>
-                        <p class="cart__sctnLeftCartBikeRmv mx-2"><span>Trip Type:</span>1200</p>
-                        <p class="cart__sctnLeftCartBikeRmv mx-2"><span>Pickup Date:</span>Not Included</p>
-                        <p class="cart__sctnLeftCartBikeRmv mx-2"><span>Pickup Time:
-</span>1</p>
-                      </div>
-               
-                     
-                      <div class="col-md-3 col-12 text-center">
-                        <div class="row justify-content-center align-items-center">
-                          <div class="col-sm-12 col-6">
-                        <div class="cart__sctnLeftCartBikeAmt h2"><i class="fa fa-rupee"></i><b class="cart__sctnLeftCartBikeNamess">350.00</b></div>
-                        <!-- <div class="cart__sctnLeftCartBikeDeposit"><span class="ng-binding">Deposit: </span><i class="fa fa-rupee"></i><b class="suney">0</b>
-                      </div> -->
-                    </div>
-                     <div class="col-sm-12 col-6">
-                      <div class="cart__sctnLeftCartBikeQtyChngMain mb-0">
-                        <div class="btn-value-details">
-                          <div class="value-button  cart-mainas-bg" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
-                          <input type="text" class="cart-number-border" id="number" value="0">
-                          <div class="value-button cart-pluss-bg" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
-                        </div>
-                        <!-- <button class="button view-button remove-cart">Remove</button> -->
-                      </div>
-                   </div>
-                   </div>
                 </div>
-                <div class="col-sm-12 mt-2">
-                  <label class="cart__sctnLeftCart-checkbox"><input type="checkbox"> I have read the Terms and Conditions</label>
-                    <nav>
-                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                                    <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Inclusions</a>
-                                                    <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Exclusions</a>
-                                                    <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Terms & Conditions</a>
-                                                </div>
-                                            </nav>
-                                            <div class="tab-content" id="nav-tabContent">
-                                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                                                    <div class="row align-items-center font-weight-bold">
-                                                        <div class="col-auto py-2">
-                                                            <img src="images/gas-station.svg" width="20"> Base Fare at <i class="fa fa-rupee"></i>9.15/km
-                                                        </div>
-                                                        <div class="col-auto py-2">
-                                                            <img src="images/taxi-driver.svg" width="20"> Driver Allowance
-                                                        </div>
-                                                        <div class="col-auto py-2">
-                                                            <img src="images/document.svg" width="20"> GST (5%)
-                                                        </div>
+            </div>
+        </div>
+        <!-- Modal cart End -->
+        <section class="py-5">
+            <!-- ptb-130 news-part-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="">
+                            <h4 class="sub-head h5">Your Booking</h4>
+                            <!--  <div>
+                                    <span>Booking Time:&nbsp;</span>22 Nov 18, 09 PM &nbsp;to&nbsp; 23 Nov 18, 02 AM 
+                                </div> -->
+                            <hr>
+                            <div class="col-sm-12">
+                                <div class="row justify-content-center align-items-center">
+                                    <div class="col-md-3 col-sm-4 col-12">
+                                        <img src="images/mercedese.jpg" class="d-block rounded mx-auto img-fluid">
+                                    </div>
+                                    <div class="col-md-6 col-sm-8 py-2 col-12">
+                                        <h4 class="h5 mb-1 px-2">Activa</h4>
+                                        <div class="mb-1 bg-light rounded px-2"><span><span class="text-primary me-2 font-weight-bold">Source:</span>INA Metro Station</span>
+                                            <span class="ms-4"><span class="text-primary me-2 font-weight-bold">Destination:</span>Airport</span></div>
+                                        <div class="mb-1 bg-light rounded px-2"><span><span class="text-primary me-2 font-weight-bold">Trip Type:</span>Oneway</span>
+                                        </div>
+                                        <div class="mb-1 bg-light rounded px-2"><span><span class="text-primary me-2 font-weight-bold">Pickup Date & Time:</span> <i class="fa fa-calendar"></i>  12 Jun2 2021  <i class="fa fa-clock-o ms-2 me-1"></i>10:10:20</span>
+                                        </div>
+                                        <div class="mb-1 bg-light rounded px-2">
+                                         <span class="d-block"><span class="text-primary me-2 me-2 font-weight-bold">Drop Date & Time:</span> <i class="fa fa-calendar"></i> 12 Jun2 2021 <i class="fa fa-clock-o ms-2 me-1"></i>10:10:20</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 py-2 bg-light col-12 pt-3 text-center">
+                                        <div class="row justify-content-center align-items-center">
+                                            <div class="col-md-12 col-6">
+                                                <div class="h2"><i class="fa fa-rupee"></i>800</div>
+                                            </div>
+                                            <div class="col-md-12 mx-auto col-6">
+                                                <div class="mb-0">
+                                                    <div class="input-group mb-3 w-75 mx-auto">
+                                                        <button class="btn btn-primary" type="button" id="decrease" onclick="decreaseValue()">-</button>
+                                                        <input type="text" class="form-control text-center" id="number" value="0" placeholder="" aria-label="Example text with two button addons">
+                                                        <button class="btn btn-primary" type="button" id="increase" onclick="increaseValue()">+</button>
                                                     </div>
-                                                </div>
-                                                <div class="tab-pane fade border" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                                                    <div class="row align-items-center font-weight-bold">
-                                                        <div class="col-auto py-2">
-                                                            <img src="images/gas-station.svg" width="20"> Base Fare at <i class="fa fa-rupee"></i>9.15/km
-                                                        </div>
-                                                        <div class="col-auto py-2">
-                                                            <img src="images/taxi-driver.svg" width="20"> Driver Allowance
-                                                        </div>
-                                                        <div class="col-auto py-2">
-                                                            <img src="images/document.svg" width="20"> GST (5%)
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-pane fade border" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                                                  <h4 class="head">Terms & Conditions</h4>
-                                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                                 </div>
                                             </div>
-                 <!--  <div class="term-cart term-cart-resposive">
+                                        </div>
+                                    </div>
+                                    <label class="text-end d-block"><input type="checkbox"> I have read the Terms and Conditions</label>
+                                    <div class="col-sm-12 mt-2 cartmn-cls">
+                                        
+                                        <nav class="border-top pt-2">
+                                            <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                                                <a class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Inclusions</a>
+                                                <a class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Exclusions</a>
+                                                <a class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Terms & Conditions</a>
+                                            </div>
+                                        </nav>
+                                        <div class="tab-content p-3  mb-4  border rounded" id="nav-tabContent">
+                                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                <div class="row align-items-center font-weight-bold">
+                                                    <div class="col-auto py-2">
+                                                        <img src="images/gas-station.svg" width="20"> Base Fare at <i class="fa fa-rupee"></i>9.15/km
+                                                    </div>
+                                                    <div class="col-auto py-2">
+                                                        <img src="images/taxi-driver.svg" width="20"> Driver Allowance
+                                                    </div>
+                                                    <div class="col-auto py-2">
+                                                        <img src="images/document.svg" width="20"> GST (5%)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                <div class="row align-items-center font-weight-bold">
+                                                    <div class="col-auto py-2">
+                                                        <img src="images/gas-station.svg" width="20"> Base Fare at <i class="fa fa-rupee"></i>9.15/km
+                                                    </div>
+                                                    <div class="col-auto py-2">
+                                                        <img src="images/taxi-driver.svg" width="20"> Driver Allowance
+                                                    </div>
+                                                    <div class="col-auto py-2">
+                                                        <img src="images/document.svg" width="20"> GST (5%)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                                <h4 class="h6">Terms & Conditions</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            </div>
+                                        </div>
+                                        <!--  <div class="term-cart term-cart-resposive">
                     <div class="panel-group bulleticon" id="accordion" role="tablist" aria-multiselectable="true">
                       <div class="panel-default">
                         <div class="panel-heading panel-heading-sty" role="tab" id="heading4">
                           <h4 class="panel-title panel-titless m-0 p-0">
-                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                          <a class="collapsed" role="button" data-bs-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
                             <i class="more-less fa fa-angle-down" aria-hidden="true"></i>
                             TERMS AND CONDITION
                           </a>
@@ -487,447 +281,217 @@
                       </div>
                     </div>
                   </div>   -->
-                </div>
-                  
-                </div>
-              </div>
-             
-            <!--   <div class="cart__sctnLeftCartAddMore"><span ng-click="search();" class="ng-binding"><i class="fa fa-angle-left" aria-hidden="true"></i>Add More Product</span></div> -->
-
-             <div class="row">
-
-        <div class="col-sm-6">
-        
-        <div class="form-group">
-          <label>First Name</label>
-          <input type="text" class="form-control" id="text" placeholder="Firs Name">
-        </div>
-        </div>
-        <div class="col-sm-6">
-        <div class="form-group">
-          <label>Last Name</label>
-          <input type="text" class="form-control" id="text" placeholder="Last Name">
-        </div>
-        </div>
-      </div>
-          <div class="row">
-        <div class="col-sm-6">
-        <div class="form-group">
-          <label>Email ID</label>
-          <input type="text" class="form-control" id="text" placeholder="Email ID">
-        </div>
-      </div>
-  
-      <div class="col-sm-6">
-        <div class="form-group">
-            <label>Phone Number</label>
-            <div class="row  no-gutters">
-              <div class="col-2">
-          <input type="text" class="form-control" id="text" placeholder="+91">
-        </div>
-        <div class="col-10">
-          <input type="text" class="form-control" id="text" placeholder="Phone Number">
-        </div>
-      </div>
-        </div>
-        </div>
-      </div>
-          <div class="row">
-
-          <div class="col-sm-6">
-        
-        <div class="form-group">
-          <label>Address</label>
-          <input type="text" class="form-control" id="text" placeholder="Address">
-          <ul class="list-inline font-weight-bold">
-            <li class="list-inline-item">Airport pickup?</li>
-            <li class="list-inline-item">Railway Station pickup?</li>
-          </ul>
-        </div>
-        </div>
-        <div class="col-sm-6">
-        <div class="form-group">
-          <label>Address 2</label>
-          <input type="text" class="form-control" id="text" placeholder="Address 2">
-          <ul class="list-inline font-weight-bold">
-            <li class="list-inline-item">Airport drop?</li>
-            <li class="list-inline-item">Railway Station drop?</li>
-          </ul>
-        </div>
-        </div>
-      </div>
-          <div class="row">
-         <div class="col-sm-12">
-        <div class="form-group">
-          <label>Special Instruction</label>
-         
-         <textarea class="form-control" placeholder="Special Instruction"></textarea>
-           
-        </div>
-        </div>
-
-      
-   
-        </div>  
-            </div>
-            
-            <div class="col-md-4">
-              
-              <div class="promo-wrap cart-margin-top side-menu-fix-change m-md-4 p-md-4 p-3">
-                <div class="product-listing-left-part">
-                  <div class="product-sidebar-area">
-                    <div class="sidebar-widget pb-55">
-                      <h3 class="sidebar-widget">PRICE DETAILS</h3>
-                      
+                                    </div>
+                                </div>
+                            </div>
+                            <!--   <div class="cart__sctnLeftCartAddMore"><span ng-click="search();"><i class="fa fa-angle-left" aria-hidden="true"></i>Add More Product</span></div> -->
+                            <h4>Contact Details</h4>
+                            <hr>
+                            <div class="row mb-3">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>First Name</label>
+                                        <input type="text" class="form-control" id="text" placeholder="Firs Name">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Last Name</label>
+                                        <input type="text" class="form-control" id="text" placeholder="Last Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Email ID</label>
+                                        <input type="text" class="form-control" id="text" placeholder="Email ID">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Mobile</label>
+                                        <div class="row  no-gutters">
+                                            <div class="col-3">
+                                                <input type="text" class="form-control" id="text" placeholder="+91">
+                                            </div>
+                                            <div class="col-9">
+                                                <input type="text" class="form-control" id="text" placeholder="Phone Number">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Flight Number</label>
+                                        <input type="text" class="form-control" id="text" placeholder="Flight Number">
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label>Pickup Address</label>
+                                        <input type="text" class="form-control" id="text" placeholder="Pickup Address">
+                                        <ul class="list-inline small text-muted">
+                                            <li class="list-inline-item">Airport pickup?</li>
+                                            <li class="list-inline-item">Railway Station pickup?</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label>Drop Address</label>
+                                        <input type="text" class="form-control" id="text" placeholder="Drop Address">
+                                       <ul class="list-inline small text-muted">
+                                            <li class="list-inline-item">Airport drop?</li>
+                                            <li class="list-inline-item">Railway Station drop?</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-sm-12">
+                                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+  Hey, your actual distance of the trip is <strong>35 km</strong> and your fare has been updated to <strong>1500</strong>
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label>Special Request</label>
+                                        <textarea class="form-control" placeholder="Special Request"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="sidebar-widget">
-                      <div class="product-compare">
-                        <ul class="product-comparess">
-                          <li class="m-0">Base Fare<span><i class="fa fa-rupee"></i><b>350</b></span></li>
-                          <li class="m-0"><a href="" class="product-comparess-li6" data-toggle="modal" data-target="#myModalcart">Have a coupon? </a></li>
-                          <li class="m-0">Night Charges<span><i class="fa fa-rupee"></i><b>63</b></span></li>
-                          <li class="m-0">Driver Allowance<p><b><i class="fa fa-rupee"></i>0</b></p></li>
-                          <li class="m-0">GST<span><b><i class="fa fa-rupee"></i>10</b></span></li>
-                          
-                          <li class="m-0"> Total Amount<p> <i class="fa fa-rupee"></i><b>10</b></p></li>
-                          <hr class="mt-0">
-                          <li class="m-0 font-weight-bold h4">Amount to Pay <span><i class="fa fa-rupee"></i>​<b>423.00</b></span></li>
-                        </ul>
-                       <!--  <div class="cart__payGatewayItm cstmRadio">
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                            <label class="form-check-label" for="exampleRadios1">
-                              Pay Now
-                            </label>
-                          </div>
-                          
-                        </div> 
-                        <div class="cart__payGatewayItm cstmRadio">
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                            <label class="form-check-label" for="exampleRadios1">
-                              I have read the <a href="#" class=" chek-color">Terms and Conditions</a>
-                            </label>
-                          </div>
-                          
-                        </div>-->
-                        
-                        
-                        <div class="cartbitton row">
-                            <div class="col-6 px-1">
-                          <button type="button" ng-class="{'active': cart.bikes.length > 0}" ng-click="checkout();" ng-disabled="false"> <span ng-show="user.userRole == CONSTANT_USER_ROLE.GUEST" class="ng-binding">Pay Advance<small>(Pay Rs. 168.00)</small></span> </button> 
+                    <div class="col-lg-4">
+                        <div class="card bg-light  menu-fix side-menu-fix  shadow-sm border-0">
+                            <div class="card-body">
+                                <div class="p-4">
+                                    <h3 class="h5">PRICE DETAILS</h3>
+                                    <hr>
+                                    <div class="sidebar-widget">
+                                        <ul class="price-details list-unstyled">
+                                            <li class="m-0">Base Fare<span><i class="fa fa-rupee"></i><b>350</b></span></li>
+                                            <li class="m-0"><a href="" class="product-comparess-li6" data-bs-toggle="modal" data-bs-target="#myModalcart">Have a coupon? </a></li>
+                                            <li class="m-0">Night Charges<span><i class="fa fa-rupee"></i><b>63</b></span></li>
+                                            <li class="m-0">Driver Allowance<span><b><i class="fa fa-rupee"></i>0</b></span>
+                                            </li>
+                                            <li class="m-0">GST<span><b><i class="fa fa-rupee"></i>10</b></span></li>
+                                            <li class="m-0"> Total Amount<span> <i class="fa fa-rupee"></i><b>10</b></span>
+                                            </li>
+                                            <hr class="mt-1 mb-1">
+                                            <li class="m-0 font-weight-bold h5 text-dark">Amount to Pay <span><i class="fa fa-rupee"></i><b>423</b></span></li>
+                                        </ul>
+                                        <div class="row">
+                                            <div class="col-6 px-1">
+                                                <div class="d-grid">
+                                                    <button type="button" class="btn  btn-sm btn-primary">Pay Advance<small class="d-block"> (Pay Rs. 168.00)</small></button>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 px-1">
+                                                <div class="d-grid">
+                                                    <button type="button" class="btn btn-sm btn-primary">Pay Full <small class="d-block">(Pay Rs. 568.00)</small></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                         <div class="col-6 px-1">
-                          <button type="button" ng-class="{'active': cart.bikes.length > 0}" ng-click="checkout();" ng-disabled="false"> <span ng-show="user.userRole == CONSTANT_USER_ROLE.GUEST" class="ng-binding">Pay Full<small>(Pay Rs. 568.00)</small></span> </button> 
-                        </div>
-                        </div>
-                      </div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
-          
-        </div>
-      </section>
-      <!-- <div class="container-fluid"> -->
-      <section class="footer-cls-sty pdtb-50 bottom-fotter1">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 col-md-6">
-            <figure> <img src="images/logo.png"> </figure>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            <div class="social-foot-cls">
-              <ul class="list-inline flex-cls">
-                <li>
-                <h6>Follow us </h6></li>
-                <li><a href="https://www.facebook.com/Urban-Drive-1117900178315777/"><i class="fa fa-facebook"></a></i>
-              </li>
-              <li><a href="https://twitter.com/urbanselfdrive"><i class="fa fa-twitter"></a></i>
-            </li>
-            <li><a href="https://plus.google.com/u/0/103734751805183845735"><i class="fa fa-google-plus"></a></i>
-          </li>
-          <li><a href="https://www.linkedin.com/company/13329566/"><i class="fa  fa-linkedin"></a></i>
-        </li>
-        <li><a href="https://www.instagram.com/urbandrive.co.in/"><i class="fa fa-instagram"></a></i>
-      </li>
-    </ul>
-  </div>
-</div>
-<div class="col-sm-6 col-md-3">
-  <h2> Company</h2>
-  <ul class="list-unstyled">
-    <li><a href="about-us.html">About Us</a></li>
-    <li><a href="testimonials.html">Testimonials</a></li>
-    <li><a href="disclaimer-privacy-ploicy.html">Disclaimer & Privacy Policy</a></li>
-    <li><a href="Policy.html">Booking Policy</a></li>
-    <li><a href="faq.html">Frequently Asked Question</a></li>
-  </ul>
-</div>
-<div class="col-sm-6 col-md-3">
-  <h2>Contact With us</h2>
-  <ul class="list-unstyled contact-foot-sty">
-    <li>
-      <a href="#"> <i class="fa  fa-envelope"></i> +91-9773-881-881</a>
-    </li>
-    <li>
-      <a href="#"> <i class="fa fa-phone"></i> care@urbandrive.co.in</a>
-    </li>
-  </ul>
-  <div class="news-cls-foot">
-    <h3>Newsletter</h3>
-    <input type="text" class="form-control" placeholder="Your Email">
-    <button class="btn btn-news-cls">Submit</button>
-  </div>
-</div>
-</div>
-</div>
-</section>
-<!-- <div class="container-fluid"> -->
-<section class="footer-cls-sty pdtb-50 bottom-fotter2 d-no">
-<div class="container">
-<div class="row">
-<div class="col-sm-12 ">
-  <nav>
-    <div class="nav nav-tabs nav-fill nav-tabsss" id="nav-tab" role="tablist">
-      <a class="nav-item nav-links nav-fill-nav-item active" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Read More</a>
-      <a class="nav-item nav-links show nav-fill-nav-item" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Car</a>
-      <a class="nav-item nav-links nav-fill-nav-item" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Bike</a>
-      <a class="nav-item nav-links nav-fill-nav-item" id="nav-contact-tab" data-toggle="tab" href="#chauffeur-drive" role="tab" aria-controls="nav-contact" aria-selected="false"> Chauffeur Drive</a>
-    </div>
-  </nav>
-  <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-    <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-      <div class="row">
-        <div class="col-sm-6 col-md-3">
-          <ul class="bottom-fotter2-ul">
-            <li><a href="#">Bike Rentals in Delhi</a></li>
-            <li><a href="#">Bike On Rent in Delhi - Ladakh</a></li>
-            <li><a href="#">Hire Bike in Bangalore</a></li>
-            <li><a href="#">Motorcycle On Rent in Pune</a></li>
-            <li><a href="#">Two Wheeler On Rent in Mumbai</a></li>
-            <li><a href="#">Bike Rentals in Chandigarh</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <ul class="bottom-fotter2-ul">
-            <li><a href="#">Bike On Rent in Hyderabad</a></li>
-            <li><a href="#">Hire Bike in Kolkata</a></li>
-            <li><a href="#">Motorcycle On Rent in Jaipur</a></li>
-            <li><a href="#">Two Wheeler On Rent in Chennai</a></li>
-            <li><a href="#">Bike Rentals in Rishikesh</a></li>
-            <li><a href="#">Bike On Rent in Manali</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <ul class="bottom-fotter2-ul">
-            <li><a href="#">Hire Bike in Ahmedabad</a></li>
-            <li><a href="#">Motorcycle On Rent in Goa</a></li>
-            <li><a href="#">Two Wheeler On Rent in Pondicherry</a></li>
-            <li><a href="#">Bike Rentals in Guwahati</a></li>
-            <li><a href="#">Bike On Rent in Ooty</a></li>
-            <li><a href="#">Hire Bike in Mysore</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <ul class="bottom-fotter2-ul">
-            <li><a href="#">Motorcycle On Rent in Nainital</a></li>
-            <li><a href="#">Two Wheeler On Rent in Raipur</a></li>
-            <li><a href="#">Bike Rentals in Udaipur</a></li>
-            <li><a href="#">Bike On Rent in Gurgaon</a></li>
-            <li><a href="#">Hire Bike in Siliguri</a></li>
-            <li><a href="#">Motorcycle On Rent in Mount</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="tab-pane fade bottom-fotter2-ul active show" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-      Urban Drive – bike rentals started its operations from Delhi in 2014. It started working with bike renting vendors in Karol bagh for a start. These are the vendors who are giving bike on rent to Indian and foreign customers to go to Ladakh. They are giving bikes on rent since last 30-40 years and have grown since then.
-      <br>
-      <br> Urban Drive started working with them and started giving business to these vendors through out the year even it it is not a Ladakh season. The vendors started to earn 4-5 Lakhs a month and the market of bike hire grew tremendously. Then Urban Drive started its bike rentals business in Bangalore and Banaglore is a even huge market then Delhi. People here are taking bike on rent for daily commute. They go to office, Mall, Cinema or pub’s , they take a bike on rent and enjoy the beautiful weather of Urban Drive.
-      <br>
-      <br> Now in 2017 Urban Drive has its operations in almost 15 cities giving bikes on rent. Urban Drive works on a market place model and works with many vendors giving business to each one. Now you can get a bike on rent in Mumbai, bike on rent in Pune, bike on rent in Chandigarh, bike on rent in Kolkata, bike on rent in Jaipur, bike on rent in Bagdogra, bike on rent in Jaisalmer, bike on rent in Darjeeling, bike on rent in delhi, bike on rent in Bangalore, bike on rent in Manali, bike on rent in Rishikesh and bike on rent in Hyderabad.
-      <br>
-      <br> If you are in any of these cities you can book a bike on rent and experience the hasslefree bike renting.
-      <br>
-      <br> You can take bikes for rent in Bangalore or any of the operational city of Urban Drive to explore city. Also, if you face problems in daily commute you can rent a bike for daily travel. Hire bike for tours as the world is beautiful and unexplored. Rental bike for office travel. Bikes on rent for just some hours to ride to a exotic dinner with your girl friend or wife is the best thing to do. Rent Royal Enfield's Bullet, Ducati, Harley Davidson, Classic 350, Thunderbird 350, Standard 500. You can rent Rent KTM Duke 200, 390, RC 200, RC 390, Thunderbird 500, Desert Storm, Himalayan, Continental GT. Renting KTM Duke 200, 390, RC 200, RC 390, Avenger, Benelli, Ninja, Kawasaki, Triumph and many more is now your cup of tea. Avenger for rent in Bangalore. Motorcycle rentals for long weekends and extended long weekends. Rent a motorcycle for special days and occasions. Motorcycle rental for anniversary and birthday celebrations. Hire a motorcycle for promotion. For amazing entrance of groom rental bikes is an amazing option. Weekend leisure bike rentals. Bike rentals for road trips. The rental motorcycles come with 999 deposit and cheapest rent across city and easy booking and pickup. Bike rentals in Bangalore from Urban Drive is most preferred and highly rated by users. We conduct expeditions to Spiti Valley, Ladakh, Leh, Goa and many exotic destinations across India.
-      <br>
-      <br> You can now have bike rentals experience across 15 cities of India. Bike rentals in Delhi was always an option. Motorcycle hire in Bangalore, rent a bike in Pune, two wheeler rentals in manali, bike on rent in Kolkata, bike on rent in Mumbai, motorcycle rentals in Jaipur, bike on rent in Jaisalmer, bike on rent in Hyderabad, bike on rent in ladakh etc.
-    </div>
-    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-      <div class="row">
-        <div class="col-sm-6 col-md-3">
-          <ul class="bottom-fotter2-ul">
-            <li><a href="#">Bike Rentals in Phuket</a></li>
-            <li><a href="#">Bike On Rent in Pattaya</a></li>
-            <li><a href="#">Hire Bike in Bali</a></li>
-            <li><a href="#">Motorcycle On Rent in Kathmandu</a></li>
-            <li><a href="#">Two Wheeler On Rent in Coron</a></li>
-            <li><a href="#">Bike Rentals in Negombo</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <ul class="bottom-fotter2-ul">
-            <li><a href="#">Bike On Rent in Rome</a></li>
-            <li><a href="#">Hire Bike in Paris</a></li>
-            <li><a href="#">Motorcycle On Rent in Munich</a></li>
-            <li><a href="#">Two Wheeler On Rent in Frankfurt</a></li>
-            <li><a href="#">Bike Rentals in Hamburg</a></li>
-            <li><a href="#">Bike On Rent in Athens</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <ul class="bottom-fotter2-ul">
-            <li><a href="#">Hire Bike in Crete</a></li>
-            <li><a href="#">Motorcycle On Rent in Kos</a></li>
-            <li><a href="#">Two Wheeler On Rent in Santorini</a></li>
-            <li><a href="#">Bike Rentals in Mykonos</a></li>
-            <li><a href="#">Bike On Rent in Zakynthos</a></li>
-            <li><a href="#">Hire Bike in Barcelona</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <ul class="bottom-fotter2-ul">
-            <li><a href="#">Motorcycle On Rent in Madrid</a></li>
-            <li><a href="#">Two Wheeler On Rent in Amsterdam</a></li>
-            <li><a href="#">Bike Rentals in Ljubljana</a></li>
-            <li><a href="#">Bike On Rent in Bratislava</a></li>
-            <li><a href="#">Hire Bike in Lisbon</a></li>
-            <li><a href="#">Motorcycle On Rent in Vilnius</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="tab-pane fade" id="chauffeur-drive" role="tabpanel" aria-labelledby="nav-contact-tab">
-      <div class="row">
-        <div class="col-sm-6 col-md-3">
-          <ul class="bottom-fotter2-ul">
-            <li><a href="#">Bike Rentals in Phuket</a></li>
-            <li><a href="#">Bike On Rent in Pattaya</a></li>
-            <li><a href="#">Hire Bike in Bali</a></li>
-            <li><a href="#">Motorcycle On Rent in Kathmandu</a></li>
-            <li><a href="#">Two Wheeler On Rent in Coron</a></li>
-            <li><a href="#">Bike Rentals in Negombo</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <ul class="bottom-fotter2-ul">
-            <li><a href="#">Bike On Rent in Rome</a></li>
-            <li><a href="#">Hire Bike in Paris</a></li>
-            <li><a href="#">Motorcycle On Rent in Munich</a></li>
-            <li><a href="#">Two Wheeler On Rent in Frankfurt</a></li>
-            <li><a href="#">Bike Rentals in Hamburg</a></li>
-            <li><a href="#">Bike On Rent in Athens</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <ul class="bottom-fotter2-ul">
-            <li><a href="#">Hire Bike in Crete</a></li>
-            <li><a href="#">Motorcycle On Rent in Kos</a></li>
-            <li><a href="#">Two Wheeler On Rent in Santorini</a></li>
-            <li><a href="#">Bike Rentals in Mykonos</a></li>
-            <li><a href="#">Bike On Rent in Zakynthos</a></li>
-            <li><a href="#">Hire Bike in Barcelona</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <ul class="bottom-fotter2-ul">
-            <li><a href="#">Motorcycle On Rent in Madrid</a></li>
-            <li><a href="#">Two Wheeler On Rent in Amsterdam</a></li>
-            <li><a href="#">Bike Rentals in Ljubljana</a></li>
-            <li><a href="#">Bike On Rent in Bratislava</a></li>
-            <li><a href="#">Hire Bike in Lisbon</a></li>
-            <li><a href="#">Motorcycle On Rent in Vilnius</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-</section>
-<!--  </div> -->
-<section class="footer-cls-sty pdtb-50 bottom-fotter3">
-<div class="container">
-<div class="footer-copy">
-<div class="row">
-  <div class="col-sm-6 col-xs-12 text-left">
-    <ul class="list-inline">
-      <li><img src="images/visa.png"></li>
-      <li><img src="images/card.png"></li>
-      <li><img src="images/paypal.png"></li>
-    </ul>
-  </div>
-  <div class="col-sm-6 col-xs-12 text-right">
-    <p>Copyright 2017 to 2018 Urban Drive All Rights Reserved</p>
-  </div>
-</div>
-</div>
-</div>
-</section>
-</main>
-<script src="js/jquery3.3.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script type="text/javascript">
-function toggleIcon(e) {
-$(e.target)
-.prev('.panel-heading')
-.find(".more-less")
-.toggleClass('fa fa-angle-down fa fa-angle-up');
-}
-$('.panel-group').on('hidden.bs.collapse', toggleIcon);
-$('.panel-group').on('shown.bs.collapse', toggleIcon);
-</script>
-<script type="text/javascript">
-$(document).ready(function () {
-$('.tablinks').click(function(e) {
-$('.tablinks').removeClass('active');
-var $this = $(this);
-if (!$this.hasClass('active')) {
-$this.addClass('active');
-}
-//e.preventDefault();
-});
-});
-</script>
-<script>
-$(document).ready(function(){
-$("#btn-mob-menu").click(function(){
-$(".small-screen-menu").toggleClass("show");
-$(this).toggleClass("nav-xs-menu");
-});
-$('.mn-section-bd').click(function() {
-if ($('.small-screen-menu').hasClass('show') ){
-$('.small-screen-menu').removeClass('show');
-}
-if ($('#btn-mob-menu').hasClass('nav-xs-menu')){
-$('#btn-mob-menu').removeClass('nav-xs-menu');
-}
-if ($('body').hasClass('overflow-none')){
-$('body').removeClass('overflow-none');
-}
-else {
+        </section>
+        <!-- <div class="container-fluid"> -->
+        <section class="footer-cls-sty d-flex justify-content-center align-items-center pt-3 bottom-fotter3">
+            <div class="container">
+                <div class="footer-copy">
+                    <div class="row">
+                        <div class="col-sm-6 col-xs-12 text-left">
+                            <ul class="list-inline">
+                                <li><img src="images/visa.png"></li>
+                                <li><img src="images/card.png"></li>
+                                <li><img src="images/paypal.png"></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 text-end">
+                            <p>Copyright 2017 to 2022 Urban Drive All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/jquery3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script type="text/javascript">
+    function toggleIcon(e) {
+        $(e.target)
+            .prev('.panel-heading')
+            .find(".more-less")
+            .toggleClass('fa fa-angle-down fa fa-angle-up');
+    }
+    $('.panel-group').on('hidden.bs.collapse', toggleIcon);
+    $('.panel-group').on('shown.bs.collapse', toggleIcon);
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('.tablinks').click(function(e) {
+            $('.tablinks').removeClass('active');
+            var $this = $(this);
+            if (!$this.hasClass('active')) {
+                $this.addClass('active');
+            }
+            //e.preventDefault();
+        });
+    });
+    </script>
+    <script>
+    $(document).ready(function() {
+        $("#btn-mob-menu").click(function() {
+            $(".small-screen-menu").toggleClass("show");
+            $(this).toggleClass("nav-xs-menu");
+        });
+        $('.mn-section-bd').click(function() {
+            if ($('.small-screen-menu').hasClass('show')) {
+                $('.small-screen-menu').removeClass('show');
+            }
+            if ($('#btn-mob-menu').hasClass('nav-xs-menu')) {
+                $('#btn-mob-menu').removeClass('nav-xs-menu');
+            }
+            if ($('body').hasClass('overflow-none')) {
+                $('body').removeClass('overflow-none');
+            } else {
 
-}
-});
+            }
+        });
 
-});
-function increaseValue() {
-var value = parseInt(document.getElementById('number').value, 10);
-value = isNaN(value) ? 0 : value;
-value++;
-document.getElementById('number').value = value;
-}
-function decreaseValue() {
-var value = parseInt(document.getElementById('number').value, 10);
-value = isNaN(value) ? 0 : value;
-value < 1 ? value = 1 : '';
-value--;
-document.getElementById('number').value = value;
-}
-</script>
+    });
+
+    function increaseValue() {
+        var value = parseInt(document.getElementById('number').value, 10);
+        value = isNaN(value) ? 0 : value;
+        value++;
+        document.getElementById('number').value = value;
+    }
+
+    function decreaseValue() {
+        var value = parseInt(document.getElementById('number').value, 10);
+        value = isNaN(value) ? 0 : value;
+        value < 1 ? value = 1 : '';
+        value--;
+        document.getElementById('number').value = value;
+    }
+    </script>
 </body>
+
 </html>

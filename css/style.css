@@ -340,6 +340,9 @@ right: 10%;
 #banner .owl-prev{
     left: 50%;
 }
+#banner .owl-next{
+    right: 10%;
+}
 
 #banner:hover .owl-nav{
     opacity: 1;
@@ -1561,7 +1564,7 @@ img {
     height: 33px;
     font-size:2rem;
     border-radius: 5px;
-    right: 30px;
+    right: 10px;
     padding-top: 3px;
     width: 33px
 }

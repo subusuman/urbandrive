@@ -43,7 +43,7 @@
        }
    })
    // ------------
-   $('#clients, #owl-demo, #offers, #partners').owlCarousel({
+   $(' #owl-demo, #offers').owlCarousel({
        loop: true,
        margin: 20,
        nav: true,
@@ -57,6 +57,25 @@
            },
            1000: {
                items: 4
+           }
+       }
+   })
+
+   // ------------
+    $('#partners, #clients').owlCarousel({
+       loop: true,
+       margin: 20,
+       nav: true,
+       dots:true,
+       responsive: {
+           0: {
+               items: 1
+           },
+           600: {
+               items: 3
+           },
+           1000: {
+               items: 5
            }
        }
    })

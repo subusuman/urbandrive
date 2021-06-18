@@ -328,6 +328,30 @@ body {
     z-index: 99;
     width: 35%;
 }
+#offers figcaption>p{
+    margin-bottom: 0;
+
+
+}
+#offers figcaption>p  strong{
+    margin-bottom: 0;
+    color: var(--color1);
+
+}
+#offers figcaption{
+   font-size: 14px;
+   color: #6a6a6a;
+
+}
+.why-book-with img{
+    max-height: 50px;
+}
+.why-book-with  h6{
+margin-bottom: 0;  
+font-size: 14px;
+color: var(--color1);
+
+}
 #banner .owl-dots{
     position: absolute;
 bottom: 20px;
@@ -1024,7 +1048,10 @@ img {
 
 .heading-cls-sty h2 {
     font-size: 24px;
-    font-weight: 600
+    font-weight: 800;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 2px;
 }
 
 .heading-cls-sty .line-heading-cls {

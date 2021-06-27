@@ -35,10 +35,12 @@
 * {
     outline: none;
 }
-.bg-blue{
+
+.bg-blue {
     background: var(--color2);
 }
-.btn-sm{
+
+.btn-sm {
     font-size: 12px;
     padding: .375rem .75rem;
 }
@@ -70,6 +72,7 @@ body {
     position: sticky;
     top: 80px;
 }
+
 .side-menu-fix1 {
     position: sticky;
     top: 10px;
@@ -341,39 +344,46 @@ select {
     text-transform: uppercase;
 }
 
-#contact  ::placeholder{
+#contact ::placeholder {
     font-size: 14px;
 }
-.ng-binding{
+
+.ng-binding {
     padding: 10px;
-font-size: 12px;
-display: block;
+    font-size: 12px;
+    display: block;
 }
-.btn-social-log{
+
+.btn-social-log {
     text-align: center;
 }
-.goo-plus-cls{
+
+.goo-plus-cls {
     padding: 0.3rem 1rem;
-display: inline-block;
-background: #05447b;
-color: white;
-font-size: 12px;
-text-decoration: none;
-border-radius: 5px;
+    display: inline-block;
+    background: #05447b;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    border-radius: 5px;
 }
-.facebook-cls:hover, .goo-plus-cls:hover{
-text-decoration: none;
-color: white;
+
+.facebook-cls:hover,
+.goo-plus-cls:hover {
+    text-decoration: none;
+    color: white;
 }
-.facebook-cls{
+
+.facebook-cls {
     font-size: 12px;
     padding: 0.3rem 1rem;
-display: inline-block;
-background: #0281f0;
-color: white;
-text-decoration: none;
-border-radius: 5px;
+    display: inline-block;
+    background: #0281f0;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }
+
 #contact .form-control {
     display: block;
     width: 100%;
@@ -389,7 +399,7 @@ border-radius: 5px;
     -moz-appearance: none;
     appearance: none;
     border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .fare-details-btn {
@@ -402,7 +412,8 @@ border-radius: 5px;
     border-color: var(--color1);
 }
 
-.fare-details-btn:hover, .fare-details-btn:focus {
+.fare-details-btn:hover,
+.fare-details-btn:focus {
     padding: 2px 10px;
     border-radius: 25px;
     font-size: 11px;
@@ -473,7 +484,7 @@ border-radius: 5px;
     right: 10%;
 }
 
- .owl-nav {
+.owl-nav {
     opacity: 0;
 }
 
@@ -499,6 +510,7 @@ border-radius: 5px;
     color: var(--color1) !important;
     text-decoration: none;
 }
+
 #banner-container #banner {
     width: auto;
     position: relative;
@@ -1798,13 +1810,16 @@ header .bg-dark {
 #myTab {
     border: none;
 }
-.bottom-fotter2{
+
+.bottom-fotter2 {
     color: white;
 }
-.bottom-fotter2  .nav-link{
+
+.bottom-fotter2 .nav-link {
     color: white;
 }
-.bottom-fotter2  .nav-link.active{
+
+.bottom-fotter2 .nav-link.active {
     background: var(--color1);
     color: white;
     border: transparent;
@@ -1852,7 +1867,7 @@ header .bg-dark {
 }
 
 @media(min-width: 960px) {
- 
+
     .owl-prev {
         margin: 0;
         left: -50px;
@@ -1864,6 +1879,7 @@ header .bg-dark {
     }
 
 }
+
 @media(max-width: 1200px) and (min-width: 960px) {
     #booking-form {
         position: absolute;

@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <nav id="nav" class="navbar navigation-cls-sty navbar-expand-md navbar-light fixed-top navbar-fixed-top full-screen-menu">
+        <nav id="nav" class="navbar home navigation-cls-sty navbar-expand-md navbar-light fixed-top navbar-fixed-top full-screen-menu">
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img src="images/logo_1.png"></a>
                 <div class="cart-small-show d-none">
@@ -50,7 +50,7 @@
                             <a class="nav-link" href="offers.html">Our Offers </a>
                         </li>
                         <li class="nav-item ps-lg-3">
-                            <a class="nav-link btn btn-primary text-white py-1 mt-1" data-bs-toggle="modal" data-bs-target="#myModal" href="javascript:void(0)" data-backdrop="static" data-keyboard="false">Login / Sign up</a>
+                            <a class="nav-link btn btn-warning text-white py-1 mt-1" data-bs-toggle="modal" data-bs-target="#myModal" href="javascript:void(0)" data-backdrop="static" data-keyboard="false">Login / Sign up</a>
                         </li>
                     </ul>
                 </div>
@@ -174,9 +174,11 @@
                         <!-- Nav tabs -->
                         <div class="card border-0 rounded-0 banner-tab-cls">
                             <div class="nav nav-pills chauffeur-tabs justify-content-center mt-3" id="pills-tab" role="tablist">
-                                <a class="nav-link active" id="pills-contact-tab" data-bs-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Airport Transfer</a>
-                                <a class="nav-link" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Hourly Rentals</a>
-                                <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Outstation</a>
+                                <a class="nav-link active" id="pills-contact-tab" data-bs-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">
+                                    <img src="images/airport.png" width="15px"  class="me-2 d-inline-block"> Airport Transfer</a>
+                                <a class="nav-link" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+                                 <img src="images/hourly.png" width="15px"  class="me-2 d-inline-block">Hourly Rentals</a>
+                                <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"> <img src="images/outstation.png" width="15px"  class="me-2 d-inline-block">Outstation</a>
                             </div>
                             <div class="tab-content px-4 pb-4  pt-2 bg-white" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
@@ -203,18 +205,18 @@
                                         <div class="col-sm-6 form-group">
                                             <label for="start date and time" class="small mb-0">Pickup Date</label>
                                             <div class="input-cls-new">
-                                                <input type="text" class="form-control form_datetime" placeholder="Start Date and Time">
+                                                <input type="text" class="form-control form_datetime" placeholder="Pickup Date">
                                                 <img src="images/calender-icon.png" class="icon-frm-cls">
                                             </div>
                                         </div>
                                         <div class="col-sm-6 form-group">
                                             <label for="start date and time" class="small mb-0">Pickup Time</label>
                                             <div class="input-cls-new">
-                                                <input type="text" class="form-control form_datetime" placeholder="Start Date and Time">
+                                                <input type="text" class="form-control timepick" placeholder="Pickup Time">
                                                 <img src="images/calender-icon.png" class="icon-frm-cls">
                                             </div>
                                         </div>
-                                        <div class="col-sm-6 form-group">
+                                        <div class="col-sm-12 text-center form-group">
                                             <button class="btn btn-primary btn-block">Search</button>
                                         </div>
                                     </div>
@@ -243,18 +245,18 @@
                                         <div class="col-sm-6 form-group">
                                             <label for="start date and time" class="small mb-0">Pickup Date</label>
                                             <div class="input-cls-new">
-                                                <input type="text" class="form-control form_datetime" placeholder="Start Date and Time">
+                                                <input type="text" class="form-control form_datetime" placeholder="Pickup Date">
                                                 <img src="images/calender-icon.png" class="icon-frm-cls">
                                             </div>
                                         </div>
                                         <div class="col-sm-6 form-group">
                                             <label for="start date and time" class="small mb-0">Pickup Time</label>
                                             <div class="input-cls-new">
-                                                <input type="text" class="form-control form_datetime" placeholder="Start Date and Time">
+                                                <input type="text" class="form-control timepick" placeholder="Pickup Time">
                                                 <img src="images/calender-icon.png" class="icon-frm-cls">
                                             </div>
                                         </div>
-                                        <div class="col-sm-6 form-group">
+                                        <div class="col-sm-12  text-center form-group">
                                             <button class="btn btn-primary btn-block">Search</button>
                                         </div>
                                     </div>
@@ -305,20 +307,20 @@
                                             <div class="col-sm-6 form-group">
                                                 <label for="start date and time" class="small mb-0">Pickup Date</label>
                                                 <div class="input-cls-new">
-                                                    <input type="text" class="form-control form_datetime" placeholder="Start Date and Time">
+                                                    <input type="text" class="form-control form_datetime" placeholder="Pickup Date">
                                                     <img src="images/calender-icon.png" class="icon-frm-cls">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 form-group">
                                                 <label for="start date and time" class="small mb-0">Pickup Time</label>
                                                 <div class="input-cls-new">
-                                                    <input type="text" class="form-control form_datetime" placeholder="Start Date and Time">
+                                                    <input type="text" class="form-control timepick" placeholder="Pickup Time">
                                                     <img src="images/calender-icon.png" class="icon-frm-cls">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-sm-12">
+                                            <div class="col-sm-12 text-center">
                                                 <a href="car-listing.html" class="btn btn-primary">Search</a>
                                                 <!-- <button class="btn btn-primary">Search</button> -->
                                                 <span class="small font-italic float-end">*One Way</span>
@@ -346,21 +348,21 @@
                                             <div class="col-sm-6 form-group">
                                                 <label for="start date and time" class="small mb-0">Pickup Date</label>
                                                 <div class="input-cls-new">
-                                                    <input type="text" class="form-control form_datetime" placeholder="Start Date and Time">
+                                                    <input type="text" class="form-control form_datetime" placeholder="Pickup Date">
                                                     <img src="images/calender-icon.png" class="icon-frm-cls">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 form-group">
                                                 <label for="start date and time" class="small mb-0">Return Date</label>
                                                 <div class="input-cls-new">
-                                                    <input type="text" class="form-control form_datetime" placeholder="Start Date and Time">
+                                                    <input type="text" class="form-control form_datetime" placeholder="Return Date">
                                                     <img src="images/calender-icon.png" class="icon-frm-cls">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 form-group">
                                                 <label for="start date and time" class="small mb-0">Pickup Time</label>
                                                 <div class="input-cls-new">
-                                                    <input type="text" class="form-control form_datetime" placeholder="Start Date and Time">
+                                                    <input type="text" class="form-control timepick" placeholder="Pickup Time">
                                                     <img src="images/calender-icon.png" class="icon-frm-cls">
                                                 </div>
                                             </div>
@@ -387,7 +389,7 @@
             </div>
         </div>
         <!-- End Booking form -->
-        <div class="owl-carousel owl-theme d-none d-md-block" id="banner">
+        <div class="owl-carousel owl-theme d-none d-lg-block" id="banner">
             <div>
                 <img src="images/homepage-banner.jpg" class="d-block">
                 <div class="banner-content">
@@ -398,7 +400,7 @@
             </div>
             <div>
                 <img src="images/homepage-banner1.jpg" class="d-block">
-                <div class="banner-content">
+                <div class="banner-content banner-content1">
                     <h3>Banner title Goes Here</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -726,7 +728,7 @@ With a professional management and offices in Delhi, Noida, Gurgaon, Jaipur, Mum
         </div>
         <div class="bg-test-cls bg-test-cls-top"></div>
     </section>
-    <section class="popular-tour pdtb-50" style="background:#dcdce6;">
+    <section class="popular-tour  d-none pdtb-50" style="background:#dcdce6;">
         <div class="container-fluid">
             <div class="heading-cls-sty text-center">
                 <h2>Recent Reviews</h2>
@@ -966,26 +968,26 @@ With a professional management and offices in Delhi, Noida, Gurgaon, Jaipur, Mum
                             <a href="#"> <i class="fa fa-phone"></i> care@urbandrive.co.in</a>
                         </li>
                     </ul>
-                    <div class="news-cls-foot">
+                   <!--  <div class="news-cls-foot">
                         <h3>Newsletter</h3>
                         <input type="text" class="form-control" placeholder="Your Email">
                         <button class="btn btn-news-cls">Submit</button>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
     </section>
     <!-- <div class="container-fluid"> -->
-    <!--   <section class="footer-cls-sty pdtb-50 bottom-fotter2">
+       <section class="footer-cls-sty bottom-fotter2">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 ">
                         <nav>
-                            <div class="nav nav-tabs nav-fill nav-tabsss" id="nav-tab" role="tablist">
-                                <a class="nav-item nav-links nav-fill-nav-item active" id="nav-profile-tab" data-bs-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Read More</a>
-                                <a class="nav-item nav-links show nav-fill-nav-item" id="nav-home-tab" data-bs-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Car</a>
-                                <a class="nav-item nav-links nav-fill-nav-item" id="nav-contact-tab" data-bs-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Bike</a>
-                                <a class="nav-item nav-links nav-fill-nav-item" id="nav-contact-tab" data-bs-toggle="tab" href="#chauffeur-drive" role="tab" aria-controls="nav-contact" aria-selected="false"> Chauffeur Drive</a>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-link active" id="nav-profile-tab" data-bs-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Read More</a>
+                                <a class="nav-link" id="nav-home-tab" data-bs-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Car</a>
+                                <a class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Bike</a>
+                                <a class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" href="#chauffeur-drive" role="tab" aria-controls="nav-contact" aria-selected="false"> Chauffeur Drive</a>
                             </div>
                         </nav>
                         <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
@@ -1138,7 +1140,7 @@ With a professional management and offices in Delhi, Noida, Gurgaon, Jaipur, Mum
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>  
     <!--  </div> -->
     <section class="footer-cls-sty d-flex justify-content-center align-items-center pt-3 bottom-fotter3">
         <div class="container">
@@ -1161,12 +1163,17 @@ With a professional management and offices in Delhi, Noida, Gurgaon, Jaipur, Mum
     </main>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!-- javascript -->
-    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="js/jquery.min.js"></script> -->
     <script src="js/owl.carousel.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/eonasdan-bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script> 
+  <!-- <script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script> --> 
+
     <script type="text/javascript" src="js/custom.js"></script>
+
 </body>
 
 </html>

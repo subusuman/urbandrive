@@ -26,7 +26,24 @@
 
    // ------------
 
-   $('#banner, #reviews, #banner-small-screen').owlCarousel({
+   $('#banner').owlCarousel({
+       loop: true,
+       margin: 0,
+       nav: true,
+       smartSpeed:1450,
+       responsive: {
+           0: {
+               items: 1
+           },
+           600: {
+               items: 1
+           },
+           1000: {
+               items: 1
+           }
+       }
+   })
+     $('#reviews, #banner-small-screen').owlCarousel({
        loop: true,
        margin: 10,
        nav: true,
@@ -121,26 +138,65 @@
         });
     });
 
+
+          // ------------
+
+
+$('.form_datetime').datetimepicker({
+    pickTime: false,
+    //format: 'yyyy-mm-dd',
+    format: "L",
+    weekStart: 0,
+    todayBtn: "linked",
+    orientation: "bottom auto",
+    keyboardNavigation: false,
+    autoclose: true,
+    showMeridian: false,
+
+});
+      
+
+// $('.timepick').datetimepicker({
+//     format: 'HH:mm',
+//     autoclose: true
+// });
+
+$(".timepick").datetimepicker({
+    pickDate: false,
+    minuteStep: 5,
+    pickerPosition: 'bottom-right',
+    format: "LT",
+   // format: 'HH:ii p',
+    autoclose: true,
+    showMeridian: true,
+    startView: 1,
+    maxView: 1,
+  });
+ $(".datetimepicker").find('thead th').remove();
+$(".datetimepicker").find('thead').append($('<th class="switch">').text('Pick Time'));
+$('.switch').css('width','190px');
+     
+        
           // ----------------
-           function sticky_relocate() {
-        var window_top = $(window).scrollTop();
-        var footer_top = $("#footer").offset().top;
-        var div_top = $('#sticky-anchor').offset().top;
-        var div_height = $(".side-menu-fix").height();
+    //        function sticky_relocate() {
+    //     var window_top = $(window).scrollTop();
+    //     var footer_top = $("#footer").offset().top;
+    //     var div_top = $('#sticky-anchor').offset().top;
+    //     var div_height = $(".side-menu-fix").height();
 
-        var padding = 20; // tweak here or get from margins etc
+    //     var padding = 20; // tweak here or get from margins etc
 
-        if (window_top + div_height > footer_top - padding)
-            $('.side-menu-fix').css({ top: (window_top + div_height - footer_top + padding) * -1 })
-        else if (window_top > div_top) {
-            $('.side-menu-fix').addClass('stick');
-            $('.side-menu-fix').css({ top: 105 })
-        } else {
-            $('.side-menu-fix').removeClass('stick');
-        }
-    }
-    $(function() {
-        $(window).scroll(sticky_relocate);
-        sticky_relocate();
-    });
+    //     if (window_top + div_height > footer_top - padding)
+    //         $('.side-menu-fix').css({ top: (window_top + div_height - footer_top + padding) * -1 })
+    //     else if (window_top > div_top) {
+    //         $('.side-menu-fix').addClass('stick');
+    //         $('.side-menu-fix').css({ top: 105 })
+    //     } else {
+    //         $('.side-menu-fix').removeClass('stick');
+    //     }
+    // }
+    // $(function() {
+    //     $(window).scroll(sticky_relocate);
+    //     sticky_relocate();
+    // });
           // ----------------

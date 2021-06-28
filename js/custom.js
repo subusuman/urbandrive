@@ -30,7 +30,7 @@
        loop: true,
        margin: 0,
        nav: true,
-       smartSpeed:1450,
+       smartSpeed: 1450,
        responsive: {
            0: {
                items: 1
@@ -43,7 +43,7 @@
            }
        }
    })
-     $('#reviews, #banner-small-screen').owlCarousel({
+   $('#reviews, #banner-small-screen').owlCarousel({
        loop: true,
        margin: 10,
        nav: true,
@@ -64,7 +64,7 @@
        loop: true,
        margin: 20,
        nav: true,
-       dots:true,
+       dots: true,
        responsive: {
            0: {
                items: 1
@@ -79,11 +79,11 @@
    })
 
    // ------------
-    $('#partners, #clients').owlCarousel({
+   $('#partners, #clients').owlCarousel({
        loop: true,
        margin: 20,
        nav: true,
-       dots:true,
+       dots: true,
        responsive: {
            0: {
                items: 1
@@ -108,95 +108,63 @@
        }
    });
 
-      $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
-        if (scroll >= 150) {
-            $("#filter").addClass("affix");
-        } else {
-            $("#filter").removeClass("affix");
-        }
-    });
+   $(window).scroll(function() {
+       var scroll = $(window).scrollTop();
+       if (scroll >= 150) {
+           $("#filter").addClass("affix");
+       } else {
+           $("#filter").removeClass("affix");
+       }
+   });
 
-      // -----------------
+   // -----------------
 
-          $(document).ready(function() {
-        $("#filter-small").click(function() {
-            $(this).toggleClass("filtershow");
-            $("body").toggleClass("overflow-none");
-            $(".side-menu-fix").toggleClass("fliteropen");
-        });
-        $('.listing-rht-cls').click(function() {
-            if ($('.side-menu-fix').hasClass('fliteropen')) {
-                $('.side-menu-fix').removeClass('fliteropen');
-            }
-            if ($('#filter-small').hasClass('filtershow')) {
-                $('#filter-small').removeClass('filtershow');
-            }
-            if ($('body').hasClass('overflow-none')) {
-                $('body').removeClass('overflow-none');
-            } else {}
-        });
-    });
-
-
-          // ------------
+   $(document).ready(function() {
+       $("#filter-small").click(function() {
+           $(this).toggleClass("filtershow");
+           $("body").toggleClass("overflow-none");
+           $(".side-menu-fix").toggleClass("fliteropen");
+       });
+       $('.listing-rht-cls').click(function() {
+           if ($('.side-menu-fix').hasClass('fliteropen')) {
+               $('.side-menu-fix').removeClass('fliteropen');
+           }
+           if ($('#filter-small').hasClass('filtershow')) {
+               $('#filter-small').removeClass('filtershow');
+           }
+           if ($('body').hasClass('overflow-none')) {
+               $('body').removeClass('overflow-none');
+           } else {}
+       });
+   });
 
 
-$('.form_datetime').datetimepicker({
-    pickTime: false,
-    //format: 'yyyy-mm-dd',
-    format: "L",
-    weekStart: 0,
-    todayBtn: "linked",
-    orientation: "bottom auto",
-    keyboardNavigation: false,
-    autoclose: true,
-    showMeridian: false,
+   // ------------
 
-});
-      
 
-// $('.timepick').datetimepicker({
-//     format: 'HH:mm',
-//     autoclose: true
-// });
 
-$(".timepick").datetimepicker({
-    pickDate: false,
-    minuteStep: 5,
-    pickerPosition: 'bottom-right',
-    format: "LT",
-   // format: 'HH:ii p',
-    autoclose: true,
-    showMeridian: true,
-    startView: 1,
-    maxView: 1,
-  });
- $(".datetimepicker").find('thead th').remove();
-$(".datetimepicker").find('thead').append($('<th class="switch">').text('Pick Time'));
-$('.switch').css('width','190px');
-     
-        
-          // ----------------
-    //        function sticky_relocate() {
-    //     var window_top = $(window).scrollTop();
-    //     var footer_top = $("#footer").offset().top;
-    //     var div_top = $('#sticky-anchor').offset().top;
-    //     var div_height = $(".side-menu-fix").height();
+   $(".timepick").datetimepicker({
+       pickDate: false,
+       minuteStep: 5,
+       pickerPosition: 'bottom-right',
+       format: 'HH:ii p',
+       autoclose: true,
+       showMeridian: true,
+       startView: 1,
+       maxView: 1,
+   });
+   $(".datetimepicker").find('thead th').remove();
+   $(".datetimepicker").find('thead').append($('<th class="switch">').text('Pick Time'));
+   $('.switch').css('width', '190px');
 
-    //     var padding = 20; // tweak here or get from margins etc
 
-    //     if (window_top + div_height > footer_top - padding)
-    //         $('.side-menu-fix').css({ top: (window_top + div_height - footer_top + padding) * -1 })
-    //     else if (window_top > div_top) {
-    //         $('.side-menu-fix').addClass('stick');
-    //         $('.side-menu-fix').css({ top: 105 })
-    //     } else {
-    //         $('.side-menu-fix').removeClass('stick');
-    //     }
-    // }
-    // $(function() {
-    //     $(window).scroll(sticky_relocate);
-    //     sticky_relocate();
-    // });
-          // ----------------
+   $(".form_datetime").datepicker({
+       autoclose: true,
+      todayHighlight: true,
+      startDate: new Date()
+   })
+   //.datepicker('update', new Date());
+
+   // ----------------
+
+   // ----------------

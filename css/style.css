@@ -114,6 +114,19 @@ body {
     border-color: var(--color1);
 }
 
+.modify {
+    color: #fff;
+    background-color: var(--color1);
+    border-color: var(--color1);
+}
+
+.modify:hover,
+.modify:focus {
+    color: #fff;
+    background-color: var(--color1);
+    border-color: var(--color1);
+}
+
 .shop-product-sorting a.active {
     color: #fa4a0c
 }
@@ -134,7 +147,7 @@ body {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: rgb(0, 0, 0, 0.5);
+    color: rgb(0, 0, 0, 0.9);
     /*text-transform: uppercase;*/
     font-size: 14px;
     font-weight: 400;
@@ -484,20 +497,31 @@ select {
     right: 10%;
 }
 
-.owl-nav {
+/*.owl-nav {
     opacity: 0;
 }
-
+*/
 #banner .owl-prev {
     left: 48%;
-    top: 40%;
+    top: 45%;
     background: #ffffffde !important;
+    color: var(--color1);
+
+}
+
+.owl-nav span {
+    font-size: 2rem;
+}
+
+.owl-nav {
+    line-height: 28px;
 }
 
 #banner .owl-next {
     right: 5%;
-    top: 40%;
-    background: #ffffffde !important;
+top: 45%;
+background: #ffffffde !important;
+color: var(--color1);
 }
 
 .owl-carousel:hover .owl-nav {
@@ -1745,7 +1769,7 @@ img {
 }
 
 .owl-prev {
-    background: #ff9800 !important;
+    background: var(--color1) !important;
     position: absolute;
     bottom: 40%;
     z-index: 99;
@@ -1764,7 +1788,7 @@ img {
 }
 
 .owl-next {
-    background: #ff9800 !important;
+    background: var(--color1) !important;
     position: absolute;
     bottom: 40%;
     z-index: 99;
@@ -1902,17 +1926,23 @@ header .bg-dark {
 }
 
 @media(max-width: 960px) and (min-width: 768px) {
+        #offers, #reviews{
+    padding: 0 2rem;
+}
     #booking-form {
         position: relative;
         top: 5rem;
         left: 0;
         z-index: 99;
         width: 100%;
-        padding: 5rem;
+        padding: 2rem 5rem 1rem;
     }
 }
 
 @media(max-width: 768px) {
+         #offers, #reviews{
+    padding: 0 2rem;
+}
     #booking-form {
         position: relative;
         top: 5rem;
@@ -1930,6 +1960,9 @@ header .bg-dark {
 }
 
 @media(max-width: 480px) {
+     #offers, #reviews{
+    padding: 0 2rem;
+}
     .banner-cls-sty1 .banner-content {
         margin-top: 3rem;
         padding-left: 25px;
@@ -1944,7 +1977,7 @@ header .bg-dark {
     .test-panel-cls {
         height: 335px;
         text-align: center;
-        width: 90%;
+        width: 100%;
     }
 
     #banner-small-screen .banner-content {

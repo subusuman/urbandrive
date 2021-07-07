@@ -505,7 +505,7 @@ select {
     left: 48%;
     top: 45%;
     background: #ffffffde !important;
-    color: var(--color1);
+    color: black;
 
 }
 
@@ -521,7 +521,7 @@ select {
     right: 5%;
 top: 45%;
 background: #ffffffde !important;
-color: var(--color1);
+color: black;
 }
 
 .owl-carousel:hover .owl-nav {
@@ -670,6 +670,10 @@ color: var(--color1);
 .dropdown-menu {
     border: 0;
     box-shadow: 0 3px 5px #0000000f;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: var(--color1);
+    background-color: #fff;
 }
 
 .h1,
@@ -1769,7 +1773,7 @@ img {
 }
 
 .owl-prev {
-    background: var(--color1) !important;
+    background: white !important;
     position: absolute;
     bottom: 40%;
     z-index: 99;
@@ -1788,7 +1792,7 @@ img {
 }
 
 .owl-next {
-    background: var(--color1) !important;
+    background: white !important;
     position: absolute;
     bottom: 40%;
     z-index: 99;
@@ -1802,7 +1806,11 @@ img {
     box-shadow: 0px 2px 4px #0000003d;
 }
 
-
+.owl-theme .owl-nav [class*="owl-"]:hover {
+    background: #869791;
+    color: #000;
+    text-decoration: none;
+}
 
 header .bg-dark {
     background-color: #343a40cc !important

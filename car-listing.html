@@ -9,6 +9,7 @@
     <!-- <link rel="stylesheet" href="css/main-stylesheet.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
     <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
 </head>
 
@@ -71,36 +72,40 @@
                 <div class="col-lg-auto col-6 frm-banner-col3">
                     <div class="form-group">
                         <!-- <label for="usr">City:</label> -->
-                        <div class="input-cls-new">
-                            <input type="text" class="form-control" placeholder="Select your City">
-                            <img src="images/target-icon.png" class="icon-frm-cls">
-                        </div>
+                         <div class="input-cls-new">
+                                                <input type="text" class="form-control" placeholder="Pickup City">
+                                                <img src="images/target-icon.png" class="icon-frm-cls">
+                                            </div>
                     </div>
                 </div>
                 <div class="col-lg-auto col-6 frm-banner-col3">
                     <div class="form-group">
-                        <!-- <label for="usr">City:</label> -->
-                        <div class="input-cls-new">
-                            <input type="text" class="form-control" placeholder="Select your City">
-                            <img src="images/target-icon.png" class="icon-frm-cls">
-                        </div>
+                        <!-- <label>Trip Type:</label> -->
+                         <div class="input-cls-new">
+                                                <select class="form-control">
+                                                    <option>Pickup from Airport</option>
+                                                    <option>Drop to Airport</option>
+                                                </select>
+                                                <img src="images/down-arrow.png" class="icon-frm-cls bg-white p-2 mr-0">
+                                            </div>
                     </div>
                 </div>
                 <div class="col-lg-auto col-6 frm-banner-col3">
                     <div class="form-group">
-                        <!-- <label for="usr">Start Date and Time:</label> -->
+                        <!-- <label for="usr">Pickup  Date:</label> -->
                         <div class="input-cls-new">
-                            <input type="text" class="form-control" placeholder="Select your City">
-                            <img src="images/calender-icon.png" class="icon-frm-cls">
-                        </div>
+                                                <input type="text" class="form-control form_datetime" placeholder="Pickup Date">
+                                                <img src="images/calender-icon.png" class="icon-frm-cls">
+                                            </div>
                     </div>
                 </div>
                 <div class="col-lg-auto col-6 frm-banner-col3">
                     <div class="form-group">
-                        <!-- <label for="usr">End Date and Time:</label> -->
-                        <div class="input-cls-new"> <input type="text" class="form-control" placeholder="Select your City">
-                            <img src="images/calender-icon.png" class="icon-frm-cls">
-                        </div>
+                        <!-- <label for="usr">Pickup Time:</label> -->
+                        <div class="input-cls-new">
+                                                <input type="text" class="form-control timepick" placeholder="Pickup Time">
+                                                <img src="images/calender-icon.png" class="icon-frm-cls">
+                                            </div>
                     </div>
                 </div>
                 <div class="col-lg-auto col-6">
@@ -1248,14 +1253,14 @@
     </main>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!-- javascript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- <script src="js/jquery.min.js"></script> -->
     <script src="js/owl.carousel.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/eonasdan-bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script> 
-  <!-- <script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script> --> 
+      <script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+   
 
     <script type="text/javascript" src="js/custom.js"></script>
      
